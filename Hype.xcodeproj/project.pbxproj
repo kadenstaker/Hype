@@ -16,9 +16,9 @@
 		FA81B7382270DB30007210E6 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81B7372270DB30007210E6 /* News.storyboard */; };
 		FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73922721E4C007210E6 /* HomeViewController.swift */; };
 		FA81B73C22721E59007210E6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73B22721E59007210E6 /* SettingsViewController.swift */; };
-		FA81B73E227231A1007210E6 /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73D227231A1007210E6 /* HabitsViewController.swift */; };
 		FA81B74022725674007210E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73F22725674007210E6 /* Extensions.swift */; };
-		FA81B742227262FB007210E6 /* HabitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B741227262FB007210E6 /* HabitsCollectionViewCell.swift */; };
+		FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */; };
+		FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,9 @@
 		FA81B7372270DB30007210E6 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		FA81B73922721E4C007210E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA81B73B22721E59007210E6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		FA81B73D227231A1007210E6 /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
 		FA81B73F22725674007210E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		FA81B741227262FB007210E6 /* HabitsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
+		FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 			children = (
 				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
 				FA81B73B22721E59007210E6 /* SettingsViewController.swift */,
-				FA81B73D227231A1007210E6 /* HabitsViewController.swift */,
-				FA81B741227262FB007210E6 /* HabitsCollectionViewCell.swift */,
+				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
+				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -210,9 +210,9 @@
 				FA81B74022725674007210E6 /* Extensions.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
-				FA81B742227262FB007210E6 /* HabitsCollectionViewCell.swift in Sources */,
+				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
+				FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */,
 				FA81B73C22721E59007210E6 /* SettingsViewController.swift in Sources */,
-				FA81B73E227231A1007210E6 /* HabitsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
