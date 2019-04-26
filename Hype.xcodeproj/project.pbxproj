@@ -17,6 +17,8 @@
 		FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73922721E4C007210E6 /* HomeViewController.swift */; };
 		FA81B73C22721E59007210E6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73B22721E59007210E6 /* SettingsViewController.swift */; };
 		FA81B73E227231A1007210E6 /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73D227231A1007210E6 /* HabitsViewController.swift */; };
+		FA81B74022725674007210E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73F22725674007210E6 /* Extensions.swift */; };
+		FA81B742227262FB007210E6 /* HabitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B741227262FB007210E6 /* HabitsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FA81B73922721E4C007210E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA81B73B22721E59007210E6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA81B73D227231A1007210E6 /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
+		FA81B73F22725674007210E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA81B741227262FB007210E6 /* HabitsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
 				FA81B73B22721E59007210E6 /* SettingsViewController.swift */,
 				FA81B73D227231A1007210E6 /* HabitsViewController.swift */,
+				FA81B741227262FB007210E6 /* HabitsCollectionViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 		FA81B7322270CACB007210E6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FA81B73F22725674007210E6 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -201,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA81B74022725674007210E6 /* Extensions.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
+				FA81B742227262FB007210E6 /* HabitsCollectionViewCell.swift in Sources */,
 				FA81B73C22721E59007210E6 /* SettingsViewController.swift in Sources */,
 				FA81B73E227231A1007210E6 /* HabitsViewController.swift in Sources */,
 			);
