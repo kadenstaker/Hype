@@ -1,31 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tk3-mg-Tfg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="szI-Un-4LJ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Habits-->
-        <scene sceneID="P8r-nI-4YI">
+        <scene sceneID="Tz2-q2-jHu">
             <objects>
-                <viewController id="tk3-mg-Tfg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wu0-hC-l7C">
+                <tableViewController id="YRg-8T-AEn" customClass="HabitsTableViewController" customModule="Hype" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="HXj-fI-tPH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Cgj-UI-QiT"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Habits" id="vH4-T6-eoz"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="habitCell" rowHeight="147" id="5ci-kL-U20" customClass="HabitTableViewCell" customModule="Hype" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="147"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5ci-kL-U20" id="NcS-Iv-6W3">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="146.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="siG-qr-ntS">
+                                            <rect key="frame" x="20" y="11" width="374" height="125"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-1A-TMY">
+                                                    <rect key="frame" x="31" y="28" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="UYp-En-rvE"/>
+                                                        <constraint firstAttribute="height" constant="80" id="a8X-7X-V3j"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HabitLabel*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJV-WX-doA">
+                                                    <rect key="frame" x="136" y="56" width="158" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="LZE-1A-TMY" firstAttribute="leading" secondItem="siG-qr-ntS" secondAttribute="leading" constant="31" id="AZ4-wu-nwJ"/>
+                                                <constraint firstItem="QJV-WX-doA" firstAttribute="top" secondItem="siG-qr-ntS" secondAttribute="top" constant="56" id="N9n-ZW-TyG"/>
+                                                <constraint firstItem="LZE-1A-TMY" firstAttribute="top" secondItem="siG-qr-ntS" secondAttribute="top" constant="28" id="QNC-xf-vdm"/>
+                                                <constraint firstAttribute="bottom" secondItem="QJV-WX-doA" secondAttribute="bottom" constant="45" id="R5K-Lc-4uV"/>
+                                                <constraint firstItem="QJV-WX-doA" firstAttribute="leading" secondItem="LZE-1A-TMY" secondAttribute="trailing" constant="25" id="UMR-cv-p5a"/>
+                                                <constraint firstAttribute="bottom" secondItem="LZE-1A-TMY" secondAttribute="bottom" constant="28" id="imL-Iw-s1D"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="siG-qr-ntS" firstAttribute="top" secondItem="NcS-Iv-6W3" secondAttribute="topMargin" id="E6s-GZ-osC"/>
+                                        <constraint firstItem="siG-qr-ntS" firstAttribute="bottom" secondItem="NcS-Iv-6W3" secondAttribute="bottomMargin" id="Jsr-16-t8e"/>
+                                        <constraint firstItem="siG-qr-ntS" firstAttribute="trailing" secondItem="NcS-Iv-6W3" secondAttribute="trailingMargin" id="tRt-ag-fpn"/>
+                                        <constraint firstItem="siG-qr-ntS" firstAttribute="leading" secondItem="NcS-Iv-6W3" secondAttribute="leadingMargin" id="vW9-9U-4bc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="habitImageView" destination="LZE-1A-TMY" id="p4z-cw-Cqt"/>
+                                    <outlet property="habitLabel" destination="QJV-WX-doA" id="Zwp-Go-jEx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YRg-8T-AEn" id="sg9-JD-UQl"/>
+                            <outlet property="delegate" destination="YRg-8T-AEn" id="hAi-Fw-iQA"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Habits" id="czn-kV-pDm"/>
+                    <navigationItem key="navigationItem" id="c0F-uA-vKC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FOM-xd-gtn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKp-29-mRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="-76"/>
+            <point key="canvasLocation" x="2155.072463768116" y="-75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mzt-KN-q2U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="szI-Un-4LJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ioz-FJ-lg7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YRg-8T-AEn" kind="relationship" relationship="rootViewController" id="Fcl-l4-mdn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRv-3A-VcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244.9275362318842" y="-75"/>
         </scene>
     </scenes>
 </document>
