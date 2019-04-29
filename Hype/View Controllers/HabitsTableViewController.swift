@@ -24,7 +24,6 @@ class HabitsTableViewController: UITableViewController {
         return habits.count
     }
 
-  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "habitCell", for: indexPath) as? HabitTableViewCell
         let habit = habits[indexPath.row]

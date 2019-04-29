@@ -12,7 +12,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.shadowImage = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1).as1ptImage()
     }
     
     override func viewWillAppear(_ animated: Bool) {
