@@ -12,6 +12,7 @@ class ArticleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var articleTitleLabel: UILabel!
     @IBOutlet weak var authorDateLabel: UILabel!
+    // Heart button
 
     override func awakeFromNib() {
         super.awakeFromNib()

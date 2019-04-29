@@ -33,6 +33,8 @@
 		FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367E227797310046C04F /* SettingsTableViewController.swift */; };
 		FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA368022779AE00046C04F /* PasswordTableViewController.swift */; };
 		FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA36822277A3060046C04F /* Recycle.storyboard */; };
+		FAEA36852277B6D00046C04F /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA36842277B6D00046C04F /* NewsTableViewController.swift */; };
+		FAEA36872277B7760046C04F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA36862277B7760046C04F /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		FAEA367E227797310046C04F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FAEA368022779AE00046C04F /* PasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewController.swift; sourceTree = "<group>"; };
 		FAEA36822277A3060046C04F /* Recycle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recycle.storyboard; sourceTree = "<group>"; };
+		FAEA36842277B6D00046C04F /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		FAEA36862277B7760046C04F /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
 				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
 				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
+				FAEA36842277B6D00046C04F /* NewsTableViewController.swift */,
+				FAEA36862277B7760046C04F /* ArticleViewController.swift */,
 				AF80516922774D620086994F /* ArticleTableViewCell.swift */,
 			);
 			path = "View Controllers";
@@ -260,6 +266,7 @@
 				AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */,
 				FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */,
 				AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */,
+				FAEA36852277B6D00046C04F /* NewsTableViewController.swift in Sources */,
 				AFE2B2B72272229000848B85 /* ArticleController.swift in Sources */,
 				FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */,
 				AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */,
@@ -267,6 +274,7 @@
 				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
+				FAEA36872277B7760046C04F /* ArticleViewController.swift in Sources */,
 				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
 				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
