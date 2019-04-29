@@ -62,7 +62,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="challengeCell" rowHeight="92" id="8VI-RJ-xbC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="challengeCell" rowHeight="92" id="8VI-RJ-xbC" customClass="ChallengeTableViewCell" customModule="Hype" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8VI-RJ-xbC" id="CcW-Rz-B1j">
@@ -107,6 +107,9 @@
                                                 <constraint firstItem="ksJ-dn-yvO" firstAttribute="trailing" secondItem="CcW-Rz-B1j" secondAttribute="trailingMargin" id="maA-yI-VfZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="challengeTitleLabel" destination="ShB-ip-uX9" id="HDr-St-I9L"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -140,6 +143,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Hype" id="LmZ-0u-Rzw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="f08-EB-IPj" id="uQA-Dv-AIe"/>
+                        <outlet property="scoreLabel" destination="tI9-E6-Sg7" id="fFE-Uo-irE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46P-zT-mi5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
