@@ -16,10 +16,24 @@ class ChallengeController {
     
     //landing pad?
     
+    
     //CRUD Functions
     func createChallenge(name: String, points: Int, isDaily: Bool, isWeekly: Bool, dateAssigned: Date, rules: String, timesCompleted: Int, maxCompletions: Int, challengeImage: UIImage) {
-        let _ = Challenge(name: name, points: points, isDaily: isDaily, isWeekly: isWeekly, dateAssigned: dateAssigned, rules: rules, timesCompleted: timesCompleted, maxCompletions: maxCompletions, challengeImage: challengeImage)
+        let challenge = Challenge(name: name, points: points, isDaily: isDaily, isWeekly: isWeekly, dateAssigned: dateAssigned, rules: rules, timesCompleted: timesCompleted, maxCompletions: maxCompletions, challengeImage: challengeImage)
+        self.challenges.append(challenge)
         saveToPersistentStore()
+    }
+    
+    func updateChallenge(challenge: Challenge, name: String, points: Int, isDaily: Bool, isWeekly: Bool, dateAssigned: Date, rules: String, timesCompleted: Int, maxCompletions: Int, challengeImage: UIImage) {
+        challenge.name = name
+        challenge.points = points
+        challenge.isDaily = isDaily
+        challenge.isWeekly = isWeekly
+        challenge.dateAssigned = dateAssigned
+        challenge.rules = rules
+        challenge.timesCompleted = timesCompleted
+        challenge.maxCompletions = maxCompletions
+        challenge.challengeImage = challengeImage
     }
     
     // Persistent Store

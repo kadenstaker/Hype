@@ -77,6 +77,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="articleNameLabel" destination="xGW-4s-YvU" id="fxk-Vt-P8y"/>
+                                            <outlet property="articleTitleLabel" destination="xGW-4s-YvU" id="gg4-Nu-dzY"/>
                                             <outlet property="authorDateLabel" destination="GpQ-X6-pPH" id="W5i-q1-zy7"/>
                                         </connections>
                                     </tableViewCell>
