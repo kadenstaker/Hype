@@ -10,6 +10,7 @@ import UIKit
 
 class ChallengeTableViewCell: UITableViewCell {
     
+
     @IBOutlet weak var challengeLabel: UILabel!
     @IBOutlet weak var challengeButton: UIButton!
 
@@ -22,6 +23,17 @@ class ChallengeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+      
+    var landingPad: MockData? {
+        didSet {
+            updateViews()
+        }
+    }
+
+    func updateViews() {
+//        guard let unwrapped = landingPad else { return }
+        challengeLabel.text = "Turn off all the lights when you leave a room"
+
     }
 
 }

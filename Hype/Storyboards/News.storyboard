@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsCell" rowHeight="120" id="G3O-wc-797">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsCell" rowHeight="120" id="G3O-wc-797" customClass="ArticleTableViewCell" customModule="Hype" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G3O-wc-797" id="F1C-WA-fQI">
@@ -75,6 +75,10 @@
                                                 <constraint firstItem="7oB-Uv-9ZB" firstAttribute="top" secondItem="F1C-WA-fQI" secondAttribute="topMargin" id="ygZ-jG-afb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="articleNameLabel" destination="xGW-4s-YvU" id="fxk-Vt-P8y"/>
+                                            <outlet property="authorDateLabel" destination="GpQ-X6-pPH" id="W5i-q1-zy7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

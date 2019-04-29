@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8051662277493C0086994F /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8051652277493C0086994F /* ChallengeTableViewCell.swift */; };
+		AF80516A22774D620086994F /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80516922774D620086994F /* ArticleTableViewCell.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
 		AFE2B2AB2271387F00848B85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AA2271387F00848B85 /* Article.swift */; };
@@ -17,7 +19,7 @@
 		AFE2B2B72272229000848B85 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2B62272229000848B85 /* ArticleController.swift */; };
 		AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B722735EC9002ED79C /* ImpactController.swift */; };
 		AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B922736025002ED79C /* TrackableHabitController.swift */; };
-		AFE9C8BE22739CAC002ED79C /* MockDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8BD22739CAC002ED79C /* MockDataController.swift */; };
+		AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8BD22739CAC002ED79C /* MockData.swift */; };
 		FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7462932270C33D00ACE3D9 /* AppDelegate.swift */; };
 		FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7462972270C33D00ACE3D9 /* TabBar.storyboard */; };
 		FA74629B2270C33E00ACE3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA74629A2270C33E00ACE3D9 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF8051652277493C0086994F /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		AF80516922774D620086994F /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AA2271387F00848B85 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = SOURCE_ROOT; };
@@ -44,7 +48,7 @@
 		AFE2B2B62272229000848B85 /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = SOURCE_ROOT; };
 		AFE9C8B722735EC9002ED79C /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = SOURCE_ROOT; };
 		AFE9C8B922736025002ED79C /* TrackableHabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableHabitController.swift; sourceTree = SOURCE_ROOT; };
-		AFE9C8BD22739CAC002ED79C /* MockDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataController.swift; sourceTree = SOURCE_ROOT; };
+		AFE9C8BD22739CAC002ED79C /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = SOURCE_ROOT; };
 		FA7462902270C33D00ACE3D9 /* Hype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7462932270C33D00ACE3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7462982270C33D00ACE3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
@@ -123,7 +127,7 @@
 				AFE2B2B62272229000848B85 /* ArticleController.swift */,
 				AFE9C8B722735EC9002ED79C /* ImpactController.swift */,
 				AFE9C8B922736025002ED79C /* TrackableHabitController.swift */,
-				AFE9C8BD22739CAC002ED79C /* MockDataController.swift */,
+				AFE9C8BD22739CAC002ED79C /* MockData.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -137,6 +141,7 @@
 				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
 				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
 				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
+				AF80516922774D620086994F /* ArticleTableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -256,7 +261,8 @@
 				AFE2B2B72272229000848B85 /* ArticleController.swift in Sources */,
 				FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */,
 				AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */,
-				AFE9C8BE22739CAC002ED79C /* MockDataController.swift in Sources */,
+				AF80516A22774D620086994F /* ArticleTableViewCell.swift in Sources */,
+				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
 				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,

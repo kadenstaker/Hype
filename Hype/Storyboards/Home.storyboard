@@ -82,6 +82,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+
                                             <outlet property="challengeButton" destination="Xs9-gM-gUZ" id="P3N-kY-2w8"/>
                                             <outlet property="challengeLabel" destination="ShB-ip-uX9" id="vyh-Qd-CZ7"/>
                                         </connections>

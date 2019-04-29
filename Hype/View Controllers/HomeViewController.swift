@@ -11,6 +11,13 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+
+    //landing pad
+    var landingPad: MockData? {
+        didSet {
+            updateMock()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,4 +60,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     }
 
+}
+
+extension HomeViewController {
+    
+    func updateMock() {
+//        guard let unwrapped = landingPad else { return }
+        nameLabel.text = "John Doe"
+        scoreLabel.text = "\(5)"
+        
+    }
 }
