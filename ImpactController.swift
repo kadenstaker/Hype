@@ -17,10 +17,7 @@ class ImpactController {
     
     func createHabit(title: String, impactImage: UIImage) {
         let impact = Impact(title: title, impactImage: impactImage)
-        impact.title = "Transportation"
-        impact.title = "Recycle"
-        impact.title = "Energy"
-        impact.title = "Water"
+        
         
         saveToPersistentStore()
     }

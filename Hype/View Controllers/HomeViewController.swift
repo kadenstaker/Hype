@@ -10,6 +10,16 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    //landing pad
+    var landingPad: MockData? {
+        didSet {
+            updateMock()
+        }
+    }
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.shadowImage = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1).as1ptImage()
@@ -47,4 +57,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     }
 
+}
+
+extension HomeViewController {
+    
+    func updateMock() {
+//        guard let unwrapped = landingPad else { return }
+        nameLabel.text = "John Doe"
+        scoreLabel.text = "\(5)"
+        
+    }
 }

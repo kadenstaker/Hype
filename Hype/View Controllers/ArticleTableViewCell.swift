@@ -1,18 +1,18 @@
 //
-//  HabitTableViewCell.swift
+//  ArticleTableViewCell.swift
 //  Hype
 //
-//  Created by Kaden Staker on 4/26/19.
+//  Created by Hannah Hoff on 4/29/19.
 //  Copyright © 2019 Kaden Staker. All rights reserved.
 //
 
 import UIKit
 
-class HabitTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var habitImageView: UIImageView!
-    @IBOutlet weak var habitLabel: UILabel!
+class ArticleTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var articleTitleLabel: UILabel!
+    @IBOutlet weak var authorDateLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,10 +25,8 @@ class HabitTableViewCell: UITableViewCell {
     }
     
     func updateMock() {
-        habitLabel.text = "Transportation"
-        habitLabel.text = "Recycle"
-        habitLabel.text = "Energy"
-        habitLabel.text = "Water"
+        articleTitleLabel.text = "Solar Energy Saves the Earth?"
+        authorDateLabel.text = "Paul Robinson, March 2019"
     }
 
 }

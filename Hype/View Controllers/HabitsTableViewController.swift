@@ -9,6 +9,8 @@
 import UIKit
 
 class HabitsTableViewController: UITableViewController {
+    
+    @IBOutlet weak var habitNameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
