@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF8051662277493C0086994F /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8051652277493C0086994F /* ChallengeTableViewCell.swift */; };
 		AF80516A22774D620086994F /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80516922774D620086994F /* ArticleTableViewCell.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
@@ -33,10 +32,10 @@
 		FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */; };
 		FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367E227797310046C04F /* SettingsTableViewController.swift */; };
 		FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA368022779AE00046C04F /* PasswordTableViewController.swift */; };
+		FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA36822277A3060046C04F /* Recycle.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AF8051652277493C0086994F /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		AF80516922774D620086994F /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
@@ -65,6 +64,7 @@
 		FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		FAEA367E227797310046C04F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FAEA368022779AE00046C04F /* PasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewController.swift; sourceTree = "<group>"; };
+		FAEA36822277A3060046C04F /* Recycle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recycle.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +152,7 @@
 				FA7462972270C33D00ACE3D9 /* TabBar.storyboard */,
 				FA81B7332270DB03007210E6 /* Home.storyboard */,
 				FA81B7352270DB25007210E6 /* Habits.storyboard */,
+				FAEA36822277A3060046C04F /* Recycle.storyboard */,
 				FA81B7372270DB30007210E6 /* News.storyboard */,
 				FA74629C2270C33E00ACE3D9 /* LaunchScreen.storyboard */,
 			);
@@ -240,6 +241,7 @@
 				FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */,
 				FA81B7362270DB25007210E6 /* Habits.storyboard in Resources */,
 				FA81B7342270DB03007210E6 /* Home.storyboard in Resources */,
+				FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

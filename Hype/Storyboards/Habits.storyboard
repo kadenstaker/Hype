@@ -71,21 +71,22 @@
                             <outlet property="delegate" destination="YRg-8T-AEn" id="hAi-Fw-iQA"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Habits" id="czn-kV-pDm"/>
-                    <navigationItem key="navigationItem" id="c0F-uA-vKC"/>
+                    <navigationItem key="navigationItem" title="Habits" id="c0F-uA-vKC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKp-29-mRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2155.072463768116" y="-75"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Habits-->
         <scene sceneID="Mzt-KN-q2U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="szI-Un-4LJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Habits" id="v7Q-G0-ED4"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ioz-FJ-lg7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ioz-FJ-lg7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

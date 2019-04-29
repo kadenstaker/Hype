@@ -66,8 +66,8 @@ extension HomeViewController {
     
     func updateMock() {
 //        guard let unwrapped = landingPad else { return }
-        nameLabel.text = "John Doe"
-        scoreLabel.text = "\(5)"
-        
+//        nameLabel.text = "John Doe"
+//        scoreLabel.text = "\(5)"
+//
     }
 }
