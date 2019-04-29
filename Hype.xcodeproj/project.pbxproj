@@ -26,10 +26,11 @@
 		FA81B7362270DB25007210E6 /* Habits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81B7352270DB25007210E6 /* Habits.storyboard */; };
 		FA81B7382270DB30007210E6 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81B7372270DB30007210E6 /* News.storyboard */; };
 		FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73922721E4C007210E6 /* HomeViewController.swift */; };
-		FA81B73C22721E59007210E6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73B22721E59007210E6 /* SettingsViewController.swift */; };
-		FA81B74022725674007210E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73F22725674007210E6 /* Extensions.swift */; };
 		FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */; };
 		FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */; };
+		FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */; };
+		FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367E227797310046C04F /* SettingsTableViewController.swift */; };
+		FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA368022779AE00046C04F /* PasswordTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,10 +55,12 @@
 		FA81B7352270DB25007210E6 /* Habits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Habits.storyboard; sourceTree = "<group>"; };
 		FA81B7372270DB30007210E6 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		FA81B73922721E4C007210E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FA81B73B22721E59007210E6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA81B73F22725674007210E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
 		FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
+		FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		FAEA367E227797310046C04F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		FAEA368022779AE00046C04F /* PasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
-				FA81B73B22721E59007210E6 /* SettingsViewController.swift */,
+				FAEA367E227797310046C04F /* SettingsTableViewController.swift */,
+				FAEA368022779AE00046C04F /* PasswordTableViewController.swift */,
 				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
+				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
 				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
 			);
 			path = "View Controllers";
@@ -246,16 +251,18 @@
 				AFE2B2AD2271390000848B85 /* Impact.swift in Sources */,
 				AFE2B2A72271338600848B85 /* User.swift in Sources */,
 				AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */,
+				FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */,
 				AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */,
 				AFE2B2B72272229000848B85 /* ArticleController.swift in Sources */,
+				FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */,
 				AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */,
 				AFE9C8BE22739CAC002ED79C /* MockDataController.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
+				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
 				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
 				FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */,
-				FA81B73C22721E59007210E6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
