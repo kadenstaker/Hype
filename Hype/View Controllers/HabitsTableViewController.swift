@@ -14,7 +14,6 @@ class HabitsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.separatorColor = .clear
     }
 
     // MARK: - Habits
