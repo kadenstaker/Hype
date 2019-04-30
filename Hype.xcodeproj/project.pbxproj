@@ -25,7 +25,6 @@
 		FA74629E2270C33E00ACE3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA74629C2270C33E00ACE3D9 /* LaunchScreen.storyboard */; };
 		FA81B7342270DB03007210E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81B7332270DB03007210E6 /* Home.storyboard */; };
 		FA81B7362270DB25007210E6 /* Habits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81B7352270DB25007210E6 /* Habits.storyboard */; };
-		FA81B7382270DB30007210E6 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA81B7372270DB30007210E6 /* News.storyboard */; };
 		FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73922721E4C007210E6 /* HomeViewController.swift */; };
 		FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */; };
 		FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */; };
@@ -58,7 +57,6 @@
 		FA74629F2270C33E00ACE3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA81B7332270DB03007210E6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FA81B7352270DB25007210E6 /* Habits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Habits.storyboard; sourceTree = "<group>"; };
-		FA81B7372270DB30007210E6 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		FA81B73922721E4C007210E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA81B73F22725674007210E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 				FA81B7332270DB03007210E6 /* Home.storyboard */,
 				FA81B7352270DB25007210E6 /* Habits.storyboard */,
 				FAEA36822277A3060046C04F /* Recycle.storyboard */,
-				FA81B7372270DB30007210E6 /* News.storyboard */,
 				FA74629C2270C33E00ACE3D9 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -242,7 +239,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA74629E2270C33E00ACE3D9 /* LaunchScreen.storyboard in Resources */,
-				FA81B7382270DB30007210E6 /* News.storyboard in Resources */,
 				FA74629B2270C33E00ACE3D9 /* Assets.xcassets in Resources */,
 				FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */,
 				FA81B7362270DB25007210E6 /* Habits.storyboard in Resources */,

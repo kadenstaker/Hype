@@ -52,8 +52,15 @@ class ArticleController {
         dataTask.resume()
     }
     
-    func fetchImageFor(article: Article, completion: @escaping((UIImage?) -> Void)) {
+    func fetchImageFor(item: Article, completion: @escaping((UIImage?) -> Void)) {
+        let imageBaseUrl = URL(string: <#T##String#>)
+        guard let completeImageUrl = imageBaseUrl?.appendingPathComponent("\(item.urlToImage)") else { return }
         
+        let dataTask = URLSession.shared.dataTask(with: completeImageUrl) { (data, _, error) in
+            if let error = error {
+                print("Error fetching image: \(#function) ; \(error) ; \(error.localizedDescription)")
+            }
+        }
     }
     
     // Persistent Store
