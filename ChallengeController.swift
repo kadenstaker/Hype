@@ -19,6 +19,7 @@ class ChallengeController {
     
     //CRUD Functions
     func createChallenge(name: String, points: Int, isDaily: Bool, isWeekly: Bool, dateAssigned: Date, rules: String, timesCompleted: Int, maxCompletions: Int, challengeImage: UIImage) {
+        let _ = Challenge(name: name, points: points, isDaily: isDaily, isWeekly: isWeekly, dateAssigned: dateAssigned, rules: rules, timesCompleted: timesCompleted, maxCompletions: maxCompletions, challengeImage: challengeImage)
         let challenge = Challenge(name: name, points: points, isDaily: isDaily, isWeekly: isWeekly, dateAssigned: dateAssigned, rules: rules, timesCompleted: timesCompleted, maxCompletions: maxCompletions, challengeImage: challengeImage)
         self.challenges.append(challenge)
         saveToPersistentStore()

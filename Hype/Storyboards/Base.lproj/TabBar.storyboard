@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9WZ-zH-5SI">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="990-vS-DDc" kind="relationship" relationship="viewControllers" id="fLC-3c-BMO"/>
                         <segue destination="yfy-kO-Fkh" kind="relationship" relationship="viewControllers" id="fDN-oN-ZVj"/>
+                        <segue destination="g7M-Zp-2Zz" kind="relationship" relationship="viewControllers" id="62L-UG-tdR"/>
                         <segue destination="NJX-dv-VBK" kind="relationship" relationship="viewControllers" id="NxT-PY-rHF"/>
                     </connections>
                 </tabBarController>
@@ -36,7 +37,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7x-jR-cVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="228"/>
+            <point key="canvasLocation" x="341" y="140"/>
         </scene>
         <!--Habits-->
         <scene sceneID="iky-o9-Qop">
@@ -46,7 +47,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bbh-p6-bTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="283"/>
+            <point key="canvasLocation" x="386" y="187"/>
+        </scene>
+        <!--Recycle-->
+        <scene sceneID="s5K-x3-yrx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Recycle" id="g7M-Zp-2Zz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ijC-XE-cxa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-oT-JXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="240"/>
         </scene>
         <!--News-->
         <scene sceneID="r5a-Ob-cky">
@@ -56,7 +67,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xV9-5D-mdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="340"/>
+            <point key="canvasLocation" x="342" y="285"/>
         </scene>
     </scenes>
 </document>
