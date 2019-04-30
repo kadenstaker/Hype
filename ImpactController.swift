@@ -17,9 +17,9 @@ class ImpactController {
     
     func createHabit(title: String, impactImage: UIImage) {
         let impact = Impact(title: title, impactImage: impactImage)
-        
-        
+        self.impacts.append(impact)
         saveToPersistentStore()
+        
     }
     
     // Persistent Store

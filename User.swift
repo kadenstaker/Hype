@@ -27,8 +27,8 @@ class User {
         self.email = email
         self.password = password
         self.score = score
-        self.currentDailyChallenge = currentDailyChallenge
         self.currentWeeklyChallenge = currentWeeklyChallenge
+        self.currentDailyChallenge = currentDailyChallenge
         self.energy = energy
         self.water = water
         self.tipsOn = tipsOn
