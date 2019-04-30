@@ -1,3 +1,21 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@HannahjH 
+0
+0 1 kadenstaker/Hype
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
+Hype/.gitignore
+ Hannah Hoff adding git ignore
+e16aef9 4 days ago
+60 lines (59 sloc)  1.45 KB
+    
 # Git Ignore
 # Xcode
 #
@@ -57,3 +75,15 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
