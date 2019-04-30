@@ -63,3 +63,7 @@ extension Article: Equatable, Codable {
     }
 }
 
+struct topLevelDict: Codable {
+    let results: [Article]
+}
+

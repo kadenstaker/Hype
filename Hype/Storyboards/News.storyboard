@@ -56,31 +56,7 @@
                                                 <constraint firstItem="H2d-Q0-tb6" firstAttribute="centerY" secondItem="zta-8D-HJl" secondAttribute="centerY" id="HrT-bX-uNn"/>
                                                 <constraint firstItem="H2d-Q0-tb6" firstAttribute="leading" secondItem="zta-8D-HJl" secondAttribute="leading" constant="8" id="tZj-wz-hY4"/>
                                             </constraints>
-<<<<<<< HEAD
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="articleNameLabel" destination="xGW-4s-YvU" id="fxk-Vt-P8y"/>
-                                            <outlet property="articleTitleLabel" destination="xGW-4s-YvU" id="gg4-Nu-dzY"/>
-                                            <outlet property="authorDateLabel" destination="GpQ-X6-pPH" id="W5i-q1-zy7"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUN-Ih-2f5">
-                                <rect key="frame" x="0.0" y="140" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="View Saved Articles"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7Jj-G5-MRX"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="News" id="l4f-9J-pEa"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXs-7x-yte" userLabel="First Responder" sceneMemberID="firstResponder"/>
-=======
+
                                         </view>
                                     </subviews>
                                     <constraints>

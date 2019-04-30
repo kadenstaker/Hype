@@ -17,11 +17,39 @@ class ArticleController {
     var articles: [Article] = []
     
     //base url
-    
+    static let baseUrl = URL(string: "https://newsapi.org/v2/")
     
     //CRUD Functions
-    static func fetchArticle(by searchTerm: String, competion: @escaping ((Article?) -> Void)) {
+    static func fetchArticle(by searchTerm: String, completion: @escaping ([Article]) -> Void) {
+        guard let url = baseUrl else { return }
+        url.appendingPathComponent("/everything")
         
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        let queryItem = URLQueryItem(name: "q", value: "eco")
+        let apiQueryItem = URLQueryItem(name: "apiKey", value: "81be08fbc0a144d9864a612fb2483f01")
+        components?.queryItems = [queryItem, apiQueryItem]
+        
+        guard let componentsUrl = components?.url else { completion([]); return }
+        let request = URLRequest(url: componentsUrl)
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, _, error) in
+            if let error = error {
+                print("Error fetching data for article \(#function) ; \(error) ; \(error.localizedDescription)")
+            }
+            
+            guard let data = data else { completion([]); return }
+            let jsonDecoder = JSONDecoder()
+            
+            do {
+                let topLevelDictionary = try jsonDecoder.decode(topLevelDict.self, from: data)
+                let articles = topLevelDictionary.results
+                completion(articles)
+            } catch {
+                print("Error decoding movie items data \(#function) ; \(error) ; \(error.localizedDescription)")
+                completion([])
+            }
+        }
+        dataTask.resume()
     }
     
     func fetchImageFor(article: Article, completion: @escaping((UIImage?) -> Void)) {

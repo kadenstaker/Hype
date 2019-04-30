@@ -123,6 +123,8 @@
                     <navigationItem key="navigationItem" title="Hype" id="LmZ-0u-Rzw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="nameLabel" destination="f08-EB-IPj" id="vfp-Q2-OO7"/>
+                        <outlet property="scoreLabel" destination="juC-4S-VwR" id="6BB-Xd-SeS"/>
                         <outlet property="tableView" destination="ceX-2C-lY6" id="gax-ff-kWS"/>
                     </connections>
                 </viewController>
