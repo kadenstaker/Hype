@@ -12,15 +12,15 @@ class Article {
     var title: String
     var author: String
     var date: Date
-    var articleImage: UIImage?
+    var urlToImage: String?
     var saved: Bool
     var articleBody: String
     
-    init(title: String, author: String, date: Date, articleImage: UIImage?, saved: Bool, articleBody: String) {
+    init(title: String, author: String, date: Date, urlToImage: String?, saved: Bool, articleBody: String) {
         self.title = title
         self.author = author
         self.date = date
-        self.articleImage = articleImage
+        self.urlToImage = urlToImage
         self.saved = saved
         self.articleBody = articleBody
     }
@@ -57,9 +57,13 @@ extension Article: Equatable, Codable {
     return lhs.title == rhs.title &&
         lhs.author == rhs.author &&
         lhs.date == rhs.date &&
-        lhs.articleImage == rhs.articleImage &&
+        lhs.urlToImage == rhs.urlToImage &&
         lhs.saved == rhs.saved &&
         lhs.articleBody == rhs.articleBody
     }
+}
+
+struct topLevelDict: Codable {
+    let results: [Article]
 }
 

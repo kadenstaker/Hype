@@ -10,11 +10,6 @@ import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
     
-    var landingPad: Article? {
-        didSet{
-            updateMock()
-        }
-    }
     
     @IBOutlet weak var articleTitleLabel: UILabel!
     @IBOutlet weak var authorDateLabel: UILabel!
@@ -31,9 +26,4 @@ class ArticleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updateMock() {
-        articleTitleLabel.text = "Solar Energy Saves the Earth?"
-        authorDateLabel.text = "Paul Robinson, March 2019"
-    }
-
 }

@@ -268,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA74629E2270C33E00ACE3D9 /* LaunchScreen.storyboard in Resources */,
+
 				FA36B8932278E86500ADF1F3 /* GoogleService-Info.plist in Resources */,
+
 				FA74629B2270C33E00ACE3D9 /* Assets.xcassets in Resources */,
 				FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */,
 				FA81B7362270DB25007210E6 /* Habits.storyboard in Resources */,

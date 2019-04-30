@@ -14,13 +14,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-
-    //landing pad
-    var landingPad: MockData? {
-        didSet {
-            updateMock()
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +30,30 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.nameLabel.text = "\(UserController.shared.currentUser)"
     }
     
+    // increase, save, and update score
     func updateScoreLabel() {
-//        self.scoreLabel.text = UserController.shared.
+        // define a constant string name for the key where the score will be stored
+        let scoreKey = "scoreKey"
+        // even if the key's value isn't Bool, iOS will return 'false'
+        // if the key hasn't been set, yet, then set an initial value
+        let scoreKeyExists: Bool = UserDefaults.standard.bool(forKey: scoreKey)
+        if !scoreKeyExists {
+            UserDefaults.standard.set(0, forKey: scoreKey)
+            UserDefaults.standard.synchronize()
+        }
+        // retrieve the value when needed
+        let currentScore = UserDefaults.standard.integer(forKey: scoreKey)
+        // set value as needed
+        let newScore = 10
+        UserDefaults.standard.set(newScore, forKey: scoreKey)
+        UserDefaults.standard.synchronize()
+        
+        self.scoreLabel.text = "\(currentScore)"
     }
     
     func updateViews() {
         updateNameLabel()
+        updateScoreLabel()
     }
     
     let challenges = ["Challenge 1", "Challenge 2", "Challenge 3"]
@@ -71,20 +82,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell ?? UITableViewCell()
     }
     
- 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-    }
-
-}
-
-extension HomeViewController {
-    
-    func updateMock() {
-//        guard let unwrapped = landingPad else { return }
-//        nameLabel.text = "John Doe"
-//        scoreLabel.text = "\(5)"
-//
     }
 }
