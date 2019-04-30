@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		78201B8AD8533EABC7405106 /* Pods_Hype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCAC460C4A23B1F184A8F60 /* Pods_Hype.framework */; };
+=======
+		26282B3C7B9F46240AD394AA /* Pods_Hype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9C526D0A4CC8D1E81D796B /* Pods_Hype.framework */; };
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 		AF80516A22774D620086994F /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80516922774D620086994F /* ArticleTableViewCell.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
@@ -33,12 +37,20 @@
 		FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */; };
 		FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367E227797310046C04F /* SettingsTableViewController.swift */; };
 		FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA368022779AE00046C04F /* PasswordTableViewController.swift */; };
+		FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA36822277A3060046C04F /* Recycle.storyboard */; };
+		FAEA36852277B6D00046C04F /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA36842277B6D00046C04F /* NewsTableViewController.swift */; };
+		FAEA36872277B7760046C04F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA36862277B7760046C04F /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		100FE993965BC75344DD0372 /* Pods-Hype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.release.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.release.xcconfig"; sourceTree = "<group>"; };
 		45F14B9D11C9DA9B150799B5 /* Pods-Hype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.debug.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.debug.xcconfig"; sourceTree = "<group>"; };
 		5FCAC460C4A23B1F184A8F60 /* Pods_Hype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		7D9C526D0A4CC8D1E81D796B /* Pods_Hype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B21EB2A2271CA8FB3FF4C9 /* Pods-Hype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.release.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.release.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 		AF80516922774D620086994F /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
@@ -51,6 +63,7 @@
 		AFE9C8B722735EC9002ED79C /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = SOURCE_ROOT; };
 		AFE9C8B922736025002ED79C /* TrackableHabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableHabitController.swift; sourceTree = SOURCE_ROOT; };
 		AFE9C8BD22739CAC002ED79C /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = SOURCE_ROOT; };
+		B4BBE7ACF3B40DBA8DE94450 /* Pods-Hype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.debug.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.debug.xcconfig"; sourceTree = "<group>"; };
 		FA7462902270C33D00ACE3D9 /* Hype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7462932270C33D00ACE3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7462982270C33D00ACE3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
@@ -67,6 +80,9 @@
 		FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		FAEA367E227797310046C04F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FAEA368022779AE00046C04F /* PasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewController.swift; sourceTree = "<group>"; };
+		FAEA36822277A3060046C04F /* Recycle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recycle.storyboard; sourceTree = "<group>"; };
+		FAEA36842277B6D00046C04F /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		FAEA36862277B7760046C04F /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +90,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				78201B8AD8533EABC7405106 /* Pods_Hype.framework in Frameworks */,
+=======
+				26282B3C7B9F46240AD394AA /* Pods_Hype.framework in Frameworks */,
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		4F4D294691AAD1CF0DD44C46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +118,24 @@
 			);
 			name = Pods;
 			path = Pods;
+=======
+		B93412CDACCB8985B4EC3E69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4BBE7ACF3B40DBA8DE94450 /* Pods-Hype.debug.xcconfig */,
+				A7B21EB2A2271CA8FB3FF4C9 /* Pods-Hype.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D16F71A69EA29FE16B8D19B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D9C526D0A4CC8D1E81D796B /* Pods_Hype.framework */,
+			);
+			name = Frameworks;
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 			sourceTree = "<group>";
 		};
 		FA7462872270C33D00ACE3D9 = {
@@ -104,8 +143,13 @@
 			children = (
 				FA7462922270C33D00ACE3D9 /* Hype */,
 				FA7462912270C33D00ACE3D9 /* Products */,
+<<<<<<< HEAD
 				96544234581A683A4AC7418C /* Pods */,
 				4F4D294691AAD1CF0DD44C46 /* Frameworks */,
+=======
+				B93412CDACCB8985B4EC3E69 /* Pods */,
+				D16F71A69EA29FE16B8D19B6 /* Frameworks */,
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +208,8 @@
 				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
 				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
 				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
+				FAEA36842277B6D00046C04F /* NewsTableViewController.swift */,
+				FAEA36862277B7760046C04F /* ArticleViewController.swift */,
 				AF80516922774D620086994F /* ArticleTableViewCell.swift */,
 			);
 			path = "View Controllers";
@@ -175,6 +221,7 @@
 				FA7462972270C33D00ACE3D9 /* TabBar.storyboard */,
 				FA81B7332270DB03007210E6 /* Home.storyboard */,
 				FA81B7352270DB25007210E6 /* Habits.storyboard */,
+				FAEA36822277A3060046C04F /* Recycle.storyboard */,
 				FA81B7372270DB30007210E6 /* News.storyboard */,
 				FA74629C2270C33E00ACE3D9 /* LaunchScreen.storyboard */,
 			);
@@ -206,7 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA7462A22270C33E00ACE3D9 /* Build configuration list for PBXNativeTarget "Hype" */;
 			buildPhases = (
+<<<<<<< HEAD
 				8256C7ADB937EA501A22C56E /* [CP] Check Pods Manifest.lock */,
+=======
+				EE2015844675FD747D2160BE /* [CP] Check Pods Manifest.lock */,
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 				FA74628C2270C33D00ACE3D9 /* Sources */,
 				FA74628D2270C33D00ACE3D9 /* Frameworks */,
 				FA74628E2270C33D00ACE3D9 /* Resources */,
@@ -264,13 +315,18 @@
 				FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */,
 				FA81B7362270DB25007210E6 /* Habits.storyboard in Resources */,
 				FA81B7342270DB03007210E6 /* Home.storyboard in Resources */,
+				FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+<<<<<<< HEAD
 		8256C7ADB937EA501A22C56E /* [CP] Check Pods Manifest.lock */ = {
+=======
+		EE2015844675FD747D2160BE /* [CP] Check Pods Manifest.lock */ = {
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -307,6 +363,7 @@
 				AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */,
 				FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */,
 				AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */,
+				FAEA36852277B6D00046C04F /* NewsTableViewController.swift in Sources */,
 				AFE2B2B72272229000848B85 /* ArticleController.swift in Sources */,
 				FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */,
 				AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */,
@@ -314,6 +371,7 @@
 				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
+				FAEA36872277B7760046C04F /* ArticleViewController.swift in Sources */,
 				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
 				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
@@ -461,7 +519,11 @@
 		};
 		FA7462A32270C33E00ACE3D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 45F14B9D11C9DA9B150799B5 /* Pods-Hype.debug.xcconfig */;
+=======
+			baseConfigurationReference = B4BBE7ACF3B40DBA8DE94450 /* Pods-Hype.debug.xcconfig */;
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,7 +542,11 @@
 		};
 		FA7462A42270C33E00ACE3D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 100FE993965BC75344DD0372 /* Pods-Hype.release.xcconfig */;
+=======
+			baseConfigurationReference = A7B21EB2A2271CA8FB3FF4C9 /* Pods-Hype.release.xcconfig */;
+>>>>>>> fe9b7c400afbe313a2d0dac2239e08d94ca0a686
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

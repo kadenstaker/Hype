@@ -10,8 +10,15 @@ import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
     
+    var landingPad: Article? {
+        didSet{
+            updateMock()
+        }
+    }
+    
     @IBOutlet weak var articleTitleLabel: UILabel!
     @IBOutlet weak var authorDateLabel: UILabel!
+    // Heart button
 
     override func awakeFromNib() {
         super.awakeFromNib()

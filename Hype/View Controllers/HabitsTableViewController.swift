@@ -17,7 +17,7 @@ class HabitsTableViewController: UITableViewController {
     }
 
     // MARK: - Habits
-    let habits = ["Transportation", "Recycle", "Energy", "Water"]
+    let habits = ["Transportation", "Energy", "Water"]
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

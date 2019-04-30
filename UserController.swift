@@ -22,10 +22,11 @@ class UserController {
     var habits: User?
     
     //CRUD Functions
-    func createUser(firstName: String, lastName: String, email: String, password: String, profilePic: UIImage, score: Int, currentWeeklyChallenge: [Challenge], currentlyDailyChallenge: [Challenge], energy: [TrackableHabit], water: [TrackableHabit], tipsOn: Bool) {
-        let _ = User(firstName: firstName, lastName: lastName, email: email, password: password, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentlyDailyChallenge, energy: energy, water: water, profilePic: profilePic)
+    func createUserWith(firstName: String, lastName: String, email: String, password: String, profilePic: UIImage?, currentDailyChallenge: [Challenge], currentWeeklyChallenge: [Challenge], energy: [TrackableHabit], water: [TrackableHabit], score: Int) {
+        guard let profilePic = profilePic else { return }
+        let user = User(firstName: firstName, lastName: lastName, email: email, password: password, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, energy: energy, water: water, profilePic: profilePic)
+        self.users.append(user)
         saveToPersistentStore()
-        
     }
     
     func updateUser(user: User, firstName: String, lastName: String, email: String, password: String, profilePic: UIImage, score: Int, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], energy: [TrackableHabit], water: [TrackableHabit]) {
@@ -51,7 +52,7 @@ class UserController {
         let fullURL = documenDirectory.appendingPathComponent(userLocation)
         return fullURL
     }
-
+    
     func saveToPersistentStore() {
         let encoder = JSONEncoder()
         do {
@@ -61,7 +62,7 @@ class UserController {
             print("Error saving to persistent store: \(error); \(error.localizedDescription)")
         }
     }
-
+    
     func loadFromPersistentStore() {
         let decoder = JSONDecoder()
         do {

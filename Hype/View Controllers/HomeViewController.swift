@@ -10,6 +10,9 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
 
     //landing pad
@@ -28,6 +31,18 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+    }
+    
+    func updateNameLabel() {
+        self.nameLabel.text = "\(UserController.shared.currentUser)"
+    }
+    
+    func updateScoreLabel() {
+//        self.scoreLabel.text = UserController.shared.
+    }
+    
+    func updateViews() {
+        updateNameLabel()
     }
     
     let challenges = ["Challenge 1", "Challenge 2", "Challenge 3"]
@@ -51,6 +66,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         view?.layer.shadowRadius = 5.0
         cell?.contentView.layer.masksToBounds = true
         
+//        return cell
+        
         return cell ?? UITableViewCell()
     }
     
@@ -66,8 +83,8 @@ extension HomeViewController {
     
     func updateMock() {
 //        guard let unwrapped = landingPad else { return }
-        nameLabel.text = "John Doe"
-        scoreLabel.text = "\(5)"
-        
+//        nameLabel.text = "John Doe"
+//        scoreLabel.text = "\(5)"
+//
     }
 }

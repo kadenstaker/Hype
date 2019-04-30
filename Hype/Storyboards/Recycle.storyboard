@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aom-rQ-lV4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recycle-->
+        <scene sceneID="Hm4-21-hqW">
+            <objects>
+                <viewController id="7oj-L1-cWh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0uU-OV-rUu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EQo-2f-hYs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recycle" id="5Oc-OG-sVB"/>
+                    <navigationItem key="navigationItem" id="3D2-oF-JoF"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIk-7D-w1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="145.98214285714286"/>
+        </scene>
+        <!--Recycle-->
+        <scene sceneID="z3Q-xd-P95">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aom-rQ-lV4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recycle" id="ms8-5n-nEr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IBA-lI-aFc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7oj-L1-cWh" kind="relationship" relationship="rootViewController" id="Oaw-nj-RSe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVF-bF-OcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="145.98214285714286"/>
+        </scene>
+    </scenes>
+</document>
