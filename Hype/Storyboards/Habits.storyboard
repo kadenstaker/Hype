@@ -217,13 +217,40 @@
                     <view key="view" contentMode="scaleToFill" id="snj-Rc-Vh4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAJ-1t-Prc" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="160" width="374" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-aM-LJH">
+                                <rect key="frame" x="20" y="446" width="374" height="367"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-2M-Kil">
+                                <rect key="frame" x="20" y="408" width="374" height="30"/>
+                                <state key="normal" title="Enter Bill"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mWS-XK-Lmu" firstAttribute="trailing" secondItem="d1X-2M-Kil" secondAttribute="trailing" constant="20" id="Gc4-pa-SV6"/>
+                            <constraint firstItem="Gf5-aM-LJH" firstAttribute="leading" secondItem="mWS-XK-Lmu" secondAttribute="leading" constant="20" id="Hs4-yz-ZCi"/>
+                            <constraint firstItem="oAJ-1t-Prc" firstAttribute="leading" secondItem="mWS-XK-Lmu" secondAttribute="leading" constant="20" id="Jrd-bt-CDc"/>
+                            <constraint firstItem="Gf5-aM-LJH" firstAttribute="bottom" secondItem="mWS-XK-Lmu" secondAttribute="bottom" id="Yv0-WS-ISB"/>
+                            <constraint firstItem="oAJ-1t-Prc" firstAttribute="top" secondItem="mWS-XK-Lmu" secondAttribute="top" constant="20" id="cDh-zT-ocq"/>
+                            <constraint firstItem="mWS-XK-Lmu" firstAttribute="trailing" secondItem="oAJ-1t-Prc" secondAttribute="trailing" constant="20" id="gWW-Vw-Nuf"/>
+                            <constraint firstItem="d1X-2M-Kil" firstAttribute="leading" secondItem="mWS-XK-Lmu" secondAttribute="leading" constant="20" id="h4h-7b-EdT"/>
+                            <constraint firstItem="d1X-2M-Kil" firstAttribute="top" secondItem="oAJ-1t-Prc" secondAttribute="bottom" constant="8" id="hcb-0Q-gSa"/>
+                            <constraint firstItem="Gf5-aM-LJH" firstAttribute="top" secondItem="mWS-XK-Lmu" secondAttribute="top" constant="306" id="oWj-Nj-rVJ"/>
+                            <constraint firstItem="mWS-XK-Lmu" firstAttribute="trailing" secondItem="Gf5-aM-LJH" secondAttribute="trailing" constant="20" id="svE-R9-NSo"/>
+                            <constraint firstItem="Gf5-aM-LJH" firstAttribute="top" secondItem="d1X-2M-Kil" secondAttribute="bottom" constant="8" id="yNV-9y-yGu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mWS-XK-Lmu"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xlx-aI-7ry" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3099" y="-75"/>
+            <point key="canvasLocation" x="3098.5507246376815" y="-75"/>
         </scene>
         <!--Habits-->
         <scene sceneID="Mzt-KN-q2U">
