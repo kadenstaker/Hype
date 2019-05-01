@@ -10,7 +10,7 @@ import UIKit
 
 class PasswordTableViewController: UITableViewController {
 
-    var password: User
+    var password: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +18,6 @@ class PasswordTableViewController: UITableViewController {
     }
   
     @IBAction func saveButtonTapped(_ sender: Any) {
-        if let password = self.password {
-            
-        }
         self.navigationController?.popViewController(animated: true)
     }
     
