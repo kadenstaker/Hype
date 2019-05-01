@@ -21,6 +21,7 @@
 		AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B922736025002ED79C /* TrackableHabitController.swift */; };
 		AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8BD22739CAC002ED79C /* MockData.swift */; };
 		FA36B8932278E86500ADF1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */; };
+		FA36B8972279389F00ADF1F3 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8962279389F00ADF1F3 /* News.storyboard */; };
 		FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7462932270C33D00ACE3D9 /* AppDelegate.swift */; };
 		FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7462972270C33D00ACE3D9 /* TabBar.storyboard */; };
 		FA74629B2270C33E00ACE3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA74629A2270C33E00ACE3D9 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		C35C60312798A7D1027C6BF8 /* Pods-Hype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.release.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.release.xcconfig"; sourceTree = "<group>"; };
 		E2A6B33F9FB59FC2F1DAD3BE /* Pods-Hype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.debug.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.debug.xcconfig"; sourceTree = "<group>"; };
 		FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA36B8962279389F00ADF1F3 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		FA7462902270C33D00ACE3D9 /* Hype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7462932270C33D00ACE3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7462982270C33D00ACE3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				FA81B7332270DB03007210E6 /* Home.storyboard */,
 				FA81B7352270DB25007210E6 /* Habits.storyboard */,
 				FAEA36822277A3060046C04F /* Recycle.storyboard */,
+				FA36B8962279389F00ADF1F3 /* News.storyboard */,
 				FA74629C2270C33E00ACE3D9 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -270,6 +273,7 @@
 				FA74629E2270C33E00ACE3D9 /* LaunchScreen.storyboard in Resources */,
 				FA36B8932278E86500ADF1F3 /* GoogleService-Info.plist in Resources */,
 				FA74629B2270C33E00ACE3D9 /* Assets.xcassets in Resources */,
+				FA36B8972279389F00ADF1F3 /* News.storyboard in Resources */,
 				FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */,
 				FA81B7362270DB25007210E6 /* Habits.storyboard in Resources */,
 				FA81B7342270DB03007210E6 /* Home.storyboard in Resources */,
