@@ -20,7 +20,7 @@ class NewsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     // MARK: - Table view data source
@@ -33,12 +33,19 @@ class NewsTableViewController: UITableViewController {
 
         let article = articles[indexPath.row]
         
-
         return cell
     }
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+    }
+    
+    func fetchImageViewFor(article: Article) {
+        ArticleController.shared.fetchImageFor(urlString: article.urlToImage) { (articleImage) in
+            DispatchQueue.main.async {
+                //self.articleImageView.image = articleImage
+            }
+        }
     }
 }

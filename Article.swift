@@ -12,11 +12,11 @@ class Article {
     var title: String
     var author: String
     var date: Date
-    var urlToImage: String?
+    var urlToImage: String
     var saved: Bool
     var articleBody: String
     
-    init(title: String, author: String, date: Date, urlToImage: String?, saved: Bool, articleBody: String) {
+    init(title: String, author: String, date: Date, urlToImage: String, saved: Bool, articleBody: String) {
         self.title = title
         self.author = author
         self.date = date
@@ -31,6 +31,7 @@ class Article {
         case date
         case saved
         case articleBody
+        case urlToImage
     }
     
     required init(from decoder: Decoder) throws {
@@ -40,6 +41,7 @@ class Article {
         date = try values.decode(Date.self, forKey: .date)
         saved = try values.decode(Bool.self, forKey: .saved)
         articleBody = try values.decode(String.self, forKey: .articleBody)
+        urlToImage = try values.decode(String.self, forKey: .urlToImage)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -49,6 +51,7 @@ class Article {
         try values.encode(date.self, forKey: .date)
         try values.encode(saved.self, forKey: .saved)
         try values.encode(articleBody.self, forKey: .articleBody)
+        try values.encode(urlToImage.self, forKey: .urlToImage)
     }
 }
 
@@ -63,7 +66,12 @@ extension Article: Equatable, Codable {
     }
 }
 
-struct topLevelDict: Codable {
-    let results: [Article]
+struct ArticleImage: Codable {
+    let articleImage: String
+    
+    enum CodingKeys: String, CodingKey {
+        case articleImage = "urlToImage"
+    }
+    
 }
 

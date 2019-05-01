@@ -25,7 +25,7 @@ class ArticleController {
         url.appendingPathComponent("/everything")
         
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        let queryItem = URLQueryItem(name: "q", value: "eco")
+        let queryItem = URLQueryItem(name: "query", value: "eco")
         let apiQueryItem = URLQueryItem(name: "apiKey", value: "81be08fbc0a144d9864a612fb2483f01")
         components?.queryItems = [queryItem, apiQueryItem]
         
@@ -37,13 +37,10 @@ class ArticleController {
                 print("Error fetching data for article \(#function) ; \(error) ; \(error.localizedDescription)")
             }
             
-            guard let data = data else { completion([]); return }
-            let jsonDecoder = JSONDecoder()
-            
+            guard let data = data else { return }
             do {
-                let topLevelDictionary = try jsonDecoder.decode(topLevelDict.self, from: data)
-                let articles = topLevelDictionary.results
-                completion(articles)
+                let article = try JSONDecoder().decode(Article.self, from: data)
+                completion([article])
             } catch {
                 print("Error decoding movie items data \(#function) ; \(error) ; \(error.localizedDescription)")
                 completion([])
@@ -52,15 +49,24 @@ class ArticleController {
         dataTask.resume()
     }
     
-    func fetchImageFor(item: Article, completion: @escaping((UIImage?) -> Void)) {
-        let imageBaseUrl = URL(string: <#T##String#>)
-        guard let completeImageUrl = imageBaseUrl?.appendingPathComponent("\(item.urlToImage)") else { return }
-        
-        let dataTask = URLSession.shared.dataTask(with: completeImageUrl) { (data, _, error) in
+    func fetchImageFor(urlString: String, completion: @escaping((UIImage?) -> Void)) {
+        guard let url = URL(string: urlString) else { completion(nil); return }
+        print(url.absoluteString)
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
             if let error = error {
-                print("Error fetching image: \(#function) ; \(error) ; \(error.localizedDescription)")
+                print("💩 There was an error in \(#function) ; \(error) ; \(error.localizedDescription) 💩")
+                completion(nil)
+                return
             }
-        }
+            guard let data = data else { return }
+            let image = UIImage(data: data)
+            completion(image)
+        }.resume()
+    }
+    
+    //toggles saved/heart button
+    func toggleSavedFor(article: Article) {
+        article.saved = !article.saved
     }
     
     // Persistent Store
