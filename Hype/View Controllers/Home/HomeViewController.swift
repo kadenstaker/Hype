@@ -10,10 +10,17 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
+    // MARK: - Outlets
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Properties
+    
+    let challenges = ["Challenge 1", "Challenge 2", "Challenge 3"]
+    
+    // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +30,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
     
+    // MARK: - Methods
+
     func updateNameLabel() {
         self.nameLabel.text = "\(UserController.shared.currentUser)"
     }
@@ -55,8 +63,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         updateNameLabel()
         updateScoreLabel()
     }
-    
-    let challenges = ["Challenge 1", "Challenge 2", "Challenge 3"]
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return challenges.count
@@ -76,8 +82,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         view?.layer.shadowOpacity = 0.1
         view?.layer.shadowRadius = 5.0
         cell?.contentView.layer.masksToBounds = true
-        
-//        return cell
         
         return cell ?? UITableViewCell()
     }
