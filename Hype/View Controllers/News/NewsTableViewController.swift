@@ -36,19 +36,19 @@ class NewsTableViewController: UITableViewController {
         return articles.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as?  NewsTableViewCell
-        
-        let article = articles[indexPath.row]
-        cell?.landingPad = article
-        
-//        ArticleController.shared.fetchImageFor(urlString: article) { (image) in
-//            DispatchQueue.main.async {
-//                cell?.articlePic.image = image
-//            }
-//        }
-        return cell ?? UITableViewCell()
-    }
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as?  NewsTableViewCell
+//        
+//        let article = articles[indexPath.row]
+//        cell?.landingPad = article
+//        
+////        ArticleController.shared.fetchImageFor(urlString: article) { (image) in
+////            DispatchQueue.main.async {
+////                cell?.articlePic.image = image
+////            }
+////        }
+//        return cell ?? UITableViewCell()
+//    }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
