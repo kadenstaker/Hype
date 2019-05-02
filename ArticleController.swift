@@ -17,15 +17,15 @@ class ArticleController {
     var articles: [Article] = []
     
     //base url
-    static let baseUrl = URL(string: "https://newsapi.org/v2/")
+    let baseUrl = URL(string: "https://newsapi.org")
     
     //CRUD Functions
-    static func fetchArticle(by searchTerm: String, completion: @escaping ([Article]) -> Void) {
-        guard let url = baseUrl else { return }
-        url.appendingPathComponent("/everything")
+    func fetchArticleWith(searchTerm: String, completion: @escaping ([Article]) -> Void) {
+        guard var url = baseUrl else { return }
+        url.appendPathComponent("/v2/everything")
         
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        let queryItem = URLQueryItem(name: "query", value: "eco")
+        let queryItem = URLQueryItem(name: "q", value: "\(searchTerm)")
         let apiQueryItem = URLQueryItem(name: "apiKey", value: "81be08fbc0a144d9864a612fb2483f01")
         components?.queryItems = [queryItem, apiQueryItem]
         
@@ -39,35 +39,48 @@ class ArticleController {
             
             guard let data = data else { return }
             do {
-                let article = try JSONDecoder().decode(Article.self, from: data)
-                completion([article])
+                let topLevelDictionary = try JSONDecoder().decode(topLevelDict.self, from: data)
+                let articles = topLevelDictionary.articles
+                completion(articles)
             } catch {
-                print("Error decoding movie items data \(#function) ; \(error) ; \(error.localizedDescription)")
+                print("Error decoding article items data \(#function) ; \(error) ; \(error.localizedDescription)")
                 completion([])
             }
         }
         dataTask.resume()
     }
     
-    func fetchImageFor(urlString: String, completion: @escaping((UIImage?) -> Void)) {
+    func fetchImageFor(urlString: String, completion: @escaping (UIImage?) -> Void) {
+        
+//        let url = URL(string: "\(urlString)")
+//        guard let completeUrl = url?.appendingPathComponent("\(urlString.urlToImage)") else { return }
+////        print(url.absoluteString)
+//
+//        URLSession.shared.dataTask(with: completeUrl) { (data, _, error) in
+//            if let error = error {
+//                print("💩 There was an error in \(#function) ; \(error) ; \(error.localizedDescription) 💩")
+//                completion(nil)
+//                return
+//            }
         guard let url = URL(string: urlString) else { completion(nil); return }
-        print(url.absoluteString)
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             if let error = error {
                 print("💩 There was an error in \(#function) ; \(error) ; \(error.localizedDescription) 💩")
                 completion(nil)
                 return
-            }
+        }
+        
             guard let data = data else { return }
             let image = UIImage(data: data)
             completion(image)
-        }.resume()
+            
+            }.resume()
     }
     
     //toggles saved/heart button
-    func toggleSavedFor(article: Article) {
-        article.saved = !article.saved
-    }
+//    func toggleSavedFor(article: Article) {
+//        article.saved = !article.saved
+//    }
     
     // Persistent Store
     func fileURL() -> URL {
