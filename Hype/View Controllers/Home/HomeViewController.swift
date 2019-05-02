@@ -30,6 +30,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        updateViews()
     }
     
     override func viewWillAppear(_ animated: Bool) {
