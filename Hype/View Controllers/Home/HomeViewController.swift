@@ -12,9 +12,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // MARK: - Outlets
     
+    @IBOutlet weak var profileImageButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var scoreCountLabel: UILabel!
+    @IBOutlet weak var hypePointsLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var statsButton: UIButton!
+    @IBOutlet weak var challengesSegmentedControl: UISegmentedControl!
     
     // MARK: - Properties
     
@@ -56,7 +60,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         UserDefaults.standard.set(newScore, forKey: scoreKey)
         UserDefaults.standard.synchronize()
         
-        self.scoreLabel.text = "\(currentScore)"
+        self.scoreCountLabel.text = "\(currentScore)"
     }
     
     func updateViews() {
