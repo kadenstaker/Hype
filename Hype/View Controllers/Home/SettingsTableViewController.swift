@@ -8,13 +8,32 @@
 
 import UIKit
 
-class SettingsTableViewController: UITableViewController {
+class SettingsTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-
+    // MARK: - Outlets
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    // MARK: - Internal Properties
+    let imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            profileImageView.image = image
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // MARK: - Actions
+    @IBAction func changeProfilePhotoButtonTapped(_ sender: Any) {
+        imagePicker.delegate = self
+        imagePicker.sourceType = .savedPhotosAlbum
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func cancelButtonTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -22,7 +41,6 @@ class SettingsTableViewController: UITableViewController {
     @IBAction func doneButtonTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
     
     // MARK: - Table view data source
    

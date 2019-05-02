@@ -10,7 +10,6 @@ import UIKit
 
 class ChallengeTableViewCell: UITableViewCell {
     
-
     @IBOutlet weak var challengeLabel: UILabel!
     @IBOutlet weak var challengeButton: UIButton!
 
