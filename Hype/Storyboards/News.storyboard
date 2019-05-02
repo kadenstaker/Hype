@@ -279,7 +279,7 @@
                                     <constraint firstAttribute="width" constant="20" id="vOF-bi-TnR"/>
                                     <constraint firstAttribute="height" constant="20" id="zeS-ID-UpE"/>
                                 </constraints>
-                                <state key="normal" title="save" image="emptyHeart"/>
+                                <state key="normal" title="save" image="blankHeart"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -329,7 +329,6 @@
     </scenes>
     <resources>
         <image name="blankHeart" width="900" height="900"/>
-        <image name="emptyHeart" width="34" height="30"/>
         <image name="filledHeart" width="30" height="30"/>
         <image name="share" width="30" height="30"/>
     </resources>

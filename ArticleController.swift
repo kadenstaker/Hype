@@ -25,7 +25,7 @@ class ArticleController {
         url.appendPathComponent("/v2/everything")
         
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        let queryItem = URLQueryItem(name: "q", value: "\(searchTerm)")
+        let queryItem = URLQueryItem(name: "q", value: "\(searchTerm)" + "eco")
         let apiQueryItem = URLQueryItem(name: "apiKey", value: "81be08fbc0a144d9864a612fb2483f01")
         components?.queryItems = [queryItem, apiQueryItem]
         
@@ -55,25 +55,18 @@ class ArticleController {
 //        let url = URL(string: "\(urlString)")
 //        guard let completeUrl = url?.appendingPathComponent("\(urlString.urlToImage)") else { return }
 ////        print(url.absoluteString)
-//
-//        URLSession.shared.dataTask(with: completeUrl) { (data, _, error) in
-//            if let error = error {
-//                print("💩 There was an error in \(#function) ; \(error) ; \(error.localizedDescription) 💩")
-//                completion(nil)
-//                return
-//            }
         guard let url = URL(string: urlString) else { completion(nil); return }
+        print(url.absoluteString)
+        
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             if let error = error {
                 print("💩 There was an error in \(#function) ; \(error) ; \(error.localizedDescription) 💩")
                 completion(nil)
                 return
         }
-        
             guard let data = data else { return }
             let image = UIImage(data: data)
             completion(image)
-            
             }.resume()
     }
     

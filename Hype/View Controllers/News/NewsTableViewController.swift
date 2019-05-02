@@ -28,6 +28,7 @@ class NewsTableViewController: UITableViewController {
     }
     
     @IBAction func savedArticlesButtonTapped(_ sender: Any) {
+        
     }
     
     
@@ -37,16 +38,18 @@ class NewsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as?  NewsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as? NewsTableViewCell
         
         let article = articles[indexPath.row]
         cell?.landingPad = article
+        
         
 //        ArticleController.shared.fetchImageFor(urlString: article) { (image) in
 //            DispatchQueue.main.async {
 //                cell?.articlePic.image = image
 //            }
 //        }
+        
         return cell ?? UITableViewCell()
     }
     
@@ -69,7 +72,10 @@ extension NewsTableViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = searchBar.text, !searchTerm.isEmpty else { return }
         ArticleController.shared.fetchArticleWith(searchTerm: searchTerm) { (articles) in
+            guard let article = article else { print("No dice!"); return }
             self.articles = articles
+            
+            
         }
     }
 }
