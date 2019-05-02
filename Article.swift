@@ -10,27 +10,27 @@ import UIKit
 
 class Article {
     var title: String
-    var author: String
-    var date: Date
+    var author: String?
+    var publishedAt: String?
     var urlToImage: String
-    var saved: Bool
-    var articleBody: String
+//    var saved: Bool
+    var description: String
     
-    init(title: String, author: String, date: Date, urlToImage: String, saved: Bool, articleBody: String) {
+    init(title: String, author: String?, publishedAt: String?, urlToImage: String, /*saved: Bool,*/ description: String) {
         self.title = title
         self.author = author
-        self.date = date
+        self.publishedAt = publishedAt
         self.urlToImage = urlToImage
-        self.saved = saved
-        self.articleBody = articleBody
+//        self.saved = saved
+        self.description = description
     }
     
     enum CodingKeys: String, CodingKey {
         case title
         case author
-        case date
-        case saved
-        case articleBody
+        case publishedAt
+//        case saved
+        case description
         case urlToImage
     }
     
@@ -38,9 +38,9 @@ class Article {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decode(String.self, forKey: .title)
         author = try values.decode(String.self, forKey: .author)
-        date = try values.decode(Date.self, forKey: .date)
-        saved = try values.decode(Bool.self, forKey: .saved)
-        articleBody = try values.decode(String.self, forKey: .articleBody)
+        publishedAt = try values.decode(String.self, forKey: .publishedAt)
+//        saved = try values.decode(Bool.self, forKey: .saved)
+        description = try values.decode(String.self, forKey: .description)
         urlToImage = try values.decode(String.self, forKey: .urlToImage)
     }
     
@@ -48,9 +48,9 @@ class Article {
         var values = encoder.container(keyedBy: CodingKeys.self)
         try values.encode(title.self, forKey: .title)
         try values.encode(author.self, forKey: .author)
-        try values.encode(date.self, forKey: .date)
-        try values.encode(saved.self, forKey: .saved)
-        try values.encode(articleBody.self, forKey: .articleBody)
+        try values.encode(publishedAt.self, forKey: .publishedAt)
+//        try values.encode(saved.self, forKey: .saved)
+        try values.encode(description.self, forKey: .description)
         try values.encode(urlToImage.self, forKey: .urlToImage)
     }
 }
@@ -59,19 +59,15 @@ extension Article: Equatable, Codable {
     static func == (lhs: Article, rhs: Article) -> Bool {
     return lhs.title == rhs.title &&
         lhs.author == rhs.author &&
-        lhs.date == rhs.date &&
+        lhs.publishedAt == rhs.publishedAt &&
         lhs.urlToImage == rhs.urlToImage &&
-        lhs.saved == rhs.saved &&
-        lhs.articleBody == rhs.articleBody
+//        lhs.saved == rhs.saved &&
+        lhs.description == rhs.description
     }
 }
 
-struct ArticleImage: Codable {
-    let articleImage: String
-    
-    enum CodingKeys: String, CodingKey {
-        case articleImage = "urlToImage"
-    }
-    
+struct topLevelDict: Codable {
+    let articles: [Article]
 }
+
 
