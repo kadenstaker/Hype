@@ -25,7 +25,6 @@ class HabitTableViewCell: UITableViewCell {
     }
     
     
-    
     func updateMock() {
         habitLabel.text = "Transportation"
         habitLabel.text = "Recycle"
