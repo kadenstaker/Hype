@@ -24,6 +24,8 @@ class HabitTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    
     func updateMock() {
         habitLabel.text = "Transportation"
         habitLabel.text = "Recycle"
