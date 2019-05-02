@@ -72,9 +72,8 @@ extension NewsTableViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = searchBar.text, !searchTerm.isEmpty else { return }
         ArticleController.shared.fetchArticleWith(searchTerm: searchTerm) { (articles) in
-            guard let article = article else { print("No dice!"); return }
+//            guard let article = articles else { print("No dice!"); return }
             self.articles = articles
-            
             
         }
     }
