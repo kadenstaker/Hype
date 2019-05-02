@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8616F543867BED06630958C9 /* Pods_Hype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5996B678E9524AA1BC30564 /* Pods_Hype.framework */; };
-		AF7142CE227A3C1200C601D8 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7142CD227A3C1200C601D8 /* NewsTableViewCell.swift */; };
+		AF80516A22774D620086994F /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80516922774D620086994F /* ArticleTableViewCell.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
 		AFE2B2AB2271387F00848B85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AA2271387F00848B85 /* Article.swift */; };
