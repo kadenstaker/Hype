@@ -7,5 +7,6 @@ target 'Hype' do
 
   # Pods for Hype
 pod 'Firebase/Core'
+pod 'Charts'
 
 end
