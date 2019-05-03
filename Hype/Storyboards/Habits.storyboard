@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="szI-Un-4LJ">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,21 @@
             <objects>
                 <tableViewController id="YRg-8T-AEn" customClass="HabitsTableViewController" customModule="Hype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="HXj-fI-tPH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="XcD-Hm-nLB">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="habitCell" rowHeight="180" id="Rbt-Pf-p6X" customClass="HabitTableViewCell" customModule="Hype" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="35" width="414" height="180"/>
+                                        <rect key="frame" x="0.0" y="35" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rbt-Pf-p6X" id="7bG-tY-smx">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="179.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="179.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-Dm-Pvg">
-                                                    <rect key="frame" x="20" y="11" width="348" height="158"/>
+                                                    <rect key="frame" x="16" y="11" width="317" height="158"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xul-Qo-NtI">
                                                             <rect key="frame" x="20" y="39" width="80" height="80"/>
@@ -71,14 +71,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="habitCell" rowHeight="180" id="5ci-kL-U20" customClass="HabitTableViewCell" customModule="Hype" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="215" width="414" height="180"/>
+                                        <rect key="frame" x="0.0" y="215" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5ci-kL-U20" id="NcS-Iv-6W3">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="179.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="179.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siG-qr-ntS">
-                                                    <rect key="frame" x="20" y="11" width="348" height="158"/>
+                                                    <rect key="frame" x="16" y="11" width="317" height="158"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-1A-TMY">
                                                             <rect key="frame" x="20" y="39" width="80" height="80"/>
@@ -120,14 +120,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="habitCell" rowHeight="180" id="uFz-gp-bi5" customClass="HabitTableViewCell" customModule="Hype" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="395" width="414" height="180"/>
+                                        <rect key="frame" x="0.0" y="395" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uFz-gp-bi5" id="F4e-G0-DRB">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="179.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="179.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FS4-BE-e1J">
-                                                    <rect key="frame" x="20" y="11" width="348" height="158"/>
+                                                    <rect key="frame" x="16" y="11" width="317" height="158"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rba-RV-qhx">
                                                             <rect key="frame" x="22" y="39" width="80" height="80"/>
@@ -188,19 +188,19 @@
             <objects>
                 <viewController id="qZI-vM-2t9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p78-CY-i0e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJy-Sc-ieJ" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="160" width="374" height="240"/>
+                                <rect key="frame" x="20" y="136" width="335" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eyt-qy-4yg">
-                                <rect key="frame" x="20" y="446" width="374" height="367"/>
+                                <rect key="frame" x="20" y="422" width="335" height="196"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgY-Wa-1be">
-                                <rect key="frame" x="20" y="408" width="374" height="30"/>
+                                <rect key="frame" x="20" y="384" width="335" height="30"/>
                                 <state key="normal" title="Add New Bill"/>
                             </button>
                         </subviews>
@@ -232,19 +232,19 @@
             <objects>
                 <viewController id="SyN-Io-qdg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9yD-Yn-gMW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOr-rs-JrX" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="160" width="374" height="240"/>
+                                <rect key="frame" x="20" y="136" width="335" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WoD-bM-3HI">
-                                <rect key="frame" x="20" y="446" width="374" height="367"/>
+                                <rect key="frame" x="20" y="422" width="335" height="196"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eza-FP-wiv">
-                                <rect key="frame" x="20" y="408" width="374" height="30"/>
+                                <rect key="frame" x="20" y="384" width="335" height="30"/>
                                 <state key="normal" title="Add New Bill"/>
                             </button>
                         </subviews>
@@ -275,19 +275,19 @@
             <objects>
                 <viewController id="1d4-WW-GLm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snj-Rc-Vh4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-aM-LJH">
-                                <rect key="frame" x="20" y="446" width="374" height="367"/>
+                                <rect key="frame" x="20" y="422" width="335" height="196"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-2M-Kil">
-                                <rect key="frame" x="20" y="408" width="374" height="30"/>
+                                <rect key="frame" x="20" y="384" width="335" height="30"/>
                                 <state key="normal" title="Add Gas Gallons"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAJ-1t-Prc" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="160" width="374" height="240"/>
+                                <rect key="frame" x="20" y="136" width="335" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -321,7 +321,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ioz-FJ-lg7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
