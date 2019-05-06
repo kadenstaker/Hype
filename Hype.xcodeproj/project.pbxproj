@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8616F543867BED06630958C9 /* Pods_Hype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5996B678E9524AA1BC30564 /* Pods_Hype.framework */; };
+		AF23681922808A79004CC847 /* Challenges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF23681822808A79004CC847 /* Challenges.storyboard */; };
+		AF23681B2280A98A004CC847 /* ChallengeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23681A2280A98A004CC847 /* ChallengeCollectionViewController.swift */; };
+		AF23681D2280A9AD004CC847 /* ChallengeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23681C2280A9AD004CC847 /* ChallengeCollectionViewCell.swift */; };
+		AF2368212280D7C8004CC847 /* ChallengeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */; };
+		AF2368232280DCCD004CC847 /* ChallengeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */; };
+		AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368242280E169004CC847 /* ChallengeSteps.swift */; };
+		AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
 		AFE2B2AB2271387F00848B85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AA2271387F00848B85 /* Article.swift */; };
@@ -66,6 +73,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF23681822808A79004CC847 /* Challenges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenges.storyboard; sourceTree = "<group>"; };
+		AF23681A2280A98A004CC847 /* ChallengeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCollectionViewController.swift; sourceTree = "<group>"; };
+		AF23681C2280A9AD004CC847 /* ChallengeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewController.swift; sourceTree = "<group>"; };
+		AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewCell.swift; sourceTree = "<group>"; };
+		AF2368242280E169004CC847 /* ChallengeSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeSteps.swift; path = "Hype/View Controllers/ChallengeSteps.swift"; sourceTree = SOURCE_ROOT; };
+		AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeStepsController.swift; path = "Hype/View Controllers/ChallengeStepsController.swift"; sourceTree = SOURCE_ROOT; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AA2271387F00848B85 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = SOURCE_ROOT; };
@@ -231,6 +245,7 @@
 				AFE2B2AA2271387F00848B85 /* Article.swift */,
 				AFE2B2AC2271390000848B85 /* Impact.swift */,
 				AFE2B2AE2271397D00848B85 /* TrackableHabit.swift */,
+				AF2368242280E169004CC847 /* ChallengeSteps.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +255,7 @@
 			children = (
 				AFE2B2B22271FE3E00848B85 /* UserController.swift */,
 				AFE2B2B42272044500848B85 /* ChallengeController.swift */,
+				AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */,
 				AFE2B2B62272229000848B85 /* ArticleController.swift */,
 				AFE9C8B722735EC9002ED79C /* ImpactController.swift */,
 				AFE9C8B922736025002ED79C /* TrackableHabitController.swift */,
@@ -256,6 +272,10 @@
 				FA36B8B9227A3AB800ADF1F3 /* Habits */,
 				FA36B8B8227A3AB000ADF1F3 /* News */,
 				AFF3149F227F555F0093CC4F /* RecycleViewController.swift */,
+				AF23681A2280A98A004CC847 /* ChallengeCollectionViewController.swift */,
+				AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */,
+				AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */,
+				AF23681C2280A9AD004CC847 /* ChallengeCollectionViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -270,6 +290,7 @@
 				FA36B8962279389F00ADF1F3 /* News.storyboard */,
 				FA74629C2270C33E00ACE3D9 /* LaunchScreen.storyboard */,
 				FA36B8CD227CA07700ADF1F3 /* Onboarding.storyboard */,
+				AF23681822808A79004CC847 /* Challenges.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -364,6 +385,7 @@
 				FA36B8CE227CA07700ADF1F3 /* Onboarding.storyboard in Resources */,
 				FA81B7342270DB03007210E6 /* Home.storyboard in Resources */,
 				FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */,
+				AF23681922808A79004CC847 /* Challenges.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +443,9 @@
 				AFE2B2B32271FE3E00848B85 /* UserController.swift in Sources */,
 				FA36B8D4227CA52000ADF1F3 /* OnboardingContentViewController.swift in Sources */,
 				AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */,
+				AF2368212280D7C8004CC847 /* ChallengeDetailTableViewController.swift in Sources */,
 				AFE2B2AD2271390000848B85 /* Impact.swift in Sources */,
+				AF23681D2280A9AD004CC847 /* ChallengeCollectionViewCell.swift in Sources */,
 				AFF3149C227CFEF50093CC4F /* SavedNewsTableViewCell.swift in Sources */,
 				AFE2B2A72271338600848B85 /* User.swift in Sources */,
 				AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */,
@@ -438,11 +462,15 @@
 				FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */,
 				AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */,
 				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
+				AF2368232280DCCD004CC847 /* ChallengeDetailTableViewCell.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
 				FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */,
 				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
+				AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */,
+				AF23681B2280A98A004CC847 /* ChallengeCollectionViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
+				AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */,
 				AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */,
 				AFF4272B227B8E0800F5E7DC /* NewsTableViewCell.swift in Sources */,
 				AFF3149A227CF97D0093CC4F /* SavedNewsTableViewController.swift in Sources */,

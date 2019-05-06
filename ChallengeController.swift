@@ -14,8 +14,6 @@ class ChallengeController {
     
     var challenges: [Challenge] = []
     
-    //landing pad?
-    
     //CRUD Functions
     func createChallenge(name: String, points: Int, isDaily: Bool, isWeekly: Bool, dateAssigned: Date, rules: String, timesCompleted: Int, maxCompletions: Int, challengeImage: UIImage) {
         let challenge = Challenge(name: name, points: points, isDaily: isDaily, isWeekly: isWeekly, dateAssigned: dateAssigned, rules: rules, timesCompleted: timesCompleted, maxCompletions: maxCompletions, challengeImage: challengeImage)
