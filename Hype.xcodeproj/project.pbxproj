@@ -19,9 +19,14 @@
 		AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B722735EC9002ED79C /* ImpactController.swift */; };
 		AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B922736025002ED79C /* TrackableHabitController.swift */; };
 		AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8BD22739CAC002ED79C /* MockData.swift */; };
+		AFF3149A227CF97D0093CC4F /* SavedNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31499227CF97D0093CC4F /* SavedNewsTableViewController.swift */; };
+		AFF3149C227CFEF50093CC4F /* SavedNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3149B227CFEF50093CC4F /* SavedNewsTableViewCell.swift */; };
+		AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3149D227D11030093CC4F /* UIViewExtensions.swift */; };
+		AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3149F227F555F0093CC4F /* RecycleViewController.swift */; };
+		AFF4272B227B8E0800F5E7DC /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF4272A227B8E0800F5E7DC /* NewsTableViewCell.swift */; };
+		AFFA3A04227C172300F7BE74 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA3A03227C172300F7BE74 /* NewsDetailViewController.swift */; };
 		FA36B8932278E86500ADF1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */; };
 		FA36B8972279389F00ADF1F3 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8962279389F00ADF1F3 /* News.storyboard */; };
-		FA36B8B4227A091D00ADF1F3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8B3227A091D00ADF1F3 /* MenuViewController.swift */; };
 		FA36B8BB227A3E8A00ADF1F3 /* EmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */; };
 		FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */; };
 		FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */; };
@@ -67,12 +72,17 @@
 		AFE9C8B722735EC9002ED79C /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = SOURCE_ROOT; };
 		AFE9C8B922736025002ED79C /* TrackableHabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableHabitController.swift; sourceTree = SOURCE_ROOT; };
 		AFE9C8BD22739CAC002ED79C /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = SOURCE_ROOT; };
+		AFF31499227CF97D0093CC4F /* SavedNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewController.swift; sourceTree = "<group>"; };
+		AFF3149B227CFEF50093CC4F /* SavedNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewCell.swift; sourceTree = "<group>"; };
+		AFF3149D227D11030093CC4F /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		AFF3149F227F555F0093CC4F /* RecycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleViewController.swift; sourceTree = "<group>"; };
+		AFF4272A227B8E0800F5E7DC /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		AFFA3A03227C172300F7BE74 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		B5996B678E9524AA1BC30564 /* Pods_Hype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35C60312798A7D1027C6BF8 /* Pods-Hype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.release.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.release.xcconfig"; sourceTree = "<group>"; };
 		E2A6B33F9FB59FC2F1DAD3BE /* Pods-Hype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.debug.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.debug.xcconfig"; sourceTree = "<group>"; };
-		FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA36B8962279389F00ADF1F3 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
-		FA36B8B3227A091D00ADF1F3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewController.swift; sourceTree = "<group>"; };
 		FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationViewController.swift; sourceTree = "<group>"; };
 		FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
-				FA36B8B3227A091D00ADF1F3 /* MenuViewController.swift */,
+				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
 				FAEA367E227797310046C04F /* SettingsTableViewController.swift */,
 				FAEA368022779AE00046C04F /* PasswordTableViewController.swift */,
 				FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */,
@@ -141,6 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				FAEA36842277B6D00046C04F /* NewsTableViewController.swift */,
+				AFF3149B227CFEF50093CC4F /* SavedNewsTableViewCell.swift */,
+				AFF4272A227B8E0800F5E7DC /* NewsTableViewCell.swift */,
+				AFFA3A03227C172300F7BE74 /* NewsDetailViewController.swift */,
+				AFF31499227CF97D0093CC4F /* SavedNewsTableViewController.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -149,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
-				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
 				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
 				FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */,
 				FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */,
@@ -185,6 +198,7 @@
 				FA7462AB2270C6A400ACE3D9 /* Storyboards */,
 				FA81B7322270CACB007210E6 /* Utilities */,
 				FA81B7312270C704007210E6 /* Resources */,
+				AFF3149D227D11030093CC4F /* UIViewExtensions.swift */,
 			);
 			path = Hype;
 			sourceTree = "<group>";
@@ -220,6 +234,7 @@
 				FA36B8B7227A3A9500ADF1F3 /* Home */,
 				FA36B8B9227A3AB800ADF1F3 /* Habits */,
 				FA36B8B8227A3AB000ADF1F3 /* News */,
+				AFF3149F227F555F0093CC4F /* RecycleViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -382,6 +397,7 @@
 				AFE2B2B32271FE3E00848B85 /* UserController.swift in Sources */,
 				AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */,
 				AFE2B2AD2271390000848B85 /* Impact.swift in Sources */,
+				AFF3149C227CFEF50093CC4F /* SavedNewsTableViewCell.swift in Sources */,
 				AFE2B2A72271338600848B85 /* User.swift in Sources */,
 				AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */,
 				FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */,
@@ -393,14 +409,18 @@
 				FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */,
 				AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */,
 				FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */,
+				AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */,
 				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
-				FA36B8B4227A091D00ADF1F3 /* MenuViewController.swift in Sources */,
 				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
+				AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */,
+				AFF4272B227B8E0800F5E7DC /* NewsTableViewCell.swift in Sources */,
+				AFF3149A227CF97D0093CC4F /* SavedNewsTableViewController.swift in Sources */,
 				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
 				FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */,
+				AFFA3A04227C172300F7BE74 /* NewsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 288VUFV9XZ;
+				DEVELOPMENT_TEAM = L5VMA54SBQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,7 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 288VUFV9XZ;
+				DEVELOPMENT_TEAM = L5VMA54SBQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
