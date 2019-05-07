@@ -21,7 +21,6 @@
 		AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8BD22739CAC002ED79C /* MockData.swift */; };
 		FA36B8932278E86500ADF1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */; };
 		FA36B8972279389F00ADF1F3 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8962279389F00ADF1F3 /* News.storyboard */; };
-		FA36B8BB227A3E8A00ADF1F3 /* EmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */; };
 		FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */; };
 		FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */; };
 		FA36B8C1227A498600ADF1F3 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */; };
@@ -40,8 +39,6 @@
 		FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */; };
 		FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */; };
 		FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */; };
-		FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367E227797310046C04F /* SettingsTableViewController.swift */; };
-		FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA368022779AE00046C04F /* PasswordTableViewController.swift */; };
 		FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA36822277A3060046C04F /* Recycle.storyboard */; };
 		FAEA36852277B6D00046C04F /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA36842277B6D00046C04F /* NewsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -76,7 +73,6 @@
 		E2A6B33F9FB59FC2F1DAD3BE /* Pods-Hype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.debug.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.debug.xcconfig"; sourceTree = "<group>"; };
 		FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA36B8962279389F00ADF1F3 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
-		FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewController.swift; sourceTree = "<group>"; };
 		FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationViewController.swift; sourceTree = "<group>"; };
 		FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
 		FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +94,6 @@
 		FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
 		FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
-		FAEA367E227797310046C04F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		FAEA368022779AE00046C04F /* PasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewController.swift; sourceTree = "<group>"; };
 		FAEA36822277A3060046C04F /* Recycle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recycle.storyboard; sourceTree = "<group>"; };
 		FAEA36842277B6D00046C04F /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,9 +132,6 @@
 			children = (
 				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
 				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
-				FAEA367E227797310046C04F /* SettingsTableViewController.swift */,
-				FAEA368022779AE00046C04F /* PasswordTableViewController.swift */,
-				FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -399,7 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFE2B2AB2271387F00848B85 /* Article.swift in Sources */,
-				FA36B8BB227A3E8A00ADF1F3 /* EmailTableViewController.swift in Sources */,
 				AFE2B2B32271FE3E00848B85 /* UserController.swift in Sources */,
 				FA36B8D4227CA52000ADF1F3 /* OnboardingContentViewController.swift in Sources */,
 				AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */,
@@ -408,7 +398,6 @@
 				AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */,
 				FA36B8D6227CD28600ADF1F3 /* StyleGuide.swift in Sources */,
 				FA36B8D2227CA2FD00ADF1F3 /* OnboardingPageViewController.swift in Sources */,
-				FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */,
 				FA36B8C1227A498600ADF1F3 /* WaterViewController.swift in Sources */,
 				AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */,
 				FAEA36852277B6D00046C04F /* NewsTableViewController.swift in Sources */,
@@ -421,7 +410,6 @@
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
 				FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */,
-				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
 				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
 				FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */,

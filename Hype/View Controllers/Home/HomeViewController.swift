@@ -12,13 +12,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // MARK: - Outlets
     
-    @IBOutlet weak var profileImageButton: UIButton!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var homeNavigationItem: UINavigationItem!
     @IBOutlet weak var scoreCountLabel: UILabel!
     @IBOutlet weak var hypePointsLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var statsButton: UIButton!
     @IBOutlet weak var challengesSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var statsButton: UIButton!
+    @IBOutlet weak var profileButton: UIButton!
     
     // MARK: - Properties
     
@@ -30,6 +31,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = tableView.frame.height / 3
+        
         updateViews()
     }
     
@@ -38,12 +42,51 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     
-    
     // MARK: - Methods
-
-    func updateNameLabel() {
-        self.nameLabel.text = "\(UserController.shared.currentUser)"
+    
+    func updateViews() {
+        updateScoreLabel()
+        setUpStatusButton()
+        setUpProfileButton()
+        setUpCellSelection()
+        setUpBackgroundView()
     }
+    
+    func setUpCellSelection() {
+        tableView.allowsSelection = false
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func setUpProfileButton() {
+        guard let button = profileButton else { return }
+        button.layer.cornerRadius = 24
+    }
+
+    func setUpStatusButton() {
+        guard let button = statsButton else { return }
+        button.layer.cornerRadius = 5
+        button.layer.borderWidth = 2
+        button.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
+    
+    func setUpBackgroundView() {
+        guard let layer = backgroundView else { return }
+
+        let gradient = CAGradientLayer()
+        gradient.frame = CGRect(x: 0, y: 0, width: 375, height: 304)
+        gradient.colors = [
+            UIColor(red:0, green:0.63, blue:0.29, alpha:1).cgColor,
+            UIColor(red:0.32, green:0.81, blue:0.75, alpha:1).cgColor
+        ]
+        gradient.locations = [0, 1]
+        gradient.startPoint = CGPoint(x: 0.5, y: 0)
+        gradient.endPoint = CGPoint(x: 0.5, y: 1)
+        layer.layer.addSublayer(gradient)
+    }
+
     
     // increase, save, and update score
     func updateScoreLabel() {
@@ -66,10 +109,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.scoreCountLabel.text = "\(currentScore)"
     }
     
-    func updateViews() {
-        updateNameLabel()
-        updateScoreLabel()
-    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return challenges.count
@@ -79,7 +118,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "challengeCell", for: indexPath) as? ChallengeTableViewCell
         let challenge = challenges[indexPath.row]
         cell?.challengeLabel.text = challenge
-        cell?.challengeButton.backgroundColor = .lightGray
+        cell?.challengeCompleteButton.backgroundColor = .lightGray
         let view = cell?.contentView.subviews[0]
         
         cell?.backgroundColor = UIColor(red: 248/255, green: 248/255, blue: 248/255, alpha: 1)
@@ -89,6 +128,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         view?.layer.shadowOpacity = 0.1
         view?.layer.shadowRadius = 5.0
         cell?.contentView.layer.masksToBounds = true
+        
+        cell?.selectionStyle = .none
         
         return cell ?? UITableViewCell()
     }
