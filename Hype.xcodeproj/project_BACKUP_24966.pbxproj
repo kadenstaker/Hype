@@ -440,7 +440,10 @@
 				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
+=======
 				FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */,
+>>>>>>> 94e07e85001d0758b42c24dd4adef72fe094edad
 				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
 				AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */,
