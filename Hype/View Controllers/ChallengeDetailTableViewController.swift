@@ -30,7 +30,7 @@ class ChallengeDetailTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! ChallengeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! DailyChallengeTableViewCell
 //        cell.setup(challenge: rules)
         return cell.contentView
     }

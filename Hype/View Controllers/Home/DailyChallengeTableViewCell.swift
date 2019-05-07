@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChallengeTableViewCell: UITableViewCell {
+class DailyChallengeTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
     @IBOutlet weak var challengeLabel: UILabel!
