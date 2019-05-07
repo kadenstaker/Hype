@@ -6,6 +6,6 @@ target 'Hype' do
   use_frameworks!
 
   # Pods for Hype
-pod 'Firebase/Core'
+pod 'Charts'
 
 end
