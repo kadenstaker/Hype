@@ -524,6 +524,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="stepNum" destination="AzI-v3-dsn" id="ocS-TN-O6O"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="352" id="apy-gb-KYS" customClass="ChallengeDetailTableViewCell" customModule="Hype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="424" width="414" height="352"/>

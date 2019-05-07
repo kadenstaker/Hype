@@ -11,7 +11,12 @@ import Charts
 
 class WaterViewController: UIViewController {
     
+    @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var newBillButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
 }

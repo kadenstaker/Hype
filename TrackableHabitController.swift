@@ -13,16 +13,14 @@ class TrackableHabitController {
     
     var trackableHabits: [TrackableHabit] = []
     
-    func createTrackableHabit(month: Date, year: Date, usage: String, amount: Double) {
-        //create mock data for now
-        let trackableHabit = TrackableHabit(month: month, year: year, usage: usage, amount: amount)
+    func createTrackableHabit(date: String, usage: String, amount: String) {
+        let trackableHabit = TrackableHabit(date: date, usage: usage, amount: amount)
         self.trackableHabits.append(trackableHabit)
         saveToPersistentStore()
     }
     
-    func updateTrackableHabit(trackableHabit: TrackableHabit, month: Date, year: Date, usage: String, amount: Double) {
-        trackableHabit.month = month
-        trackableHabit.year = year
+    func updateTrackableHabit(trackableHabit: TrackableHabit, date: String, usage: String, amount: String) {
+        trackableHabit.date = date
         trackableHabit.usage = usage
         trackableHabit.amount = amount
         saveToPersistentStore()

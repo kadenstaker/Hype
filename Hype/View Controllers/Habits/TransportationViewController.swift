@@ -11,6 +11,9 @@ import Charts
 
 class TransportationViewController: UIViewController {
     
+    @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var addGasButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -15,6 +15,8 @@
 		AF2368232280DCCD004CC847 /* ChallengeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */; };
 		AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368242280E169004CC847 /* ChallengeSteps.swift */; };
 		AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */; };
+		AF23682B2281E1F2004CC847 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23682A2281E1F2004CC847 /* BarChart.swift */; };
+		AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
 		AFE2B2AB2271387F00848B85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AA2271387F00848B85 /* Article.swift */; };
@@ -80,6 +82,8 @@
 		AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewCell.swift; sourceTree = "<group>"; };
 		AF2368242280E169004CC847 /* ChallengeSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeSteps.swift; path = "Hype/View Controllers/ChallengeSteps.swift"; sourceTree = SOURCE_ROOT; };
 		AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeStepsController.swift; path = "Hype/View Controllers/ChallengeStepsController.swift"; sourceTree = SOURCE_ROOT; };
+		AF23682A2281E1F2004CC847 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyBillViewController.swift; sourceTree = "<group>"; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AA2271387F00848B85 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = SOURCE_ROOT; };
@@ -191,6 +195,7 @@
 				FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */,
 				FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */,
 				FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */,
+				AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */,
 			);
 			path = Habits;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */,
 				AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */,
 				AF23681C2280A9AD004CC847 /* ChallengeCollectionViewCell.swift */,
+				AF23682A2281E1F2004CC847 /* BarChart.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -462,11 +468,13 @@
 				FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */,
 				AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */,
 				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
+				AF23682B2281E1F2004CC847 /* BarChart.swift in Sources */,
 				AF2368232280DCCD004CC847 /* ChallengeDetailTableViewCell.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
 				FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */,
 				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
+				AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */,
 				AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */,
 				AF23681B2280A98A004CC847 /* ChallengeCollectionViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,

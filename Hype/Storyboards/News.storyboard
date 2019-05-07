@@ -353,8 +353,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pg-fS-sC7">
-                                <rect key="frame" x="48" y="441.5" width="318" height="30"/>
-                                <state key="normal" title="Read Article"/>
+                                <rect key="frame" x="95.5" y="441.5" width="223" height="40"/>
+                                <color key="backgroundColor" red="0.001411589328" green="0.63292580840000001" blue="0.28558444979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Read Article">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="readArticleButtonTapped:" destination="NLs-5w-bpr" eventType="touchUpInside" id="8ut-rD-BMV"/>
                                 </connections>
@@ -372,7 +376,7 @@
                             <constraint firstItem="6ey-Ws-wMP" firstAttribute="top" secondItem="UcW-fF-K3U" secondAttribute="bottom" constant="9" id="On7-7d-G7c"/>
                             <constraint firstItem="cxy-eM-Joe" firstAttribute="top" secondItem="6ey-Ws-wMP" secondAttribute="bottom" constant="32" id="R6Y-8L-NEn"/>
                             <constraint firstItem="cxy-eM-Joe" firstAttribute="centerX" secondItem="wFK-Ay-XjQ" secondAttribute="centerX" id="WCu-oR-xTB"/>
-                            <constraint firstItem="6Pg-fS-sC7" firstAttribute="width" secondItem="6ey-Ws-wMP" secondAttribute="width" id="WDc-QY-y3C"/>
+                            <constraint firstItem="6Pg-fS-sC7" firstAttribute="width" secondItem="6ey-Ws-wMP" secondAttribute="width" multiplier="0.7" id="WDc-QY-y3C"/>
                             <constraint firstItem="UcW-fF-K3U" firstAttribute="top" secondItem="Gq5-Z2-5xw" secondAttribute="bottom" constant="24" id="ZeX-mH-qx8"/>
                             <constraint firstItem="cxy-eM-Joe" firstAttribute="width" secondItem="6ey-Ws-wMP" secondAttribute="width" id="qVm-Hd-4D2"/>
                         </constraints>

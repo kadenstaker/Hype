@@ -10,37 +10,32 @@ import Foundation
 
 class TrackableHabit {
     
-    var month: Date
-    var year: Date
+    var date: String
     var usage: String
-    var amount: Double
+    var amount: String
     
-    init(month: Date, year: Date, usage: String, amount: Double) {
-        self.month = month
-        self.year = year
+    init(date: String, usage: String, amount: String) {
+        self.date = date
         self.usage = usage
         self.amount = amount
     }
     
     enum CodingKeys: String, CodingKey {
-        case month
-        case year
+        case date
         case usage
         case amount
     }
     
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        month = try values.decode(Date.self, forKey: .month)
-        year = try values.decode(Date.self, forKey: .year)
+        date = try values.decode(String.self, forKey: .date)
         usage = try values.decode(String.self, forKey: .usage)
-        amount = try values.decode(Double.self, forKey: .amount)
+        amount = try values.decode(String.self, forKey: .amount)
     }
     
     func encode(to encoder: Encoder) throws {
         var values = encoder.container(keyedBy: CodingKeys.self)
-        try values.encode(month.self, forKey: .month)
-        try values.encode(year.self, forKey: .year)
+        try values.encode(date.self, forKey: .date)
         try values.encode(usage.self, forKey: .usage)
         try values.encode(amount.self, forKey: .amount)
     }
@@ -48,8 +43,7 @@ class TrackableHabit {
 
 extension TrackableHabit: Equatable, Codable {
     static func == (lhs: TrackableHabit, rhs: TrackableHabit) -> Bool {
-        return lhs.month == rhs.month &&
-        lhs.year == rhs.year &&
+        return lhs.date == rhs.date &&
         lhs.usage == rhs.usage &&
         lhs.amount == rhs.amount
     }

@@ -10,16 +10,23 @@ import UIKit
 
 class ChallengeDetailTableViewCell: UITableViewCell {
     
-    var arrayOfSteps = ChallengeStepsController.shared.steps
+    var arrayOfSteps: ChallengeSteps? {
+        didSet {
+            updateViews()
+        }
+    }
 
     @IBOutlet weak var instructionsLabel: UILabel!
-        
+    @IBOutlet weak var headerLabel: UILabel!
+    
 override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
 }
     
-    func updateViews(challengeSteps: ChallengeSteps) {
-        instructionsLabel.text = challengeSteps.body
+    func updateViews() {
+        guard let unwrapped = arrayOfSteps else { return }
+        instructionsLabel.text = unwrapped.body
+        headerLabel.text = unwrapped.header
     }
 }
