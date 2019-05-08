@@ -30,6 +30,7 @@ class EnergyViewController: UIViewController, GetChartData {
         super.viewDidLoad()
         populateChartData()
         barChart()
+        
     }
     
     private func updateChart() {
@@ -55,7 +56,7 @@ class EnergyViewController: UIViewController, GetChartData {
         guard let energy = UserController.shared.users.first?.energy else { return }
         date = energy.compactMap({$0.date})
         let habit: [TrackableHabit] = energy
-        let usage = habit.compactMap({$0.amount})
+        let amount = habit.compactMap({$0.amount})
 //        let date = ["Jan" ,"Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 //        let amount = ["12", "14", "133", "43", "22", "93", "45", "55", "79", "66", "18", "112"]
         self.getChartData(with: date, values: amount)
