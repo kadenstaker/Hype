@@ -13,11 +13,22 @@ class WeeklyViewController: UIViewController, UITableViewDataSource, UITableView
     var challenges = ["Create a compost bin"]
     
     @IBOutlet weak var weeklyTableView: UITableView!
+    @IBOutlet weak var addChallengeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         weeklyTableView.dataSource = self
         weeklyTableView.delegate = self
+        updateViews()
+    }
+    
+    func updateViews() {
+        setUpAddChallengeButton()
+    }
+    
+    func setUpAddChallengeButton() {
+        guard let button = addChallengeButton else { return }
+        button.layer.cornerRadius = 5
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
