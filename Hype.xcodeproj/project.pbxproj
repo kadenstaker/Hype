@@ -473,11 +473,8 @@
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
 				FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */,
-<<<<<<< HEAD
 				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */,
-=======
->>>>>>> 103b9d531ddf822ee525de231ebbcd4b0ad2d506
 				AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */,
 				AF23681B2280A98A004CC847 /* ChallengeCollectionViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
