@@ -17,8 +17,16 @@ protocol GetChartData {
 
 class EnergyViewController: UIViewController, GetChartData {
     
-    var usage: [Double] = []
+    //barChart properties
+    var dataEntry: [BarChartDataEntry] = []
+    var delegate: GetChartData! {
+        didSet {
+            populateData()
+//            barChartSetup()
+        }
+    }
     
+    var usage: [Double] = []
     var date = [String]()
     var amount = [String]()
     
@@ -29,8 +37,7 @@ class EnergyViewController: UIViewController, GetChartData {
     override func viewDidLoad() {
         super.viewDidLoad()
         populateChartData()
-        barChart()
-        
+//        barChart()
     }
     
     private func updateChart() {
@@ -62,17 +69,67 @@ class EnergyViewController: UIViewController, GetChartData {
         self.getChartData(with: date, values: amount)
     }
     
-    func barChart() {
-        let barChart = BarChart(frame: CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: self.view.frame.height))
-        barChart.delegate = self
-        self.view.addSubview(barChart)
-        
-    }
+//    func barChart() {
+//        let barChart = barChart(frame: CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: self.view.frame.height))
+//        barChart.delegate = self
+//        self.view.addSubview(barChart)
+//    }
     
     func getChartData(with dataPoints: [String], values: [String]) {
         self.date = values
         self.amount = dataPoints
     }
+    
+    func populateData() {
+        amount = delegate.amount
+        date = delegate.date
+    }
+    
+//    func barChartSetup() {
+//        self.backgroundColor = UIColor.white
+//        self.addSubview(barChartView)
+//        barChartView.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint(item: barChartView, attribute: .top, relatedBy: .equal, toItem: safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: 2).isActive = true
+//        NSLayoutConstraint(item: barChartView, attribute: .bottom, relatedBy: .equal, toItem: safeAreaLayoutGuide, attribute: .bottom, multiplier: 1, constant: -250).isActive = true
+//        NSLayoutConstraint(item: barChartView, attribute: .leading, relatedBy: .equal, toItem: safeAreaLayoutGuide, attribute: .leading, multiplier: 1, constant: 16).isActive = true
+//        NSLayoutConstraint(item: barChartView, attribute: .trailing, relatedBy: .equal, toItem: safeAreaLayoutGuide, attribute: .trailing, multiplier: 1, constant: -16).isActive = true
+//
+//        setBarChart(dataPoints: amount, values: date)
+//    }
+    
+    func setBarChart(dataPoints: [String], values: [String]) {
+        barChartView.noDataTextColor = UIColor.black
+        barChartView.noDataText = "No data for the chart."
+        barChartView.backgroundColor = UIColor.white
+        
+        for i in 0..<dataPoints.count {
+            let dataPoint = BarChartDataEntry(x: Double(i), y: Double(values[i])!)
+            print(dataPoint)
+            dataEntry.append(dataPoint)
+        }
+        
+        let chartDataSet = BarChartDataSet(entries: dataEntry, label: "gallons")
+        let chartData = BarChartData()
+        chartData.addDataSet(chartDataSet)
+        chartData.setDrawValues(false)
+        chartDataSet.colors = [UIColor(red: 0.19, green: 0.69, blue: 1, alpha: 1)]
+        
+        let formatter: ChartFormatter = ChartFormatter()
+        formatter.setValues(values: dataPoints)
+        let xaxis: XAxis = XAxis()
+        xaxis.valueFormatter = formatter
+        barChartView.xAxis.labelPosition = .bottom
+        barChartView.xAxis.drawGridLinesEnabled = false
+        barChartView.xAxis.valueFormatter = xaxis.valueFormatter
+        barChartView.chartDescription?.enabled = false
+        barChartView.legend.enabled = true
+        barChartView.rightAxis.enabled = false
+        barChartView.leftAxis.drawGridLinesEnabled = true
+        barChartView.leftAxis.drawLabelsEnabled = true
+        barChartView.data = chartData
+        
+    }
+
 }
 
 public class ChartFormatter: NSObject, IAxisValueFormatter {
@@ -85,6 +142,9 @@ public class ChartFormatter: NSObject, IAxisValueFormatter {
     public func setValues(values: [String]) {
         self.date = values
     }
+    
+    
 }
+
 
     
