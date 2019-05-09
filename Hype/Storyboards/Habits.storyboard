@@ -31,16 +31,16 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siG-qr-ntS">
                                                     <rect key="frame" x="16" y="11" width="317" height="158"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-1A-TMY">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transportation" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-1A-TMY">
                                                             <rect key="frame" x="20" y="39" width="80" height="80"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="UYp-En-rvE"/>
                                                                 <constraint firstAttribute="height" constant="80" id="a8X-7X-V3j"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Transportation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJV-WX-doA">
-                                                            <rect key="frame" x="146" y="62" width="136" height="35"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transportation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJV-WX-doA">
+                                                            <rect key="frame" x="146" y="62" width="131.5" height="35"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -80,9 +80,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-Dm-Pvg">
                                                     <rect key="frame" x="16" y="11" width="317" height="158"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xul-Qo-NtI">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="energy" translatesAutoresizingMaskIntoConstraints="NO" id="Xul-Qo-NtI">
                                                             <rect key="frame" x="20" y="39" width="80" height="80"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="qNR-Pr-VOW"/>
                                                                 <constraint firstAttribute="width" constant="80" id="rPB-RJ-QG0"/>
@@ -131,7 +131,7 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="Rba-RV-qhx">
                                                             <rect key="frame" x="22" y="39" width="80" height="80"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="8QN-4N-aeR"/>
                                                                 <constraint firstAttribute="height" constant="80" id="y4o-iW-329"/>
@@ -337,37 +337,26 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WmW-Af-2Sb">
-                                <rect key="frame" x="67" y="370" width="241" height="83"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-2M-Kil">
-                                        <rect key="frame" x="-38" y="45" width="315" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.001411589328" green="0.63292580840000001" blue="0.28558444979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
-                                        <state key="normal" title="Enter New Bill">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="newBillButton:" destination="1d4-WW-GLm" eventType="touchUpInside" id="0TV-6x-GBo"/>
-                                            <segue destination="uxI-Z7-UIK" kind="show" id="9dn-Ss-Qlo"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-2M-Kil">
+                                <rect key="frame" x="30" y="400" width="315" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.001411589328" green="0.63292580840000001" blue="0.28558444979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Enter New Bill">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uxI-Z7-UIK" kind="show" id="9dn-Ss-Qlo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Gf5-aM-LJH" firstAttribute="centerX" secondItem="WmW-Af-2Sb" secondAttribute="centerX" id="46D-P8-KQN"/>
-                            <constraint firstItem="WmW-Af-2Sb" firstAttribute="top" secondItem="mWS-XK-Lmu" secondAttribute="top" constant="306" id="5lp-Q8-QMj"/>
                             <constraint firstItem="Gf5-aM-LJH" firstAttribute="leading" secondItem="mWS-XK-Lmu" secondAttribute="leading" constant="20" id="Hs4-yz-ZCi"/>
                             <constraint firstItem="Gf5-aM-LJH" firstAttribute="bottom" secondItem="mWS-XK-Lmu" secondAttribute="bottom" id="Yv0-WS-ISB"/>
-                            <constraint firstItem="WmW-Af-2Sb" firstAttribute="leading" secondItem="mWS-XK-Lmu" secondAttribute="leading" constant="67" id="bZM-H6-65X"/>
                             <constraint firstItem="oAJ-1t-Prc" firstAttribute="top" secondItem="mWS-XK-Lmu" secondAttribute="top" constant="20" id="cDh-zT-ocq"/>
                             <constraint firstItem="oAJ-1t-Prc" firstAttribute="centerX" secondItem="snj-Rc-Vh4" secondAttribute="centerX" id="dGv-gW-6HI"/>
                             <constraint firstItem="mWS-XK-Lmu" firstAttribute="trailing" secondItem="Gf5-aM-LJH" secondAttribute="trailing" constant="20" id="svE-R9-NSo"/>
-                            <constraint firstItem="Gf5-aM-LJH" firstAttribute="top" secondItem="WmW-Af-2Sb" secondAttribute="bottom" constant="7" id="wXU-iz-tLC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mWS-XK-Lmu"/>
                     </view>
@@ -464,14 +453,18 @@
                         <outlet property="amountTextField" destination="6vY-Kc-s1B" id="pTa-Df-azn"/>
                         <outlet property="selectDateTextField" destination="16S-NK-86n" id="fqG-P2-zTw"/>
                         <outlet property="usageTextField" destination="PEP-yG-hn9" id="ggv-ru-uok"/>
+                        <segue destination="C7u-yJ-0jt" kind="unwind" identifier="unwindWithData" unwindAction="unwindWithData:" id="aBT-pV-ZeY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oR-Qg-SzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="C7u-yJ-0jt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4141.6000000000004" y="-75.112443778110944"/>
         </scene>
     </scenes>
     <resources>
+        <image name="energy" width="84" height="88"/>
+        <image name="transportation" width="77" height="82"/>
         <image name="water" width="85" height="115"/>
     </resources>
 </document>
