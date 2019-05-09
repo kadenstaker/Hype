@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class UserController {
     
@@ -22,9 +23,9 @@ class UserController {
     var habits: User?
     
     //CRUD Functions
-    func createUserWith(firstName: String, lastName: String, email: String, password: String, profilePic: UIImage?, currentDailyChallenge: [Challenge], currentWeeklyChallenge: [Challenge], energy: [TrackableHabit], water: [TrackableHabit], score: Int) {
+    func createUserWith(firstName: String, lastName: String, email: String, password: String, profilePic: UIImage?, currentDailyChallenge: [Challenge], currentWeeklyChallenge: [Challenge], transportation: [TrackableHabit], energy: [TrackableHabit], water: [TrackableHabit], score: Int) {
         guard let profilePic = profilePic else { return }
-        let user = User(firstName: firstName, lastName: lastName, email: email, password: password, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, energy: energy, water: water, profilePic: profilePic)
+        let user = User(firstName: firstName, lastName: lastName, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, transportation: transportation, energy: energy, water: water, profilePic: profilePic)
         self.users.append(user)
         saveToPersistentStore()
     }
@@ -32,17 +33,22 @@ class UserController {
     func updateUser(user: User, firstName: String, lastName: String, email: String, password: String, profilePic: UIImage, score: Int, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], energy: [TrackableHabit], water: [TrackableHabit]) {
         user.firstName = firstName
         user.lastName = lastName
-        user.email = email
-        user.password = password
         user.profilePic = profilePic
         user.score = score
         user.currentWeeklyChallenge = currentWeeklyChallenge
-        user.currentDailyChallenge = currentDailyChallenge
+        user.currentDailyChallenges = currentDailyChallenge
         user.energy = energy
         user.water = water
         
         saveToPersistentStore()
     }
+    
+    // Save
+//    guard let userRecord = CKRecord
+    
+    // Update
+    
+    // Fetch
     
     // Persistent Store
     func fileURL() -> URL {
