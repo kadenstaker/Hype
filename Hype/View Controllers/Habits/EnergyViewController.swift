@@ -15,6 +15,8 @@ class EnergyViewController: UIViewController {
     @IBOutlet weak var barChartView: BarChartView!
     
     var usage: [Double] = []
+    var date = [String]()
+    var amount = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
