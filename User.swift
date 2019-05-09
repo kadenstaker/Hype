@@ -11,13 +11,6 @@ import CloudKit
 
 class User {
     
-    let recordTypeKey = "User"
-    fileprivate let firstNameKey = "firstName"
-    fileprivate let lastNameKey = "lastName"
-    fileprivate let scoreKey = "score"
-    fileprivate let weeklyChallengeKey = "weekly"
-    
-    var recordID = CKRecord.ID(recordName: UUID().uuidString)
     var firstName: String
     var lastName: String
     var score: Int
@@ -27,8 +20,9 @@ class User {
     var water: [TrackableHabit]
     var transportation: [TrackableHabit]
     var profilePic: UIImage?
+    let recordID: CKRecord.ID
     
-    init(firstName: String, lastName: String, score: Int = 0, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], transportation: [TrackableHabit], energy: [TrackableHabit], water: [TrackableHabit], profilePic: UIImage?) {
+    init(firstName: String, lastName: String, score: Int = 0, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], transportation: [TrackableHabit], energy: [TrackableHabit], water: [TrackableHabit], profilePic: UIImage?, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
         self.firstName = firstName
         self.lastName = lastName
         self.score = score
@@ -38,60 +32,49 @@ class User {
         self.energy = energy
         self.water = water
         self.profilePic = profilePic
+        self.recordID = recordID
     }
     
-    enum CodingKeys: String, CodingKey {
-        case firstName
-        case lastName
-        case score
-        case currentWeeklyChallenge
-        case currentDailyChallenge
-        case transportation
-        case energy
-        case water
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        firstName = try values.decode(String.self, forKey: .firstName)
-        lastName = try values.decode(String.self, forKey: .lastName)
-        score = try values.decode(Int.self, forKey: .score)
-        currentWeeklyChallenge = try values.decode([Challenge].self, forKey: .currentWeeklyChallenge)
-        currentDailyChallenges = try values.decode([Challenge].self, forKey: .currentDailyChallenge)
-        transportation = try values.decode([TrackableHabit].self, forKey: .transportation)
-        energy = try values.decode([TrackableHabit].self, forKey: .energy)
-        water = try values.decode([TrackableHabit].self, forKey: .water)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var values = encoder.container(keyedBy: CodingKeys.self)
-        try values.encode(firstName.self, forKey: .firstName)
-        try values.encode(lastName.self, forKey: .lastName)
-        try values.encode(score.self, forKey: .score)
-        try values.encode(currentWeeklyChallenge.self, forKey: .currentWeeklyChallenge)
-        try values.encode(currentDailyChallenges.self, forKey: .currentDailyChallenge)
-        try values.encode(transportation.self, forKey: .transportation)
-        try values.encode(energy.self, forKey: .energy)
-        try values.encode(water.self, forKey: .water)
-    }
-}
-
-extension User: Equatable, Codable {
-    static func == (lhs: User, rhs: User) -> Bool {
-        return lhs.firstName == rhs.firstName &&
-            lhs.lastName == rhs.lastName &&
-            lhs.currentWeeklyChallenge == rhs.currentWeeklyChallenge &&
-            lhs.currentDailyChallenges == rhs.currentDailyChallenges &&
-            lhs.energy == rhs.energy &&
-            lhs.water == rhs.water &&
-            lhs.profilePic == rhs.profilePic
+    convenience init?(ckRecord: CKRecord) {
+        guard let firstName = ckRecord[UserConstants.firstNameKey] as? String,
+        let lastName = ckRecord[UserConstants.lastNameKey] as? String,
+        let score = ckRecord[UserConstants.scoreKey] as? Int,
+        let currentWeeklyChallenge = ckRecord[UserConstants.weeklyChallengeKey] as? [Challenge],
+        let currentDailyChallenge = ckRecord[UserConstants.dailyChallengeKey] as? [Challenge],
+        let energy = ckRecord[UserConstants.energyKey] as? [TrackableHabit],
+        let water = ckRecord[UserConstants.waterKey] as? [TrackableHabit],
+        let transportation = ckRecord[UserConstants.transportationKey] as? [TrackableHabit],
+        let profilePic = ckRecord[UserConstants.profilePicKey]as? UIImage else { return nil }
+        
+        self.init(firstName: firstName, lastName: lastName, score: score, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, transportation: transportation, energy: energy, water: water, profilePic: profilePic, recordID: ckRecord.recordID)
+        
     }
 }
 
 extension CKRecord {
-//    convenience init(_ user: User) {
-//        let recordID = post.recordID
-//        self.init(recordType: user.recordTypeKey, recordID: recordID)
-//        self.setValue()
-//    }
+    convenience init(user: User) {
+        self.init(recordType: UserConstants.recordType, recordID: user.recordID)
+        self.setValue(user.firstName, forKey: UserConstants.firstNameKey)
+        self.setValue(user.lastName, forKey: UserConstants.lastNameKey)
+        self.setValue(user.score, forKey: UserConstants.scoreKey)
+        self.setValue(user.currentWeeklyChallenge, forKey: UserConstants.weeklyChallengeKey)
+        self.setValue(user.currentWeeklyChallenge, forKey: UserConstants.dailyChallengeKey)
+        self.setValue(user.energy, forKey: UserConstants.energyKey)
+        self.setValue(user.water, forKey: UserConstants.waterKey)
+        self.setValue(user.transportation, forKey: UserConstants.transportationKey)
+        self.setValue(user.profilePic, forKey: UserConstants.profilePicKey)
+    }
+}
+
+struct UserConstants {
+    static let recordType = "User"
+    static let firstNameKey = "firstName"
+    static let lastNameKey = "lastName"
+    static let scoreKey = "score"
+    static let weeklyChallengeKey = "weekly"
+    static let dailyChallengeKey = "daily"
+    static let energyKey = "energy"
+    static let waterKey = "water"
+    static let transportationKey = "transportation"
+    static let profilePicKey = "profilePic"
 }

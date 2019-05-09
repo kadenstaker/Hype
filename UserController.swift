@@ -22,25 +22,43 @@ class UserController {
     var weeklyChallenges: User?
     var habits: User?
     
-    //CRUD Functions
-    func createUserWith(firstName: String, lastName: String, email: String, password: String, profilePic: UIImage?, currentDailyChallenge: [Challenge], currentWeeklyChallenge: [Challenge], transportation: [TrackableHabit], energy: [TrackableHabit], water: [TrackableHabit], score: Int) {
-        guard let profilePic = profilePic else { return }
-        let user = User(firstName: firstName, lastName: lastName, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, transportation: transportation, energy: energy, water: water, profilePic: profilePic)
-        self.users.append(user)
-        saveToPersistentStore()
+    func save(user: User, completion: @escaping (Bool) -> ()) {
+        let record = CKRecord(user: user)
+        CKContainer.default().privateCloudDatabase.save(record) { (record, error) in
+            if let error = error {
+                print("💩 There was an error in \(#function) ; \(error) ; \(error.localizedDescription) 💩")
+                completion(false)
+                return
+            }
+            
+            guard let record = record,
+                let user = User(ckRecord: record) else { completion(false); return }
+            self.users.append(user)
+            completion(true)
+        }
     }
     
-    func updateUser(user: User, firstName: String, lastName: String, email: String, password: String, profilePic: UIImage, score: Int, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], energy: [TrackableHabit], water: [TrackableHabit]) {
-        user.firstName = firstName
-        user.lastName = lastName
-        user.profilePic = profilePic
-        user.score = score
-        user.currentWeeklyChallenge = currentWeeklyChallenge
-        user.currentDailyChallenges = currentDailyChallenge
-        user.energy = energy
-        user.water = water
-        
-        saveToPersistentStore()
+    //CRUD Functions
+    func createUserWith(firstName: String, lastName: String, email: String, password: String, profilePic: UIImage?, currentDailyChallenge: [Challenge], currentWeeklyChallenge: [Challenge], transportation: [TrackableHabit], energy: [TrackableHabit], water: [TrackableHabit], score: Int, completion: @escaping (Bool) -> Void) {
+        guard let profilePic = profilePic else { return }
+        let user = User(firstName: firstName, lastName: lastName, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, transportation: transportation, energy: energy, water: water, profilePic: profilePic)
+        save(user: user, completion: completion)
+    }
+    
+    func fetchUsers(completion: @escaping (Bool) -> ()) {
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: UserConstants.recordType, predicate: predicate)
+        CKContainer.default().privateCloudDatabase.perform(query, inZoneWith: nil) { (records, error) in
+            if let error = error {
+                print("💩 There was an error in \(#function) ; \(error) ; \(error.localizedDescription) 💩")
+                completion(false)
+                return
+            }
+            guard let records = records else { completion(false); return }
+            let users = records.compactMap{ User(ckRecord: $0)}
+            self.users = users
+            completion(true)
+        }
     }
     
     // Save
@@ -50,33 +68,4 @@ class UserController {
     
     // Fetch
     
-    // Persistent Store
-    func fileURL() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documenDirectory = paths[0]
-        let userLocation = "user.json"
-        let fullURL = documenDirectory.appendingPathComponent(userLocation)
-        return fullURL
-    }
-    
-    func saveToPersistentStore() {
-        let encoder = JSONEncoder()
-        do {
-            let userAsData = try encoder.encode(users)
-            try userAsData.write(to: fileURL())
-        } catch let error {
-            print("Error saving to persistent store: \(error); \(error.localizedDescription)")
-        }
-    }
-    
-    func loadFromPersistentStore() {
-        let decoder = JSONDecoder()
-        do {
-            let data = try Data(contentsOf: fileURL())
-            let decodedUsers = try decoder.decode([User].self, from: data)
-            self.users = decodedUsers
-        } catch let error {
-            print("There was an error loading from the persistent store: \(error); \(error.localizedDescription)")
-        }
-    }
 }

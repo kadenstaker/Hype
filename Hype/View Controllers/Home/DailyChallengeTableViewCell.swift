@@ -31,11 +31,11 @@ class DailyChallengeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    var landingPad: MockData? {
-        didSet {
-            updateViews()
-        }
-    }
+//    var landingPad: MockData? {
+//        didSet {
+//            updateViews()
+//        }
+//    }
     
     func updateViews() {
         setUpChallengeCompleteButton()
