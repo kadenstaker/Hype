@@ -10,6 +10,9 @@ import UIKit
 
 class EnergyBillViewController: UIViewController {
     
+    var numbers: [Double] = []
+    var input: Double!
+    
     var habits: TrackableHabit? {
         didSet {
             updateViews()
@@ -37,33 +40,30 @@ class EnergyBillViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
-        guard let usage = usageTextField.text,
-            let amount = amountTextField.text,
-            let date = selectDateTextField.text,
-            !usage.isEmpty,
-            !amount.isEmpty,
-            !date.isEmpty else { return }
-        TrackableHabitController.shared.createTrackableHabit(date: date, usage: usage, amount: amount)
-        //save data to the bar chart somehow
-        DispatchQueue.main.async {
-            self.navigationController?.popViewController(animated: true)
-        }
+
+        // get the input from the textField as a double
+        guard let tempInput = Double(usageTextField.text!) else { return }
+        
+        input = tempInput
+        // append the data to the entry
+        performSegue(withIdentifier: "unwindWithData", sender: self)
+        // update the graph
+        // pop navigation controller
     }
     
     func updateViews() {
         usageTextField.text = "\(habits?.usage ?? "KWh")"
-        amountTextField.text = "\(habits?.amount ?? "$000.00")" 
-        
+        amountTextField.text = "\(habits?.amount ?? "$000.00")"
     }
-    
+
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
         view.endEditing(true)
     }
-    
+
     @objc func dateChanged(datePicker: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/yyyy"
-        
+
         selectDateTextField.text = dateFormatter.string(from: datePicker.date)
         view.endEditing(true)
     }

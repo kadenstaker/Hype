@@ -31,16 +31,16 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siG-qr-ntS">
                                                     <rect key="frame" x="16" y="11" width="317" height="158"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-1A-TMY">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transportation" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-1A-TMY">
                                                             <rect key="frame" x="20" y="39" width="80" height="80"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="UYp-En-rvE"/>
                                                                 <constraint firstAttribute="height" constant="80" id="a8X-7X-V3j"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Transportation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJV-WX-doA">
-                                                            <rect key="frame" x="146" y="62" width="136" height="35"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transportation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJV-WX-doA">
+                                                            <rect key="frame" x="146" y="62" width="131.5" height="35"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -80,9 +80,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-Dm-Pvg">
                                                     <rect key="frame" x="16" y="11" width="317" height="158"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xul-Qo-NtI">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="energy" translatesAutoresizingMaskIntoConstraints="NO" id="Xul-Qo-NtI">
                                                             <rect key="frame" x="20" y="39" width="80" height="80"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="qNR-Pr-VOW"/>
                                                                 <constraint firstAttribute="width" constant="80" id="rPB-RJ-QG0"/>
@@ -131,7 +131,7 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="Rba-RV-qhx">
                                                             <rect key="frame" x="22" y="39" width="80" height="80"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="8QN-4N-aeR"/>
                                                                 <constraint firstAttribute="height" constant="80" id="y4o-iW-329"/>
@@ -312,18 +312,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-2M-Kil">
-                                <rect key="frame" x="30" y="414" width="315" height="38"/>
-                                <color key="backgroundColor" red="0.001411589328" green="0.63292580840000001" blue="0.28558444979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
-                                <state key="normal" title="Enter New Bill">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="uxI-Z7-UIK" kind="show" id="9dn-Ss-Qlo"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAJ-1t-Prc">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAJ-1t-Prc" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="16" y="84" width="343" height="322"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -334,6 +323,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-aM-LJH">
                                 <rect key="frame" x="20" y="460" width="335" height="158"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="pVe-1C-qMe"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="46" id="QKh-IH-YBS">
                                         <rect key="frame" x="0.0" y="28" width="335" height="46"/>
@@ -345,25 +337,33 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-2M-Kil">
+                                <rect key="frame" x="30" y="400" width="315" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.001411589328" green="0.63292580840000001" blue="0.28558444979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Enter New Bill">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uxI-Z7-UIK" kind="show" id="9dn-Ss-Qlo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mWS-XK-Lmu" firstAttribute="trailing" secondItem="d1X-2M-Kil" secondAttribute="trailing" constant="30" id="Gc4-pa-SV6"/>
                             <constraint firstItem="Gf5-aM-LJH" firstAttribute="leading" secondItem="mWS-XK-Lmu" secondAttribute="leading" constant="20" id="Hs4-yz-ZCi"/>
                             <constraint firstItem="Gf5-aM-LJH" firstAttribute="bottom" secondItem="mWS-XK-Lmu" secondAttribute="bottom" id="Yv0-WS-ISB"/>
                             <constraint firstItem="oAJ-1t-Prc" firstAttribute="top" secondItem="mWS-XK-Lmu" secondAttribute="top" constant="20" id="cDh-zT-ocq"/>
                             <constraint firstItem="oAJ-1t-Prc" firstAttribute="centerX" secondItem="snj-Rc-Vh4" secondAttribute="centerX" id="dGv-gW-6HI"/>
-                            <constraint firstItem="d1X-2M-Kil" firstAttribute="leading" secondItem="mWS-XK-Lmu" secondAttribute="leading" constant="30" id="h4h-7b-EdT"/>
-                            <constraint firstItem="d1X-2M-Kil" firstAttribute="top" secondItem="oAJ-1t-Prc" secondAttribute="bottom" constant="8" id="hcb-0Q-gSa"/>
                             <constraint firstItem="mWS-XK-Lmu" firstAttribute="trailing" secondItem="Gf5-aM-LJH" secondAttribute="trailing" constant="20" id="svE-R9-NSo"/>
-                            <constraint firstItem="Gf5-aM-LJH" firstAttribute="top" secondItem="d1X-2M-Kil" secondAttribute="bottom" constant="8" id="yNV-9y-yGu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mWS-XK-Lmu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Energy" id="7fd-Op-e3b"/>
                     <connections>
                         <outlet property="barChartView" destination="oAJ-1t-Prc" id="0yP-VD-ODS"/>
-                        <outlet property="enterBillButton" destination="d1X-2M-Kil" id="pjp-CP-9iY"/>
+                        <outlet property="newBillButton" destination="d1X-2M-Kil" id="LKP-zB-aER"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xlx-aI-7ry" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -453,14 +453,18 @@
                         <outlet property="amountTextField" destination="6vY-Kc-s1B" id="pTa-Df-azn"/>
                         <outlet property="selectDateTextField" destination="16S-NK-86n" id="fqG-P2-zTw"/>
                         <outlet property="usageTextField" destination="PEP-yG-hn9" id="ggv-ru-uok"/>
+                        <segue destination="C7u-yJ-0jt" kind="unwind" identifier="unwindWithData" unwindAction="unwindWithData:" id="aBT-pV-ZeY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oR-Qg-SzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="C7u-yJ-0jt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4141.6000000000004" y="-75.112443778110944"/>
         </scene>
     </scenes>
     <resources>
+        <image name="energy" width="84" height="88"/>
+        <image name="transportation" width="77" height="82"/>
         <image name="water" width="85" height="115"/>
     </resources>
 </document>

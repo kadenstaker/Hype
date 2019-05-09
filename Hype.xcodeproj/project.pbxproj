@@ -31,7 +31,6 @@
 		FA36B8932278E86500ADF1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */; };
 		FA36B8972279389F00ADF1F3 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8962279389F00ADF1F3 /* News.storyboard */; };
 		FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */; };
-		FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */; };
 		FA36B8C1227A498600ADF1F3 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */; };
 		FA36B8CE227CA07700ADF1F3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8CD227CA07700ADF1F3 /* Onboarding.storyboard */; };
 		FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8CF227CA0E100ADF1F3 /* OnboardingViewController.swift */; };
@@ -97,7 +96,6 @@
 		FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA36B8962279389F00ADF1F3 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationViewController.swift; sourceTree = "<group>"; };
-		FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
 		FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
 		FA36B8CD227CA07700ADF1F3 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		FA36B8CF227CA0E100ADF1F3 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -118,13 +116,13 @@
 		FA74629F2270C33E00ACE3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA81B7332270DB03007210E6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FA81B7352270DB25007210E6 /* Habits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Habits.storyboard; sourceTree = "<group>"; };
-		FA81B73922721E4C007210E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA81B73922721E4C007210E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/HomeViewController.swift; sourceTree = "<group>"; };
 		FA81B73F22725674007210E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
 		FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		FAEA367C2277772C0046C04F /* DailyChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		FAEA36822277A3060046C04F /* Recycle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recycle.storyboard; sourceTree = "<group>"; };
-		FAEA36842277B6D00046C04F /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		FAEA36842277B6D00046C04F /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = News/NewsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +145,14 @@
 				B5996B678E9524AA1BC30564 /* Pods_Hype.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF5354F12284C983009F184D /* Recycle */ = {
+			isa = PBXGroup;
+			children = (
+				AFF3149F227F555F0093CC4F /* RecycleViewController.swift */,
+			);
+			path = Recycle;
 			sourceTree = "<group>";
 		};
 		D34D2ED903F2DD72490A1AD9 /* Pods */ = {
@@ -184,7 +190,7 @@
 			path = News;
 			sourceTree = "<group>";
 		};
-		FA36B8B9227A3AB800ADF1F3 /* Habits */ = {
+		D34D2ED903F2DD72490A1AD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
@@ -194,7 +200,7 @@
 				FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */,
 				AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */,
 			);
-			path = Habits;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		FA36B8C8227C9CBE00ADF1F3 /* Onboarding */ = {
@@ -222,6 +228,7 @@
 				FA7462912270C33D00ACE3D9 /* Products */,
 				D34D2ED903F2DD72490A1AD9 /* Pods */,
 				31D75ED4FCA7F65C00C1880E /* Frameworks */,
+				AF7142D2227B43E400C601D8 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -435,9 +442,20 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
