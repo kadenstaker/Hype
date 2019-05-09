@@ -345,6 +345,7 @@
                                     <constraint firstItem="fSu-ea-cNl" firstAttribute="width" secondItem="6ey-Ws-wMP" secondAttribute="width" id="qqZ-ZT-X6C"/>
                                     <constraint firstAttribute="height" constant="180" id="vmF-RQ-vYU"/>
                                 </constraints>
+<<<<<<< HEAD
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxy-eM-Joe">
                                 <rect key="frame" x="48" y="386" width="318" height="23.5"/>
@@ -362,6 +363,9 @@
                                 <connections>
                                     <action selector="readArticleButtonTapped:" destination="NLs-5w-bpr" eventType="touchUpInside" id="8ut-rD-BMV"/>
                                 </connections>
+=======
+                                <state key="normal" title="save" image="blankHeart"/>
+>>>>>>> 9923bd57a374f539ba21688a9a32996c79ac7cac
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -416,8 +420,13 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="emptyHeart" width="21" height="20"/>
         <image name="redHeart" width="16" height="15"/>
+=======
+        <image name="blankHeart" width="900" height="900"/>
+        <image name="filledHeart" width="30" height="30"/>
+>>>>>>> 9923bd57a374f539ba21688a9a32996c79ac7cac
         <image name="share" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
