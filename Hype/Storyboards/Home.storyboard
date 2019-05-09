@@ -420,6 +420,9 @@
                                             <state key="normal" title="Add a challenge">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <segue destination="RpB-dl-Tu6" kind="show" id="vLP-Fj-3Rc"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -523,6 +526,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zS-NB-rLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1471" y="888"/>
+        </scene>
+        <!--Challenges-->
+        <scene sceneID="xT5-kY-9cl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Challenges" id="RpB-dl-Tu6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbb-7s-pQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2085" y="888"/>
         </scene>
     </scenes>
 </document>

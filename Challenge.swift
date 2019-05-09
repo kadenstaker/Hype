@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import CloudKit
 
 class Challenge {
+    
+    let recordTypeKey = "Challenge"
+    
     var name: String
     var points: Int
     var isDaily: Bool //bool?

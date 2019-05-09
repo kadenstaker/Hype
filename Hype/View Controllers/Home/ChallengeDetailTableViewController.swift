@@ -24,15 +24,8 @@ class ChallengeDetailTableViewController: UITableViewController {
         return 1
     }
     
-<<<<<<< HEAD
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Steps"
-=======
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! DailyChallengeTableViewCell
-//        cell.setup(challenge: rules)
-        return cell.contentView
->>>>>>> 103b9d531ddf822ee525de231ebbcd4b0ad2d506
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

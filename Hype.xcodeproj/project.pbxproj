@@ -9,25 +9,19 @@
 /* Begin PBXBuildFile section */
 		8616F543867BED06630958C9 /* Pods_Hype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5996B678E9524AA1BC30564 /* Pods_Hype.framework */; };
 		AF23681922808A79004CC847 /* Challenges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF23681822808A79004CC847 /* Challenges.storyboard */; };
-		AF23681B2280A98A004CC847 /* ChallengeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23681A2280A98A004CC847 /* ChallengeCollectionViewController.swift */; };
-		AF23681D2280A9AD004CC847 /* ChallengeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23681C2280A9AD004CC847 /* ChallengeCollectionViewCell.swift */; };
 		AF2368212280D7C8004CC847 /* ChallengeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */; };
 		AF2368232280DCCD004CC847 /* ChallengeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */; };
 		AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368242280E169004CC847 /* ChallengeSteps.swift */; };
 		AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */; };
-		AF23682B2281E1F2004CC847 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23682A2281E1F2004CC847 /* BarChart.swift */; };
 		AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
 		AFE2B2AB2271387F00848B85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AA2271387F00848B85 /* Article.swift */; };
-		AFE2B2AD2271390000848B85 /* Impact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AC2271390000848B85 /* Impact.swift */; };
 		AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AE2271397D00848B85 /* TrackableHabit.swift */; };
 		AFE2B2B32271FE3E00848B85 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2B22271FE3E00848B85 /* UserController.swift */; };
 		AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2B42272044500848B85 /* ChallengeController.swift */; };
 		AFE2B2B72272229000848B85 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2B62272229000848B85 /* ArticleController.swift */; };
-		AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B722735EC9002ED79C /* ImpactController.swift */; };
 		AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B922736025002ED79C /* TrackableHabitController.swift */; };
-		AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8BD22739CAC002ED79C /* MockData.swift */; };
 		AFF3149A227CF97D0093CC4F /* SavedNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31499227CF97D0093CC4F /* SavedNewsTableViewController.swift */; };
 		AFF3149C227CFEF50093CC4F /* SavedNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3149B227CFEF50093CC4F /* SavedNewsTableViewCell.swift */; };
 		AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3149D227D11030093CC4F /* UIViewExtensions.swift */; };
@@ -44,6 +38,8 @@
 		FA36B8D2227CA2FD00ADF1F3 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D1227CA2FD00ADF1F3 /* OnboardingPageViewController.swift */; };
 		FA36B8D4227CA52000ADF1F3 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D3227CA52000ADF1F3 /* OnboardingContentViewController.swift */; };
 		FA36B8D6227CD28600ADF1F3 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D5227CD28600ADF1F3 /* StyleGuide.swift */; };
+		FA48354A228396B8008888F0 /* WeeklyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA483549228396B8008888F0 /* WeeklyDetailTableViewController.swift */; };
+		FA48354D22848A9A008888F0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA48354C22848A9A008888F0 /* CloudKit.framework */; };
 		FA6B2DAD22821C2D0084320E /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DAC22821C2D0084320E /* DailyViewController.swift */; };
 		FA6B2DAF22821C390084320E /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DAE22821C380084320E /* WeeklyViewController.swift */; };
 		FA6B2DB122821E3E0084320E /* WeeklyChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DB022821E3E0084320E /* WeeklyChallengeTableViewCell.swift */; };
@@ -76,25 +72,19 @@
 
 /* Begin PBXFileReference section */
 		AF23681822808A79004CC847 /* Challenges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenges.storyboard; sourceTree = "<group>"; };
-		AF23681A2280A98A004CC847 /* ChallengeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCollectionViewController.swift; sourceTree = "<group>"; };
-		AF23681C2280A9AD004CC847 /* ChallengeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewController.swift; sourceTree = "<group>"; };
 		AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewCell.swift; sourceTree = "<group>"; };
 		AF2368242280E169004CC847 /* ChallengeSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeSteps.swift; path = "Hype/View Controllers/ChallengeSteps.swift"; sourceTree = SOURCE_ROOT; };
 		AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeStepsController.swift; path = "Hype/View Controllers/ChallengeStepsController.swift"; sourceTree = SOURCE_ROOT; };
-		AF23682A2281E1F2004CC847 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyBillViewController.swift; sourceTree = "<group>"; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AA2271387F00848B85 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = SOURCE_ROOT; };
-		AFE2B2AC2271390000848B85 /* Impact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Impact.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AE2271397D00848B85 /* TrackableHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableHabit.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2B22271FE3E00848B85 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2B42272044500848B85 /* ChallengeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeController.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2B62272229000848B85 /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = SOURCE_ROOT; };
-		AFE9C8B722735EC9002ED79C /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = SOURCE_ROOT; };
 		AFE9C8B922736025002ED79C /* TrackableHabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableHabitController.swift; sourceTree = SOURCE_ROOT; };
-		AFE9C8BD22739CAC002ED79C /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = SOURCE_ROOT; };
 		AFF31499227CF97D0093CC4F /* SavedNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewController.swift; sourceTree = "<group>"; };
 		AFF3149B227CFEF50093CC4F /* SavedNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewCell.swift; sourceTree = "<group>"; };
 		AFF3149D227D11030093CC4F /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -114,6 +104,9 @@
 		FA36B8D1227CA2FD00ADF1F3 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		FA36B8D3227CA52000ADF1F3 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 		FA36B8D5227CD28600ADF1F3 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		FA483549228396B8008888F0 /* WeeklyDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyDetailTableViewController.swift; sourceTree = "<group>"; };
+		FA48354B22848A08008888F0 /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
+		FA48354C22848A9A008888F0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FA6B2DAC22821C2D0084320E /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		FA6B2DAE22821C380084320E /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
 		FA6B2DB022821E3E0084320E /* WeeklyChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChallengeTableViewCell.swift; sourceTree = "<group>"; };
@@ -140,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8616F543867BED06630958C9 /* Pods_Hype.framework in Frameworks */,
+				FA48354D22848A9A008888F0 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +143,7 @@
 		31D75ED4FCA7F65C00C1880E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA48354C22848A9A008888F0 /* CloudKit.framework */,
 				B5996B678E9524AA1BC30564 /* Pods_Hype.framework */,
 			);
 			name = Frameworks;
@@ -171,6 +166,8 @@
 				FA6B2DAE22821C380084320E /* WeeklyViewController.swift */,
 				FAEA367C2277772C0046C04F /* DailyChallengeTableViewCell.swift */,
 				FA6B2DB022821E3E0084320E /* WeeklyChallengeTableViewCell.swift */,
+				AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */,
+				AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -210,6 +207,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		FA48354E2284C968008888F0 /* Recycle */ = {
+			isa = PBXGroup;
+			children = (
+				AFF3149F227F555F0093CC4F /* RecycleViewController.swift */,
+			);
+			path = Recycle;
+			sourceTree = "<group>";
+		};
 		FA7462872270C33D00ACE3D9 = {
 			isa = PBXGroup;
 			children = (
@@ -231,11 +236,12 @@
 		FA7462922270C33D00ACE3D9 /* Hype */ = {
 			isa = PBXGroup;
 			children = (
+				FA48354B22848A08008888F0 /* Hype.entitlements */,
+				FA81B7322270CACB007210E6 /* Utilities */,
 				FA7462A52270C5E200ACE3D9 /* Models */,
 				FA7462A62270C5ED00ACE3D9 /* Model Controllers */,
 				FA7462A72270C5F500ACE3D9 /* View Controllers */,
 				FA7462AB2270C6A400ACE3D9 /* Storyboards */,
-				FA81B7322270CACB007210E6 /* Utilities */,
 				FA81B7312270C704007210E6 /* Resources */,
 				AFF3149D227D11030093CC4F /* UIViewExtensions.swift */,
 			);
@@ -248,7 +254,6 @@
 				AFE2B2A62271338600848B85 /* User.swift */,
 				AFE2B2A82271376D00848B85 /* Challenge.swift */,
 				AFE2B2AA2271387F00848B85 /* Article.swift */,
-				AFE2B2AC2271390000848B85 /* Impact.swift */,
 				AFE2B2AE2271397D00848B85 /* TrackableHabit.swift */,
 				AF2368242280E169004CC847 /* ChallengeSteps.swift */,
 			);
@@ -262,9 +267,8 @@
 				AFE2B2B42272044500848B85 /* ChallengeController.swift */,
 				AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */,
 				AFE2B2B62272229000848B85 /* ArticleController.swift */,
-				AFE9C8B722735EC9002ED79C /* ImpactController.swift */,
 				AFE9C8B922736025002ED79C /* TrackableHabitController.swift */,
-				AFE9C8BD22739CAC002ED79C /* MockData.swift */,
+				FA483549228396B8008888F0 /* WeeklyDetailTableViewController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -272,16 +276,11 @@
 		FA7462A72270C5F500ACE3D9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA48354E2284C968008888F0 /* Recycle */,
 				FA36B8C8227C9CBE00ADF1F3 /* Onboarding */,
 				FA36B8B7227A3A9500ADF1F3 /* Home */,
 				FA36B8B9227A3AB800ADF1F3 /* Habits */,
 				FA36B8B8227A3AB000ADF1F3 /* News */,
-				AFF3149F227F555F0093CC4F /* RecycleViewController.swift */,
-				AF23681A2280A98A004CC847 /* ChallengeCollectionViewController.swift */,
-				AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */,
-				AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */,
-				AF23681C2280A9AD004CC847 /* ChallengeCollectionViewCell.swift */,
-				AF23682A2281E1F2004CC847 /* BarChart.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -356,6 +355,14 @@
 				TargetAttributes = {
 					FA74628F2270C33D00ACE3D9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -447,10 +454,7 @@
 				AFE2B2AB2271387F00848B85 /* Article.swift in Sources */,
 				AFE2B2B32271FE3E00848B85 /* UserController.swift in Sources */,
 				FA36B8D4227CA52000ADF1F3 /* OnboardingContentViewController.swift in Sources */,
-				AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */,
 				AF2368212280D7C8004CC847 /* ChallengeDetailTableViewController.swift in Sources */,
-				AFE2B2AD2271390000848B85 /* Impact.swift in Sources */,
-				AF23681D2280A9AD004CC847 /* ChallengeCollectionViewCell.swift in Sources */,
 				AFF3149C227CFEF50093CC4F /* SavedNewsTableViewCell.swift in Sources */,
 				AFE2B2A72271338600848B85 /* User.swift in Sources */,
 				AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */,
@@ -467,16 +471,12 @@
 				FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */,
 				AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */,
 				FA6B2DAD22821C2D0084320E /* DailyViewController.swift in Sources */,
-				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
-				AF23682B2281E1F2004CC847 /* BarChart.swift in Sources */,
 				AF2368232280DCCD004CC847 /* ChallengeDetailTableViewCell.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
 				FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */,
-				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */,
 				AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */,
-				AF23681B2280A98A004CC847 /* ChallengeCollectionViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
 				AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */,
 				AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */,
@@ -486,6 +486,7 @@
 				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
 				FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */,
 				AFFA3A04227C172300F7BE74 /* NewsDetailViewController.swift in Sources */,
+				FA48354A228396B8008888F0 /* WeeklyDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,8 +633,9 @@
 			baseConfigurationReference = E2A6B33F9FB59FC2F1DAD3BE /* Pods-Hype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L5VMA54SBQ;
+				DEVELOPMENT_TEAM = 288VUFV9XZ;
 				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -651,8 +653,9 @@
 			baseConfigurationReference = C35C60312798A7D1027C6BF8 /* Pods-Hype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L5VMA54SBQ;
+				DEVELOPMENT_TEAM = 288VUFV9XZ;
 				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
