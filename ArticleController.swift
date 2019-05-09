@@ -24,14 +24,11 @@ class ArticleController {
         guard let url = baseUrl else { return }
         
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-<<<<<<< HEAD
         
         let queryItem = URLQueryItem(name: "q", value: "recycling")
         let language = URLQueryItem(name: "language", value: "en")
         let sort = URLQueryItem(name: "sortBy", value: "popularity")
-=======
-        let queryItem = URLQueryItem(name: "q", value: "\(searchTerm)" + "eco")
->>>>>>> 9923bd57a374f539ba21688a9a32996c79ac7cac
+
         let apiQueryItem = URLQueryItem(name: "apiKey", value: "81be08fbc0a144d9864a612fb2483f01")
         components?.queryItems = [queryItem, language, sort, apiQueryItem]
         
@@ -58,12 +55,9 @@ class ArticleController {
     
     func fetchImageFor(urlString: String, completion: @escaping (UIImage?) -> Void) {
         
-<<<<<<< HEAD
-=======
 //        let url = URL(string: "\(urlString)")
 //        guard let completeUrl = url?.appendingPathComponent("\(urlString.urlToImage)") else { return }
 ////        print(url.absoluteString)
->>>>>>> 9923bd57a374f539ba21688a9a32996c79ac7cac
         guard let url = URL(string: urlString) else { completion(nil); return }
         print(url.absoluteString)
         

@@ -14,6 +14,7 @@
 		AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368242280E169004CC847 /* ChallengeSteps.swift */; };
 		AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */; };
 		AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */; };
+		AF5354F42284D91B009F184D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5354F32284D91B009F184D /* CloudKit.framework */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
 		AFE2B2AB2271387F00848B85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AA2271387F00848B85 /* Article.swift */; };
@@ -31,14 +32,13 @@
 		FA36B8932278E86500ADF1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */; };
 		FA36B8972279389F00ADF1F3 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8962279389F00ADF1F3 /* News.storyboard */; };
 		FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */; };
+		FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */; };
 		FA36B8C1227A498600ADF1F3 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */; };
 		FA36B8CE227CA07700ADF1F3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8CD227CA07700ADF1F3 /* Onboarding.storyboard */; };
 		FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8CF227CA0E100ADF1F3 /* OnboardingViewController.swift */; };
 		FA36B8D2227CA2FD00ADF1F3 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D1227CA2FD00ADF1F3 /* OnboardingPageViewController.swift */; };
 		FA36B8D4227CA52000ADF1F3 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D3227CA52000ADF1F3 /* OnboardingContentViewController.swift */; };
 		FA36B8D6227CD28600ADF1F3 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D5227CD28600ADF1F3 /* StyleGuide.swift */; };
-		FA48354A228396B8008888F0 /* WeeklyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA483549228396B8008888F0 /* WeeklyDetailTableViewController.swift */; };
-		FA48354D22848A9A008888F0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA48354C22848A9A008888F0 /* CloudKit.framework */; };
 		FA6B2DAD22821C2D0084320E /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DAC22821C2D0084320E /* DailyViewController.swift */; };
 		FA6B2DAF22821C390084320E /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DAE22821C380084320E /* WeeklyViewController.swift */; };
 		FA6B2DB122821E3E0084320E /* WeeklyChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DB022821E3E0084320E /* WeeklyChallengeTableViewCell.swift */; };
@@ -76,6 +76,8 @@
 		AF2368242280E169004CC847 /* ChallengeSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeSteps.swift; path = "Hype/View Controllers/ChallengeSteps.swift"; sourceTree = SOURCE_ROOT; };
 		AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeStepsController.swift; path = "Hype/View Controllers/ChallengeStepsController.swift"; sourceTree = SOURCE_ROOT; };
 		AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyBillViewController.swift; sourceTree = "<group>"; };
+		AF5354F22284D900009F184D /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
+		AF5354F32284D91B009F184D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AA2271387F00848B85 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = SOURCE_ROOT; };
@@ -96,15 +98,13 @@
 		FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA36B8962279389F00ADF1F3 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationViewController.swift; sourceTree = "<group>"; };
+		FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
 		FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
 		FA36B8CD227CA07700ADF1F3 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		FA36B8CF227CA0E100ADF1F3 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		FA36B8D1227CA2FD00ADF1F3 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		FA36B8D3227CA52000ADF1F3 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 		FA36B8D5227CD28600ADF1F3 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
-		FA483549228396B8008888F0 /* WeeklyDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyDetailTableViewController.swift; sourceTree = "<group>"; };
-		FA48354B22848A08008888F0 /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
-		FA48354C22848A9A008888F0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FA6B2DAC22821C2D0084320E /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		FA6B2DAE22821C380084320E /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
 		FA6B2DB022821E3E0084320E /* WeeklyChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChallengeTableViewCell.swift; sourceTree = "<group>"; };
@@ -116,13 +116,13 @@
 		FA74629F2270C33E00ACE3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA81B7332270DB03007210E6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FA81B7352270DB25007210E6 /* Habits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Habits.storyboard; sourceTree = "<group>"; };
-		FA81B73922721E4C007210E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/HomeViewController.swift; sourceTree = "<group>"; };
+		FA81B73922721E4C007210E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA81B73F22725674007210E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
 		FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		FAEA367C2277772C0046C04F /* DailyChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		FAEA36822277A3060046C04F /* Recycle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recycle.storyboard; sourceTree = "<group>"; };
-		FAEA36842277B6D00046C04F /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = News/NewsTableViewController.swift; sourceTree = "<group>"; };
+		FAEA36842277B6D00046C04F /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8616F543867BED06630958C9 /* Pods_Hype.framework in Frameworks */,
-				FA48354D22848A9A008888F0 /* CloudKit.framework in Frameworks */,
+				AF5354F42284D91B009F184D /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +141,7 @@
 		31D75ED4FCA7F65C00C1880E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA48354C22848A9A008888F0 /* CloudKit.framework */,
+				AF5354F32284D91B009F184D /* CloudKit.framework */,
 				B5996B678E9524AA1BC30564 /* Pods_Hype.framework */,
 			);
 			name = Frameworks;
@@ -190,7 +190,7 @@
 			path = News;
 			sourceTree = "<group>";
 		};
-		D34D2ED903F2DD72490A1AD9 /* Pods */ = {
+		FA36B8B9227A3AB800ADF1F3 /* Habits */ = {
 			isa = PBXGroup;
 			children = (
 				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
@@ -200,7 +200,7 @@
 				FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */,
 				AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */,
 			);
-			path = Pods;
+			path = Habits;
 			sourceTree = "<group>";
 		};
 		FA36B8C8227C9CBE00ADF1F3 /* Onboarding */ = {
@@ -213,14 +213,6 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		FA48354E2284C968008888F0 /* Recycle */ = {
-			isa = PBXGroup;
-			children = (
-				AFF3149F227F555F0093CC4F /* RecycleViewController.swift */,
-			);
-			path = Recycle;
-			sourceTree = "<group>";
-		};
 		FA7462872270C33D00ACE3D9 = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +220,6 @@
 				FA7462912270C33D00ACE3D9 /* Products */,
 				D34D2ED903F2DD72490A1AD9 /* Pods */,
 				31D75ED4FCA7F65C00C1880E /* Frameworks */,
-				AF7142D2227B43E400C601D8 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,12 +234,12 @@
 		FA7462922270C33D00ACE3D9 /* Hype */ = {
 			isa = PBXGroup;
 			children = (
-				FA48354B22848A08008888F0 /* Hype.entitlements */,
-				FA81B7322270CACB007210E6 /* Utilities */,
+				AF5354F22284D900009F184D /* Hype.entitlements */,
 				FA7462A52270C5E200ACE3D9 /* Models */,
 				FA7462A62270C5ED00ACE3D9 /* Model Controllers */,
 				FA7462A72270C5F500ACE3D9 /* View Controllers */,
 				FA7462AB2270C6A400ACE3D9 /* Storyboards */,
+				FA81B7322270CACB007210E6 /* Utilities */,
 				FA81B7312270C704007210E6 /* Resources */,
 				AFF3149D227D11030093CC4F /* UIViewExtensions.swift */,
 			);
@@ -275,7 +266,6 @@
 				AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */,
 				AFE2B2B62272229000848B85 /* ArticleController.swift */,
 				AFE9C8B922736025002ED79C /* TrackableHabitController.swift */,
-				FA483549228396B8008888F0 /* WeeklyDetailTableViewController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -283,7 +273,7 @@
 		FA7462A72270C5F500ACE3D9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA48354E2284C968008888F0 /* Recycle */,
+				AF5354F12284C983009F184D /* Recycle */,
 				FA36B8C8227C9CBE00ADF1F3 /* Onboarding */,
 				FA36B8B7227A3A9500ADF1F3 /* Home */,
 				FA36B8B9227A3AB800ADF1F3 /* Habits */,
@@ -363,9 +353,6 @@
 					FA74628F2270C33D00ACE3D9 = {
 						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
-							com.apple.Push = {
-								enabled = 1;
-							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -442,20 +429,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -504,7 +480,6 @@
 				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
 				FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */,
 				AFFA3A04227C172300F7BE74 /* NewsDetailViewController.swift in Sources */,
-				FA48354A228396B8008888F0 /* WeeklyDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,13 +628,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 288VUFV9XZ;
+				DEVELOPMENT_TEAM = L5VMA54SBQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kadenstaker.Hype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhoff.Hype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -673,13 +648,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 288VUFV9XZ;
+				DEVELOPMENT_TEAM = L5VMA54SBQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kadenstaker.Hype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhoff.Hype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
