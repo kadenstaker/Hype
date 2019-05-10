@@ -15,6 +15,7 @@
 		AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */; };
 		AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */; };
 		AF5354F42284D91B009F184D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5354F32284D91B009F184D /* CloudKit.framework */; };
+		AF55BC6D228565F400450A86 /* AddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55BC6C228565F400450A86 /* AddBillViewController.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
 		AFE2B2AB2271387F00848B85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AA2271387F00848B85 /* Article.swift */; };
@@ -78,6 +79,7 @@
 		AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyBillViewController.swift; sourceTree = "<group>"; };
 		AF5354F22284D900009F184D /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
 		AF5354F32284D91B009F184D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AF55BC6C228565F400450A86 /* AddBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewController.swift; sourceTree = "<group>"; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AA2271387F00848B85 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = SOURCE_ROOT; };
@@ -199,6 +201,7 @@
 				FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */,
 				FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */,
 				AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */,
+				AF55BC6C228565F400450A86 /* AddBillViewController.swift */,
 			);
 			path = Habits;
 			sourceTree = "<group>";
@@ -429,9 +432,16 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,6 +472,7 @@
 				FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */,
 				FA6B2DB122821E3E0084320E /* WeeklyChallengeTableViewCell.swift in Sources */,
 				AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */,
+				AF55BC6D228565F400450A86 /* AddBillViewController.swift in Sources */,
 				FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */,
 				AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */,
 				FA6B2DAD22821C2D0084320E /* DailyViewController.swift in Sources */,

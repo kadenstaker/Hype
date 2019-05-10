@@ -10,7 +10,7 @@ import UIKit
 
 class EnergyBillViewController: UIViewController {
     
-    var numbers: [Double] = []
+//    var numbers: [Double] = []
     var input: Double!
     
     var habits: TrackableHabit? {

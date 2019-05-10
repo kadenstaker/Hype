@@ -19,20 +19,24 @@ class User {
     var energy: [TrackableHabit]
     var water: [TrackableHabit]
     var transportation: [TrackableHabit]
+    var savedArticles: [Article]?
     var profilePic: UIImage?
-    let recordID: CKRecord.ID
+    var recordID: CKRecord.ID
+    var appleUserReference: CKRecord.Reference
     
-    init(firstName: String, lastName: String, score: Int = 0, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], transportation: [TrackableHabit], energy: [TrackableHabit], water: [TrackableHabit], profilePic: UIImage?, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
+    init(firstName: String, lastName: String, score: Int = 0, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], transportation: [TrackableHabit], savedArticles: [Article]?, energy: [TrackableHabit], water: [TrackableHabit], profilePic: UIImage?, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), appleUserReference: CKRecord.Reference) {
         self.firstName = firstName
         self.lastName = lastName
         self.score = score
         self.currentWeeklyChallenge = currentWeeklyChallenge
         self.currentDailyChallenges = currentDailyChallenge
         self.transportation = transportation
+        self.savedArticles = savedArticles
         self.energy = energy
         self.water = water
         self.profilePic = profilePic
         self.recordID = recordID
+        self.appleUserReference = appleUserReference
     }
     
     convenience init?(ckRecord: CKRecord) {
@@ -44,9 +48,11 @@ class User {
         let energy = ckRecord[UserConstants.energyKey] as? [TrackableHabit],
         let water = ckRecord[UserConstants.waterKey] as? [TrackableHabit],
         let transportation = ckRecord[UserConstants.transportationKey] as? [TrackableHabit],
-        let profilePic = ckRecord[UserConstants.profilePicKey]as? UIImage else { return nil }
+        let savedArticles = ckRecord[UserConstants.savedArticlesKey] as? [Article],
+        let profilePic = ckRecord[UserConstants.profilePicKey]as? UIImage,
+        let applueUserRef = ckRecord[UserConstants.appleUserRefKey] as? CKRecord.Reference else { return nil }
         
-        self.init(firstName: firstName, lastName: lastName, score: score, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, transportation: transportation, energy: energy, water: water, profilePic: profilePic, recordID: ckRecord.recordID)
+        self.init(firstName: firstName, lastName: lastName, score: score, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, transportation: transportation, savedArticles: savedArticles, energy: energy, water: water, profilePic: profilePic, recordID: ckRecord.recordID, appleUserReference: applueUserRef)
         
     }
 }
@@ -62,7 +68,9 @@ extension CKRecord {
         self.setValue(user.energy, forKey: UserConstants.energyKey)
         self.setValue(user.water, forKey: UserConstants.waterKey)
         self.setValue(user.transportation, forKey: UserConstants.transportationKey)
+        self.setValue(user.savedArticles, forKey: UserConstants.savedArticlesKey)
         self.setValue(user.profilePic, forKey: UserConstants.profilePicKey)
+        self.setValue(user.appleUserReference, forKey: UserConstants.appleUserRefKey)
     }
 }
 
@@ -76,5 +84,7 @@ struct UserConstants {
     static let energyKey = "energy"
     static let waterKey = "water"
     static let transportationKey = "transportation"
+    static let savedArticlesKey = "savedArticles"
     static let profilePicKey = "profilePic"
+    static let appleUserRefKey = "appleUserRefenece"
 }

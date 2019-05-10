@@ -28,6 +28,11 @@ class HomeViewController: UIViewController {
 //        tableView.delegate = self
 //        tableView.rowHeight = UITableView.automaticDimension
 //        tableView.estimatedRowHeight = tableView.frame.height / 3
+        UserController.shared.fetchCurrentUser { (success) in
+            DispatchQueue.main.async {
+                
+            }
+        }
         updateViews()
     }
     
