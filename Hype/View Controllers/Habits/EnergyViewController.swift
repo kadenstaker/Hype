@@ -15,7 +15,7 @@ class EnergyViewController: UIViewController {
     @IBOutlet weak var barChartView: BarChartView!
     
     var usage: [Double] = []
-    var date = [String]()
+    var date: [String] = []
     var amount = [String]()
     
     var dataEntry: [BarChartDataEntry] = []
@@ -32,8 +32,9 @@ class EnergyViewController: UIViewController {
     }
     
     @IBAction func unwindWithData(_ sender: UIStoryboardSegue) {
-        if let viewController = sender.source as? EnergyBillViewController {
+        if let viewController = sender.source as? AddBillViewController {
             usage.append(viewController.input)
+//            date.append(viewController.input)
         }
     }
     
@@ -64,6 +65,18 @@ class EnergyViewController: UIViewController {
         barChartView.data = data
         // sets the title for the graph
         barChartView.chartDescription?.text = "Monthly Usage"
+    }
+}
+public class ChartFormatter: NSObject, IAxisValueFormatter {
+    
+    var usage = [String]()
+    
+    public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
+        return usage[Int(value)]
+    }
+    
+    public func setValues(values: [String]) {
+        self.usage = values
     }
 }
 

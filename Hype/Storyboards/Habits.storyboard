@@ -206,6 +206,9 @@
                                 <state key="normal" title="Add Gas Gallons">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="uxI-Z7-UIK" kind="show" id="HBy-5y-46l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -235,21 +238,6 @@
             </objects>
             <point key="canvasLocation" x="3099" y="-788"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="bTd-A1-aef">
-            <objects>
-                <viewController id="Zpl-4d-IsT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V4o-Oo-K8W">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="htP-a3-4ac"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iOr-rQ-qD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4142" y="636"/>
-        </scene>
         <!--Water-->
         <scene sceneID="1SD-J5-R7y">
             <objects>
@@ -274,7 +262,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zpl-4d-IsT" kind="show" id="rhc-zT-ugC"/>
+                                    <segue destination="uxI-Z7-UIK" kind="show" id="3Da-La-HBY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -298,9 +286,11 @@
                     <connections>
                         <outlet property="barChartView" destination="yOr-rs-JrX" id="jYm-9J-mVp"/>
                         <outlet property="newBillButton" destination="Eza-FP-wiv" id="Hfp-y9-Hcc"/>
+                        <segue destination="Fc6-Ov-h0U" kind="unwind" unwindAction="unwindWithData:" id="tUl-qF-YOV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfd-BU-aFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Fc6-Ov-h0U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3099" y="637"/>
         </scene>
@@ -390,10 +380,10 @@
             </objects>
             <point key="canvasLocation" x="1244.9275362318842" y="-75"/>
         </scene>
-        <!--Energy Bill View Controller-->
+        <!--Add Bill View Controller-->
         <scene sceneID="Aex-75-ff7">
             <objects>
-                <viewController id="uxI-Z7-UIK" customClass="EnergyBillViewController" customModule="Hype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uxI-Z7-UIK" customClass="AddBillViewController" customModule="Hype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U4U-S8-4fJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -407,8 +397,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-P0-C4Z">
-                                <rect key="frame" x="34" y="254" width="307" height="91"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-P0-C4Z">
+                                <rect key="frame" x="34" y="254" width="307" height="90"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usage" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PEP-yG-hn9">
                                         <rect key="frame" x="0.0" y="0.0" width="307" height="30"/>
@@ -417,7 +407,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vY-Kc-s1B">
-                                        <rect key="frame" x="0.0" y="61" width="307" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="307" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -450,16 +440,17 @@
                         <viewLayoutGuide key="safeArea" id="5OD-iz-pVv"/>
                     </view>
                     <connections>
-                        <outlet property="amountTextField" destination="6vY-Kc-s1B" id="pTa-Df-azn"/>
-                        <outlet property="selectDateTextField" destination="16S-NK-86n" id="fqG-P2-zTw"/>
-                        <outlet property="usageTextField" destination="PEP-yG-hn9" id="ggv-ru-uok"/>
+                        <outlet property="amountTextField" destination="6vY-Kc-s1B" id="4rm-HT-ynE"/>
+                        <outlet property="saveButton" destination="y8g-EP-M1t" id="DyV-Rd-TqL"/>
+                        <outlet property="selectDateTextField" destination="16S-NK-86n" id="2Py-ks-6Ht"/>
+                        <outlet property="usageTextField" destination="PEP-yG-hn9" id="DuO-BE-Y6W"/>
                         <segue destination="C7u-yJ-0jt" kind="unwind" identifier="unwindWithData" unwindAction="unwindWithData:" id="aBT-pV-ZeY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oR-Qg-SzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="C7u-yJ-0jt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4141.6000000000004" y="-75.112443778110944"/>
+            <point key="canvasLocation" x="4118" y="-75"/>
         </scene>
     </scenes>
     <resources>
@@ -467,4 +458,7 @@
         <image name="transportation" width="77" height="82"/>
         <image name="water" width="85" height="115"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3Da-La-HBY"/>
+    </inferredMetricsTieBreakers>
 </document>
