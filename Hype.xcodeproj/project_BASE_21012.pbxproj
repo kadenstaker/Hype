@@ -8,41 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		8616F543867BED06630958C9 /* Pods_Hype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5996B678E9524AA1BC30564 /* Pods_Hype.framework */; };
-		AF23681922808A79004CC847 /* Challenges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF23681822808A79004CC847 /* Challenges.storyboard */; };
-		AF2368212280D7C8004CC847 /* ChallengeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */; };
-		AF2368232280DCCD004CC847 /* ChallengeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */; };
-		AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368242280E169004CC847 /* ChallengeSteps.swift */; };
-		AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */; };
-		AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */; };
-		AF5354F42284D91B009F184D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5354F32284D91B009F184D /* CloudKit.framework */; };
-		AF55BC6D228565F400450A86 /* AddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55BC6C228565F400450A86 /* AddBillViewController.swift */; };
+		AF80516A22774D620086994F /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80516922774D620086994F /* ArticleTableViewCell.swift */; };
 		AFE2B2A72271338600848B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A62271338600848B85 /* User.swift */; };
 		AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2A82271376D00848B85 /* Challenge.swift */; };
 		AFE2B2AB2271387F00848B85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AA2271387F00848B85 /* Article.swift */; };
+		AFE2B2AD2271390000848B85 /* Impact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AC2271390000848B85 /* Impact.swift */; };
 		AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2AE2271397D00848B85 /* TrackableHabit.swift */; };
 		AFE2B2B32271FE3E00848B85 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2B22271FE3E00848B85 /* UserController.swift */; };
 		AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2B42272044500848B85 /* ChallengeController.swift */; };
 		AFE2B2B72272229000848B85 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2B2B62272229000848B85 /* ArticleController.swift */; };
+		AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B722735EC9002ED79C /* ImpactController.swift */; };
 		AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8B922736025002ED79C /* TrackableHabitController.swift */; };
-		AFF3149A227CF97D0093CC4F /* SavedNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31499227CF97D0093CC4F /* SavedNewsTableViewController.swift */; };
-		AFF3149C227CFEF50093CC4F /* SavedNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3149B227CFEF50093CC4F /* SavedNewsTableViewCell.swift */; };
-		AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3149D227D11030093CC4F /* UIViewExtensions.swift */; };
-		AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3149F227F555F0093CC4F /* RecycleViewController.swift */; };
-		AFF4272B227B8E0800F5E7DC /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF4272A227B8E0800F5E7DC /* NewsTableViewCell.swift */; };
-		AFFA3A04227C172300F7BE74 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA3A03227C172300F7BE74 /* NewsDetailViewController.swift */; };
+		AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9C8BD22739CAC002ED79C /* MockData.swift */; };
 		FA36B8932278E86500ADF1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */; };
 		FA36B8972279389F00ADF1F3 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8962279389F00ADF1F3 /* News.storyboard */; };
+		FA36B8AB2279FDE200ADF1F3 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA36B8AA2279FDE200ADF1F3 /* Charts.framework */; };
+		FA36B8AC2279FDE200ADF1F3 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA36B8AA2279FDE200ADF1F3 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA36B8B4227A091D00ADF1F3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8B3227A091D00ADF1F3 /* MenuViewController.swift */; };
+		FA36B8BB227A3E8A00ADF1F3 /* EmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */; };
 		FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */; };
 		FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */; };
 		FA36B8C1227A498600ADF1F3 /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */; };
-		FA36B8CE227CA07700ADF1F3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA36B8CD227CA07700ADF1F3 /* Onboarding.storyboard */; };
-		FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8CF227CA0E100ADF1F3 /* OnboardingViewController.swift */; };
-		FA36B8D2227CA2FD00ADF1F3 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D1227CA2FD00ADF1F3 /* OnboardingPageViewController.swift */; };
-		FA36B8D4227CA52000ADF1F3 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D3227CA52000ADF1F3 /* OnboardingContentViewController.swift */; };
-		FA36B8D6227CD28600ADF1F3 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36B8D5227CD28600ADF1F3 /* StyleGuide.swift */; };
-		FA6B2DAD22821C2D0084320E /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DAC22821C2D0084320E /* DailyViewController.swift */; };
-		FA6B2DAF22821C390084320E /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DAE22821C380084320E /* WeeklyViewController.swift */; };
-		FA6B2DB122821E3E0084320E /* WeeklyChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2DB022821E3E0084320E /* WeeklyChallengeTableViewCell.swift */; };
 		FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7462932270C33D00ACE3D9 /* AppDelegate.swift */; };
 		FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7462972270C33D00ACE3D9 /* TabBar.storyboard */; };
 		FA74629B2270C33E00ACE3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA74629A2270C33E00ACE3D9 /* Assets.xcassets */; };
@@ -52,7 +38,9 @@
 		FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81B73922721E4C007210E6 /* HomeViewController.swift */; };
 		FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */; };
 		FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */; };
-		FAEA367D2277772C0046C04F /* DailyChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367C2277772C0046C04F /* DailyChallengeTableViewCell.swift */; };
+		FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */; };
+		FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA367E227797310046C04F /* SettingsTableViewController.swift */; };
+		FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA368022779AE00046C04F /* PasswordTableViewController.swift */; };
 		FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA36822277A3060046C04F /* Recycle.storyboard */; };
 		FAEA36852277B6D00046C04F /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA36842277B6D00046C04F /* NewsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA36B8AC2279FDE200ADF1F3 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,45 +60,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AF23681822808A79004CC847 /* Challenges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenges.storyboard; sourceTree = "<group>"; };
-		AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewController.swift; sourceTree = "<group>"; };
-		AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewCell.swift; sourceTree = "<group>"; };
-		AF2368242280E169004CC847 /* ChallengeSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeSteps.swift; path = "Hype/View Controllers/ChallengeSteps.swift"; sourceTree = SOURCE_ROOT; };
-		AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeStepsController.swift; path = "Hype/View Controllers/ChallengeStepsController.swift"; sourceTree = SOURCE_ROOT; };
-		AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyBillViewController.swift; sourceTree = "<group>"; };
-		AF5354F22284D900009F184D /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
-		AF5354F32284D91B009F184D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		AF55BC6C228565F400450A86 /* AddBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewController.swift; sourceTree = "<group>"; };
+		AF7142CD227A3C1200C601D8 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		AFE2B2A62271338600848B85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2A82271376D00848B85 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AA2271387F00848B85 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = SOURCE_ROOT; };
+		AFE2B2AC2271390000848B85 /* Impact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Impact.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2AE2271397D00848B85 /* TrackableHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableHabit.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2B22271FE3E00848B85 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2B42272044500848B85 /* ChallengeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeController.swift; sourceTree = SOURCE_ROOT; };
 		AFE2B2B62272229000848B85 /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = SOURCE_ROOT; };
+		AFE9C8B722735EC9002ED79C /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = SOURCE_ROOT; };
 		AFE9C8B922736025002ED79C /* TrackableHabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableHabitController.swift; sourceTree = SOURCE_ROOT; };
-		AFF31499227CF97D0093CC4F /* SavedNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewController.swift; sourceTree = "<group>"; };
-		AFF3149B227CFEF50093CC4F /* SavedNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewCell.swift; sourceTree = "<group>"; };
-		AFF3149D227D11030093CC4F /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		AFF3149F227F555F0093CC4F /* RecycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleViewController.swift; sourceTree = "<group>"; };
-		AFF4272A227B8E0800F5E7DC /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
-		AFFA3A03227C172300F7BE74 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		AFE9C8BD22739CAC002ED79C /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = SOURCE_ROOT; };
 		B5996B678E9524AA1BC30564 /* Pods_Hype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35C60312798A7D1027C6BF8 /* Pods-Hype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.release.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.release.xcconfig"; sourceTree = "<group>"; };
 		E2A6B33F9FB59FC2F1DAD3BE /* Pods-Hype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hype.debug.xcconfig"; path = "Target Support Files/Pods-Hype/Pods-Hype.debug.xcconfig"; sourceTree = "<group>"; };
 		FA36B8922278E86400ADF1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA36B8962279389F00ADF1F3 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		FA36B8AA2279FDE200ADF1F3 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA36B8B3227A091D00ADF1F3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewController.swift; sourceTree = "<group>"; };
 		FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationViewController.swift; sourceTree = "<group>"; };
 		FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
 		FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
-		FA36B8CD227CA07700ADF1F3 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		FA36B8CF227CA0E100ADF1F3 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		FA36B8D1227CA2FD00ADF1F3 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
-		FA36B8D3227CA52000ADF1F3 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
-		FA36B8D5227CD28600ADF1F3 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
-		FA6B2DAC22821C2D0084320E /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
-		FA6B2DAE22821C380084320E /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
-		FA6B2DB022821E3E0084320E /* WeeklyChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		FA7462902270C33D00ACE3D9 /* Hype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7462932270C33D00ACE3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7462982270C33D00ACE3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
@@ -122,7 +95,9 @@
 		FA81B73F22725674007210E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
 		FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
-		FAEA367C2277772C0046C04F /* DailyChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		FAEA367E227797310046C04F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		FAEA368022779AE00046C04F /* PasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewController.swift; sourceTree = "<group>"; };
 		FAEA36822277A3060046C04F /* Recycle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recycle.storyboard; sourceTree = "<group>"; };
 		FAEA36842277B6D00046C04F /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,7 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8616F543867BED06630958C9 /* Pods_Hype.framework in Frameworks */,
-				AF5354F42284D91B009F184D /* CloudKit.framework in Frameworks */,
+				FA36B8AB2279FDE200ADF1F3 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,18 +118,9 @@
 		31D75ED4FCA7F65C00C1880E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AF5354F32284D91B009F184D /* CloudKit.framework */,
 				B5996B678E9524AA1BC30564 /* Pods_Hype.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AF5354F12284C983009F184D /* Recycle */ = {
-			isa = PBXGroup;
-			children = (
-				AFF3149F227F555F0093CC4F /* RecycleViewController.swift */,
-			);
-			path = Recycle;
 			sourceTree = "<group>";
 		};
 		D34D2ED903F2DD72490A1AD9 /* Pods */ = {
@@ -170,12 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
-				FA6B2DAC22821C2D0084320E /* DailyViewController.swift */,
-				FA6B2DAE22821C380084320E /* WeeklyViewController.swift */,
-				FAEA367C2277772C0046C04F /* DailyChallengeTableViewCell.swift */,
-				FA6B2DB022821E3E0084320E /* WeeklyChallengeTableViewCell.swift */,
-				AF2368202280D7C8004CC847 /* ChallengeDetailTableViewController.swift */,
-				AF2368222280DCCD004CC847 /* ChallengeDetailTableViewCell.swift */,
+				FA36B8B3227A091D00ADF1F3 /* MenuViewController.swift */,
+				FAEA367E227797310046C04F /* SettingsTableViewController.swift */,
+				FAEA368022779AE00046C04F /* PasswordTableViewController.swift */,
+				FA36B8BA227A3E8A00ADF1F3 /* EmailTableViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -184,10 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				FAEA36842277B6D00046C04F /* NewsTableViewController.swift */,
-				AFF3149B227CFEF50093CC4F /* SavedNewsTableViewCell.swift */,
-				AFF4272A227B8E0800F5E7DC /* NewsTableViewCell.swift */,
-				AFFA3A03227C172300F7BE74 /* NewsDetailViewController.swift */,
-				AFF31499227CF97D0093CC4F /* SavedNewsTableViewController.swift */,
+				FAEA36862277B7760046C04F /* ArticleViewController.swift */,
+				AF80516922774D620086994F /* ArticleTableViewCell.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -196,29 +158,19 @@
 			isa = PBXGroup;
 			children = (
 				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
+				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
 				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
 				FA36B8BC227A496F00ADF1F3 /* TransportationViewController.swift */,
 				FA36B8BE227A497A00ADF1F3 /* EnergyViewController.swift */,
 				FA36B8C0227A498600ADF1F3 /* WaterViewController.swift */,
-				AF23682C2281FE01004CC847 /* EnergyBillViewController.swift */,
-				AF55BC6C228565F400450A86 /* AddBillViewController.swift */,
 			);
 			path = Habits;
-			sourceTree = "<group>";
-		};
-		FA36B8C8227C9CBE00ADF1F3 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				FA36B8CF227CA0E100ADF1F3 /* OnboardingViewController.swift */,
-				FA36B8D1227CA2FD00ADF1F3 /* OnboardingPageViewController.swift */,
-				FA36B8D3227CA52000ADF1F3 /* OnboardingContentViewController.swift */,
-			);
-			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		FA7462872270C33D00ACE3D9 = {
 			isa = PBXGroup;
 			children = (
+				FA36B8AA2279FDE200ADF1F3 /* Charts.framework */,
 				FA7462922270C33D00ACE3D9 /* Hype */,
 				FA7462912270C33D00ACE3D9 /* Products */,
 				D34D2ED903F2DD72490A1AD9 /* Pods */,
@@ -237,14 +189,12 @@
 		FA7462922270C33D00ACE3D9 /* Hype */ = {
 			isa = PBXGroup;
 			children = (
-				AF5354F22284D900009F184D /* Hype.entitlements */,
 				FA7462A52270C5E200ACE3D9 /* Models */,
 				FA7462A62270C5ED00ACE3D9 /* Model Controllers */,
 				FA7462A72270C5F500ACE3D9 /* View Controllers */,
 				FA7462AB2270C6A400ACE3D9 /* Storyboards */,
 				FA81B7322270CACB007210E6 /* Utilities */,
 				FA81B7312270C704007210E6 /* Resources */,
-				AFF3149D227D11030093CC4F /* UIViewExtensions.swift */,
 			);
 			path = Hype;
 			sourceTree = "<group>";
@@ -255,8 +205,8 @@
 				AFE2B2A62271338600848B85 /* User.swift */,
 				AFE2B2A82271376D00848B85 /* Challenge.swift */,
 				AFE2B2AA2271387F00848B85 /* Article.swift */,
+				AFE2B2AC2271390000848B85 /* Impact.swift */,
 				AFE2B2AE2271397D00848B85 /* TrackableHabit.swift */,
-				AF2368242280E169004CC847 /* ChallengeSteps.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,9 +216,10 @@
 			children = (
 				AFE2B2B22271FE3E00848B85 /* UserController.swift */,
 				AFE2B2B42272044500848B85 /* ChallengeController.swift */,
-				AF2368262280E1CB004CC847 /* ChallengeStepsController.swift */,
 				AFE2B2B62272229000848B85 /* ArticleController.swift */,
+				AFE9C8B722735EC9002ED79C /* ImpactController.swift */,
 				AFE9C8B922736025002ED79C /* TrackableHabitController.swift */,
+				AFE9C8BD22739CAC002ED79C /* MockData.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -276,7 +227,6 @@
 		FA7462A72270C5F500ACE3D9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
 				FAEA367E227797310046C04F /* SettingsTableViewController.swift */,
 				FAEA368022779AE00046C04F /* PasswordTableViewController.swift */,
@@ -285,11 +235,6 @@
 				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
 				FAEA36842277B6D00046C04F /* NewsTableViewController.swift */,
 				AF7142CD227A3C1200C601D8 /* NewsTableViewCell.swift */,
-=======
-				FA36B8B7227A3A9500ADF1F3 /* Home */,
-				FA36B8B9227A3AB800ADF1F3 /* Habits */,
-				FA36B8B8227A3AB000ADF1F3 /* News */,
->>>>>>> 111f6e686796a21c0b120ddc9c4a8d6b85c43a0f
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -303,8 +248,6 @@
 				FAEA36822277A3060046C04F /* Recycle.storyboard */,
 				FA36B8962279389F00ADF1F3 /* News.storyboard */,
 				FA74629C2270C33E00ACE3D9 /* LaunchScreen.storyboard */,
-				FA36B8CD227CA07700ADF1F3 /* Onboarding.storyboard */,
-				AF23681822808A79004CC847 /* Challenges.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -324,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				FA81B73F22725674007210E6 /* Extensions.swift */,
-				FA36B8D5227CD28600ADF1F3 /* StyleGuide.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -364,11 +306,6 @@
 				TargetAttributes = {
 					FA74628F2270C33D00ACE3D9 = {
 						CreatedOnToolsVersion = 10.2.1;
-						SystemCapabilities = {
-							com.apple.iCloud = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
@@ -401,10 +338,8 @@
 				FA36B8972279389F00ADF1F3 /* News.storyboard in Resources */,
 				FA7462992270C33D00ACE3D9 /* TabBar.storyboard in Resources */,
 				FA81B7362270DB25007210E6 /* Habits.storyboard in Resources */,
-				FA36B8CE227CA07700ADF1F3 /* Onboarding.storyboard in Resources */,
 				FA81B7342270DB03007210E6 /* Home.storyboard in Resources */,
 				FAEA36832277A3060046C04F /* Recycle.storyboard in Resources */,
-				AF23681922808A79004CC847 /* Challenges.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,16 +376,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hype/Pods-Hype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -465,41 +393,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFE2B2AB2271387F00848B85 /* Article.swift in Sources */,
+				FA36B8BB227A3E8A00ADF1F3 /* EmailTableViewController.swift in Sources */,
 				AFE2B2B32271FE3E00848B85 /* UserController.swift in Sources */,
-				FA36B8D4227CA52000ADF1F3 /* OnboardingContentViewController.swift in Sources */,
-				AF2368212280D7C8004CC847 /* ChallengeDetailTableViewController.swift in Sources */,
-				AFF3149C227CFEF50093CC4F /* SavedNewsTableViewCell.swift in Sources */,
+				AF7142CE227A3C1200C601D8 /* NewsTableViewCell.swift in Sources */,
+				AFE9C8B822735EC9002ED79C /* ImpactController.swift in Sources */,
+				AFE2B2AD2271390000848B85 /* Impact.swift in Sources */,
 				AFE2B2A72271338600848B85 /* User.swift in Sources */,
 				AFE9C8BA22736025002ED79C /* TrackableHabitController.swift in Sources */,
-				FA36B8D6227CD28600ADF1F3 /* StyleGuide.swift in Sources */,
-				FA36B8D2227CA2FD00ADF1F3 /* OnboardingPageViewController.swift in Sources */,
+				FAEA367F227797310046C04F /* SettingsTableViewController.swift in Sources */,
 				FA36B8C1227A498600ADF1F3 /* WaterViewController.swift in Sources */,
 				AFE2B2A92271376D00848B85 /* Challenge.swift in Sources */,
 				FAEA36852277B6D00046C04F /* NewsTableViewController.swift in Sources */,
 				AFE2B2B72272229000848B85 /* ArticleController.swift in Sources */,
-				FAEA367D2277772C0046C04F /* DailyChallengeTableViewCell.swift in Sources */,
+				FAEA367D2277772C0046C04F /* ChallengeTableViewCell.swift in Sources */,
 				FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */,
-				FA6B2DB122821E3E0084320E /* WeeklyChallengeTableViewCell.swift in Sources */,
 				AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */,
-				AF55BC6D228565F400450A86 /* AddBillViewController.swift in Sources */,
-				FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */,
-				AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */,
-				FA6B2DAD22821C2D0084320E /* DailyViewController.swift in Sources */,
-				AF2368232280DCCD004CC847 /* ChallengeDetailTableViewCell.swift in Sources */,
+				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
 				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
 				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
-				FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */,
-				AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */,
-				AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */,
+				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
-				AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */,
-				AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */,
-				AFF4272B227B8E0800F5E7DC /* NewsTableViewCell.swift in Sources */,
-				FA6B2DAF22821C390084320E /* WeeklyViewController.swift in Sources */,
-				AFF3149A227CF97D0093CC4F /* SavedNewsTableViewController.swift in Sources */,
 				FAABD0C822739ED700F6FD03 /* HabitsTableViewController.swift in Sources */,
 				FAABD0CA2273A0B700F6FD03 /* HabitTableViewCell.swift in Sources */,
-				AFFA3A04227C172300F7BE74 /* NewsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,7 +561,6 @@
 			baseConfigurationReference = E2A6B33F9FB59FC2F1DAD3BE /* Pods-Hype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5VMA54SBQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
@@ -654,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhoff.Hype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadenstaker.Hype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -666,7 +580,6 @@
 			baseConfigurationReference = C35C60312798A7D1027C6BF8 /* Pods-Hype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5VMA54SBQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
@@ -674,7 +587,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhoff.Hype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadenstaker.Hype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -276,20 +276,11 @@
 		FA7462A72270C5F500ACE3D9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
-				FAEA367E227797310046C04F /* SettingsTableViewController.swift */,
-				FAEA368022779AE00046C04F /* PasswordTableViewController.swift */,
-				FAABD0C722739ED700F6FD03 /* HabitsTableViewController.swift */,
-				FAEA367C2277772C0046C04F /* ChallengeTableViewCell.swift */,
-				FAABD0C92273A0B700F6FD03 /* HabitTableViewCell.swift */,
-				FAEA36842277B6D00046C04F /* NewsTableViewController.swift */,
-				AF7142CD227A3C1200C601D8 /* NewsTableViewCell.swift */,
-=======
+				AF5354F12284C983009F184D /* Recycle */,
+				FA36B8C8227C9CBE00ADF1F3 /* Onboarding */,
 				FA36B8B7227A3A9500ADF1F3 /* Home */,
 				FA36B8B9227A3AB800ADF1F3 /* Habits */,
 				FA36B8B8227A3AB000ADF1F3 /* News */,
->>>>>>> 111f6e686796a21c0b120ddc9c4a8d6b85c43a0f
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

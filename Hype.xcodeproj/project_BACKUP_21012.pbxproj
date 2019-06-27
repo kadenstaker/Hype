@@ -277,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				FA81B73922721E4C007210E6 /* HomeViewController.swift */,
 				FAEA367E227797310046C04F /* SettingsTableViewController.swift */,
 				FAEA368022779AE00046C04F /* PasswordTableViewController.swift */,
@@ -290,6 +291,13 @@
 				FA36B8B9227A3AB800ADF1F3 /* Habits */,
 				FA36B8B8227A3AB000ADF1F3 /* News */,
 >>>>>>> 111f6e686796a21c0b120ddc9c4a8d6b85c43a0f
+=======
+				AF5354F12284C983009F184D /* Recycle */,
+				FA36B8C8227C9CBE00ADF1F3 /* Onboarding */,
+				FA36B8B7227A3A9500ADF1F3 /* Home */,
+				FA36B8B9227A3AB800ADF1F3 /* Habits */,
+				FA36B8B8227A3AB000ADF1F3 /* News */,
+>>>>>>> hannah
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -481,6 +489,22 @@
 				FA36B8BD227A496F00ADF1F3 /* TransportationViewController.swift in Sources */,
 				FA6B2DB122821E3E0084320E /* WeeklyChallengeTableViewCell.swift in Sources */,
 				AFE2B2AF2271397D00848B85 /* TrackableHabit.swift in Sources */,
+<<<<<<< HEAD
+<<<<<<< HEAD
+				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
+				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
+				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
+=======
+				FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */,
+				AF80516A22774D620086994F /* ArticleTableViewCell.swift in Sources */,
+				AFE9C8BE22739CAC002ED79C /* MockData.swift in Sources */,
+				AFE2B2B52272044500848B85 /* ChallengeController.swift in Sources */,
+				FA7462942270C33D00ACE3D9 /* AppDelegate.swift in Sources */,
+				FA36B8B4227A091D00ADF1F3 /* MenuViewController.swift in Sources */,
+				FAEA36872277B7760046C04F /* ArticleViewController.swift in Sources */,
+>>>>>>> 111f6e686796a21c0b120ddc9c4a8d6b85c43a0f
+				FAEA368122779AE00046C04F /* PasswordTableViewController.swift in Sources */,
+=======
 				AF55BC6D228565F400450A86 /* AddBillViewController.swift in Sources */,
 				FA36B8BF227A497A00ADF1F3 /* EnergyViewController.swift in Sources */,
 				AFF314A0227F555F0093CC4F /* RecycleViewController.swift in Sources */,
@@ -491,6 +515,7 @@
 				FA36B8D0227CA0E100ADF1F3 /* OnboardingViewController.swift in Sources */,
 				AF23682D2281FE01004CC847 /* EnergyBillViewController.swift in Sources */,
 				AF2368272280E1CB004CC847 /* ChallengeStepsController.swift in Sources */,
+>>>>>>> hannah
 				FA81B73A22721E4C007210E6 /* HomeViewController.swift in Sources */,
 				AF2368252280E169004CC847 /* ChallengeSteps.swift in Sources */,
 				AFF3149E227D11030093CC4F /* UIViewExtensions.swift in Sources */,
