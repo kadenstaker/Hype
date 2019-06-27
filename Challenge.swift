@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import CloudKit
 
 class Challenge {
+    
+    let recordTypeKey = "Challenge"
+    
     var name: String
     var points: Int
     var isDaily: Bool //bool?
@@ -79,4 +83,5 @@ extension Challenge: Equatable, Codable {
         lhs.maxCompletions == rhs.maxCompletions
     }
 }
+
 

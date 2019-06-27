@@ -7,89 +7,84 @@
 //
 
 import UIKit
+import CloudKit
 
 class User {
+    
     var firstName: String
     var lastName: String
-    var email: String
-    var password: String
     var score: Int
     var currentWeeklyChallenge: [Challenge]
-    var currentDailyChallenge: [Challenge]
+    var currentDailyChallenges: [Challenge]
     var energy: [TrackableHabit]
     var water: [TrackableHabit]
-    var tipsOn: Bool
+    var transportation: [TrackableHabit]
+    var savedArticles: [Article]?
     var profilePic: UIImage?
+    var recordID: CKRecord.ID
+    var appleUserReference: CKRecord.Reference
     
-    init(firstName: String, lastName: String, email: String, password: String, score: Int = 0, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], energy: [TrackableHabit], water: [TrackableHabit], tipsOn: Bool = true, profilePic: UIImage?) {
+    init(firstName: String, lastName: String, score: Int = 0, currentWeeklyChallenge: [Challenge], currentDailyChallenge: [Challenge], transportation: [TrackableHabit], savedArticles: [Article]?, energy: [TrackableHabit], water: [TrackableHabit], profilePic: UIImage?, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), appleUserReference: CKRecord.Reference) {
         self.firstName = firstName
         self.lastName = lastName
-        self.email = email
-        self.password = password
         self.score = score
         self.currentWeeklyChallenge = currentWeeklyChallenge
-        self.currentDailyChallenge = currentDailyChallenge
+        self.currentDailyChallenges = currentDailyChallenge
+        self.transportation = transportation
+        self.savedArticles = savedArticles
         self.energy = energy
         self.water = water
-        self.tipsOn = tipsOn
         self.profilePic = profilePic
+        self.recordID = recordID
+        self.appleUserReference = appleUserReference
     }
     
-    enum CodingKeys: String, CodingKey {
-        case firstName
-        case lastName
-        case email
-        case password
-        case score
-        case currentWeeklyChallenge
-        case currentDailyChallenge
-        case energy
-        case water
-        case tipsOn
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        firstName = try values.decode(String.self, forKey: .firstName)
-        lastName = try values.decode(String.self, forKey: .lastName)
-        email = try values.decode(String.self, forKey: .email)
-        password = try values.decode(String.self, forKey: .password)
-        score = try values.decode(Int.self, forKey: .score)
-        currentWeeklyChallenge = try values.decode([Challenge].self, forKey: .currentWeeklyChallenge)
-        currentDailyChallenge = try values.decode([Challenge].self, forKey: .currentDailyChallenge)
-        energy = try values.decode([TrackableHabit].self, forKey: .energy)
-        water = try values.decode([TrackableHabit].self, forKey: .water)
-        tipsOn = try values.decode(Bool.self, forKey: .tipsOn)
+    convenience init?(ckRecord: CKRecord) {
+        guard let firstName = ckRecord[UserConstants.firstNameKey] as? String,
+        let lastName = ckRecord[UserConstants.lastNameKey] as? String,
+        let score = ckRecord[UserConstants.scoreKey] as? Int,
+        let currentWeeklyChallenge = ckRecord[UserConstants.weeklyChallengeKey] as? [Challenge],
+        let currentDailyChallenge = ckRecord[UserConstants.dailyChallengeKey] as? [Challenge],
+        let energy = ckRecord[UserConstants.energyKey] as? [TrackableHabit],
+        let water = ckRecord[UserConstants.waterKey] as? [TrackableHabit],
+        let transportation = ckRecord[UserConstants.transportationKey] as? [TrackableHabit],
+        let savedArticles = ckRecord[UserConstants.savedArticlesKey] as? [Article],
+        let profilePic = ckRecord[UserConstants.profilePicKey]as? UIImage,
+        let applueUserRef = ckRecord[UserConstants.appleUserRefKey] as? CKRecord.Reference else { return nil }
+        
+        self.init(firstName: firstName, lastName: lastName, score: score, currentWeeklyChallenge: currentWeeklyChallenge, currentDailyChallenge: currentDailyChallenge, transportation: transportation, savedArticles: savedArticles, energy: energy, water: water, profilePic: profilePic, recordID: ckRecord.recordID, appleUserReference: applueUserRef)
         
     }
-    
-    func encode(to encoder: Encoder) throws {
-        var values = encoder.container(keyedBy: CodingKeys.self)
-        try values.encode(firstName.self, forKey: .firstName)
-        try values.encode(lastName.self, forKey: .lastName)
-        try values.encode(email.self, forKey: .email)
-        try values.encode(password.self, forKey: .password)
-        try values.encode(score.self, forKey: .score)
-        try values.encode(currentWeeklyChallenge.self, forKey: .currentWeeklyChallenge)
-        try values.encode(currentDailyChallenge.self, forKey: .currentDailyChallenge)
-        try values.encode(energy.self, forKey: .energy)
-        try values.encode(water.self, forKey: .water)
-        try values.encode(tipsOn.self, forKey: .tipsOn)
+}
+
+extension CKRecord {
+    convenience init(user: User) {
+        self.init(recordType: UserConstants.recordType, recordID: user.recordID)
+        self.setValue(user.firstName, forKey: UserConstants.firstNameKey)
+        self.setValue(user.lastName, forKey: UserConstants.lastNameKey)
+        self.setValue(user.score, forKey: UserConstants.scoreKey)
+        self.setValue(user.currentWeeklyChallenge, forKey: UserConstants.weeklyChallengeKey)
+        self.setValue(user.currentWeeklyChallenge, forKey: UserConstants.dailyChallengeKey)
+        self.setValue(user.energy, forKey: UserConstants.energyKey)
+        self.setValue(user.water, forKey: UserConstants.waterKey)
+        self.setValue(user.transportation, forKey: UserConstants.transportationKey)
+        self.setValue(user.savedArticles, forKey: UserConstants.savedArticlesKey)
+        self.setValue(user.profilePic, forKey: UserConstants.profilePicKey)
+        self.setValue(user.appleUserReference, forKey: UserConstants.appleUserRefKey)
     }
 }
 
-extension User: Equatable, Codable {
-    static func == (lhs: User, rhs: User) -> Bool {
-        return lhs.firstName == rhs.firstName &&
-            lhs.lastName == rhs.lastName &&
-            lhs.email == rhs.email &&
-            lhs.password == rhs.password &&
-            lhs.currentWeeklyChallenge == rhs.currentWeeklyChallenge &&
-            lhs.currentDailyChallenge == rhs.currentDailyChallenge &&
-            lhs.energy == rhs.energy &&
-            lhs.water == rhs.water &&
-            lhs.tipsOn == rhs.tipsOn &&
-            lhs.profilePic == rhs.profilePic
-    }
+struct UserConstants {
+    static let recordType = "User"
+    static let firstNameKey = "firstName"
+    static let lastNameKey = "lastName"
+    static let scoreKey = "score"
+    static let weeklyChallengeKey = "weekly"
+    static let dailyChallengeKey = "daily"
+    static let energyKey = "energy"
+    static let waterKey = "water"
+    static let transportationKey = "transportation"
+    static let savedArticlesKey = "savedArticles"
+    static let profilePicKey = "profilePic"
+    static let appleUserRefKey = "appleUserRefenece"
 }
-

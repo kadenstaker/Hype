@@ -13,20 +13,340 @@
         <!--Recycle-->
         <scene sceneID="Hm4-21-hqW">
             <objects>
-                <viewController id="7oj-L1-cWh" sceneMemberID="viewController">
+                <viewController id="7oj-L1-cWh" customClass="RecycleViewController" customModule="Hype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0uU-OV-rUu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3u-7d-eTV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1329"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRZ-dV-9Kh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGd-gt-W5i">
+                                                <rect key="frame" x="41.5" y="12" width="331" height="37"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zfn-fo-ak0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="37"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlS-DA-Wrd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="331" height="37"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.63137254899999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                                                <state key="normal" title="Find Recycle Centers">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="recycleCentersButtonTapped:" destination="7oj-L1-cWh" eventType="touchUpInside" id="4u2-GK-LgO"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="zfn-fo-ak0" firstAttribute="height" secondItem="SGd-gt-W5i" secondAttribute="height" id="7r6-pU-hdC"/>
+                                                    <constraint firstItem="zfn-fo-ak0" firstAttribute="width" secondItem="SGd-gt-W5i" secondAttribute="width" id="92P-Ue-yvZ"/>
+                                                    <constraint firstItem="zfn-fo-ak0" firstAttribute="centerY" secondItem="SGd-gt-W5i" secondAttribute="centerY" id="aY1-9L-a9r"/>
+                                                    <constraint firstItem="DlS-DA-Wrd" firstAttribute="width" secondItem="SGd-gt-W5i" secondAttribute="width" id="hpW-mS-CGV"/>
+                                                    <constraint firstItem="zfn-fo-ak0" firstAttribute="centerX" secondItem="SGd-gt-W5i" secondAttribute="centerX" id="pFm-W7-ptX"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Different Kinds of Plastic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFj-mC-2T2">
+                                                <rect key="frame" x="25" y="103" width="364" height="31.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dlg-Fm-ww7">
+                                                <rect key="frame" x="14" y="169.5" width="386" height="114"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle1" translatesAutoresizingMaskIntoConstraints="NO" id="iJ7-8I-3w5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="114"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="114" id="JF9-aZ-KoL"/>
+                                                            <constraint firstAttribute="width" constant="80" id="JcF-7D-8ix"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jYa-Cw-EjE">
+                                                        <rect key="frame" x="100" y="0.0" width="286" height="82"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-Pq-7wt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="61.5"/>
+                                                                <string key="text">Polyethylene terphthalate - 
+Soft drink bottles, water bottles, salad dressing bottles, mouthwash bottles</string>
+                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, it can be recycled curbside" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2c-uL-oQz">
+                                                                <rect key="frame" x="0.0" y="61.5" width="286" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mlL-N5-d5R">
+                                                <rect key="frame" x="14" y="323.5" width="386" height="123"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle2" translatesAutoresizingMaskIntoConstraints="NO" id="rrd-yo-hVg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="114"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="114" id="BBt-IJ-XZk"/>
+                                                            <constraint firstAttribute="width" constant="80" id="cNy-sb-FIl"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IRn-gq-VzW">
+                                                        <rect key="frame" x="100" y="0.0" width="286" height="123"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwT-xm-NDw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="82"/>
+                                                                <string key="text">High-Density Polyethylene - 
+Milk jugs, cleaning agents, laundry detergents, cereal box liners, shampoo bottles, washing and shower soaps</string>
+                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, it can be recycled curbside, but no plastic gorcery bags" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k5-KT-far">
+                                                                <rect key="frame" x="0.0" y="82" width="286" height="41"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="Mdj-tO-BKs"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wV5-7e-jwJ">
+                                                <rect key="frame" x="14" y="486.5" width="386" height="123"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle3" translatesAutoresizingMaskIntoConstraints="NO" id="PoD-xa-U1G">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="114"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="ceV-YH-5cB"/>
+                                                            <constraint firstAttribute="height" constant="114" id="zBE-49-Kqh"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9fr-HB-2sC">
+                                                        <rect key="frame" x="100" y="0.0" width="286" height="123"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfF-sT-LFE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="61.5"/>
+                                                                <string key="text">Polyvinyl Chloride - 
+Clear food packaging, pipes, lawn chairs, children’s toys</string>
+                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not accepted through most curbisde recycling programs. See waste pickup facilities" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld3-tU-5sr">
+                                                                <rect key="frame" x="0.0" y="61.5" width="286" height="61.5"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="TBI-gM-Eho"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-Y7-v28">
+                                                <rect key="frame" x="14" y="649.5" width="386" height="114"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle4" translatesAutoresizingMaskIntoConstraints="NO" id="Gez-mI-U9I">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="114"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="114" id="7Il-6Q-KHh"/>
+                                                            <constraint firstAttribute="width" constant="80" id="iqk-0V-wPR"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EeA-ZN-4G5">
+                                                        <rect key="frame" x="100" y="0.0" width="286" height="82"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDp-c3-PQf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="61.5"/>
+                                                                <string key="text">Low-Density Polyethylene - 
+Bread bags, squeezable bottles, dispensing bottles</string>
+                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, it can be recycled curbside" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0h-MT-0WC">
+                                                                <rect key="frame" x="0.0" y="61.5" width="286" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="Xcy-GD-oxe"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KZ6-r7-sUD">
+                                                <rect key="frame" x="14" y="803.5" width="386" height="114"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle5" translatesAutoresizingMaskIntoConstraints="NO" id="iWj-gT-rN2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="114"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="6en-Jd-2eX"/>
+                                                            <constraint firstAttribute="height" constant="114" id="O4X-JZ-aEo"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="16a-p5-TLc">
+                                                        <rect key="frame" x="100" y="0.0" width="286" height="82"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJL-jc-HeU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="61.5"/>
+                                                                <string key="text">Polypropylene - 
+Ketchup bottles, most yogurt tubs, straws, bottle caps</string>
+                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, it can be recycled curbside" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvH-oi-1kX">
+                                                                <rect key="frame" x="0.0" y="61.5" width="286" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="3j6-RC-reb"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QgH-oH-fO2">
+                                                <rect key="frame" x="14" y="957.5" width="386" height="143.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle6" translatesAutoresizingMaskIntoConstraints="NO" id="FWZ-i8-hjC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="114"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="PQv-jE-cyl"/>
+                                                            <constraint firstAttribute="height" constant="114" id="mxQ-nA-HoV"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f4d-hR-d3q">
+                                                        <rect key="frame" x="100" y="0.0" width="286" height="143.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne9-kC-sfF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="82"/>
+                                                                <string key="text">Poylstyrene - 
+Disposable plates, disposable cutlery, carry out containers, meat trays, egg cartons, other styrofoam containers</string>
+                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not accepted through most curbside recycling programs. See waste pickup facilities" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEM-8D-vL5">
+                                                                <rect key="frame" x="0.0" y="82" width="286" height="61.5"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="C26-fQ-vkB"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m6N-ZK-u1S">
+                                                <rect key="frame" x="14" y="1141" width="386" height="114"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle7" translatesAutoresizingMaskIntoConstraints="NO" id="oHg-xA-yvt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="114"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="0qn-MA-1Cu"/>
+                                                            <constraint firstAttribute="height" constant="114" id="VwP-n8-kM7"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kw7-HD-afX">
+                                                        <rect key="frame" x="100" y="0.0" width="286" height="102.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIT-SK-P59">
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="82"/>
+                                                                <string key="text">Other Plastics - 
+Citrus juice bottles, 3/5 gallon water jugs, acrylic, nylon, policarbonate, gas containers</string>
+                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, it can be recycled curbside" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLf-uX-YR0">
+                                                                <rect key="frame" x="0.0" y="82" width="286" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="GJ1-oQ-tRe"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="QgH-oH-fO2" secondAttribute="trailing" constant="14" id="6PP-CW-bfP"/>
+                                            <constraint firstAttribute="trailing" secondItem="m6N-ZK-u1S" secondAttribute="trailing" constant="14" id="7Ry-tk-Gc4"/>
+                                            <constraint firstItem="tFj-mC-2T2" firstAttribute="leading" secondItem="SRZ-dV-9Kh" secondAttribute="leading" constant="25" id="82y-dm-HyK"/>
+                                            <constraint firstItem="SGd-gt-W5i" firstAttribute="top" secondItem="SRZ-dV-9Kh" secondAttribute="top" constant="12" id="9a5-oE-4VL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mm7-Y7-v28" secondAttribute="trailing" constant="14" id="Ejn-et-Tk7"/>
+                                            <constraint firstItem="Mm7-Y7-v28" firstAttribute="top" secondItem="wV5-7e-jwJ" secondAttribute="bottom" constant="40" id="FjQ-Wr-Nhx"/>
+                                            <constraint firstItem="QgH-oH-fO2" firstAttribute="top" secondItem="KZ6-r7-sUD" secondAttribute="bottom" constant="40" id="GNO-Bo-ibl"/>
+                                            <constraint firstAttribute="trailing" secondItem="dlg-Fm-ww7" secondAttribute="trailing" constant="14" id="GpD-FR-lLq"/>
+                                            <constraint firstItem="wV5-7e-jwJ" firstAttribute="leading" secondItem="SRZ-dV-9Kh" secondAttribute="leading" constant="14" id="H4R-RI-usm"/>
+                                            <constraint firstItem="dlg-Fm-ww7" firstAttribute="leading" secondItem="SRZ-dV-9Kh" secondAttribute="leading" constant="14" id="Hhf-ct-iHp"/>
+                                            <constraint firstItem="m6N-ZK-u1S" firstAttribute="top" secondItem="QgH-oH-fO2" secondAttribute="bottom" constant="40" id="O5N-5x-oQk"/>
+                                            <constraint firstItem="QgH-oH-fO2" firstAttribute="leading" secondItem="SRZ-dV-9Kh" secondAttribute="leading" constant="14" id="PaZ-Zh-6wL"/>
+                                            <constraint firstItem="tFj-mC-2T2" firstAttribute="centerX" secondItem="SRZ-dV-9Kh" secondAttribute="centerX" id="QC8-KJ-aIT"/>
+                                            <constraint firstItem="SGd-gt-W5i" firstAttribute="width" secondItem="SRZ-dV-9Kh" secondAttribute="width" multiplier="0.8" id="Sc8-nN-kCN"/>
+                                            <constraint firstItem="Mm7-Y7-v28" firstAttribute="leading" secondItem="SRZ-dV-9Kh" secondAttribute="leading" constant="14" id="WJq-Yj-TEs"/>
+                                            <constraint firstAttribute="height" constant="1500" id="WLj-de-tGL"/>
+                                            <constraint firstItem="dlg-Fm-ww7" firstAttribute="top" secondItem="tFj-mC-2T2" secondAttribute="bottom" constant="35" id="aJ1-Yb-Oc6"/>
+                                            <constraint firstAttribute="trailing" secondItem="wV5-7e-jwJ" secondAttribute="trailing" constant="14" id="aNa-nj-d9C"/>
+                                            <constraint firstItem="KZ6-r7-sUD" firstAttribute="leading" secondItem="SRZ-dV-9Kh" secondAttribute="leading" constant="14" id="cwn-5R-jiy"/>
+                                            <constraint firstItem="KZ6-r7-sUD" firstAttribute="top" secondItem="Mm7-Y7-v28" secondAttribute="bottom" constant="40" id="e2y-x9-Ctk"/>
+                                            <constraint firstItem="mlL-N5-d5R" firstAttribute="top" secondItem="dlg-Fm-ww7" secondAttribute="bottom" constant="40" id="eiR-8l-d1t"/>
+                                            <constraint firstAttribute="trailing" secondItem="tFj-mC-2T2" secondAttribute="trailing" constant="25" id="har-cd-K2W"/>
+                                            <constraint firstAttribute="trailing" secondItem="mlL-N5-d5R" secondAttribute="trailing" constant="14" id="hdx-Q3-LlW"/>
+                                            <constraint firstAttribute="trailing" secondItem="KZ6-r7-sUD" secondAttribute="trailing" constant="14" id="mkw-qZ-Ibj"/>
+                                            <constraint firstItem="m6N-ZK-u1S" firstAttribute="leading" secondItem="SRZ-dV-9Kh" secondAttribute="leading" constant="14" id="oUP-yx-U54"/>
+                                            <constraint firstItem="wV5-7e-jwJ" firstAttribute="top" secondItem="mlL-N5-d5R" secondAttribute="bottom" constant="40" id="sIj-8O-roj"/>
+                                            <constraint firstItem="tFj-mC-2T2" firstAttribute="top" secondItem="SGd-gt-W5i" secondAttribute="bottom" constant="54" id="sTN-Fy-b8y"/>
+                                            <constraint firstItem="mlL-N5-d5R" firstAttribute="leading" secondItem="SRZ-dV-9Kh" secondAttribute="leading" constant="14" id="vrT-Rr-dzC"/>
+                                            <constraint firstItem="SGd-gt-W5i" firstAttribute="centerX" secondItem="SRZ-dV-9Kh" secondAttribute="centerX" id="yxw-u9-OJJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="SRZ-dV-9Kh" secondAttribute="bottom" id="Hhw-aY-7mQ"/>
+                                    <constraint firstItem="SRZ-dV-9Kh" firstAttribute="top" secondItem="l3u-7d-eTV" secondAttribute="top" id="ItH-rH-v0n"/>
+                                    <constraint firstAttribute="trailing" secondItem="SRZ-dV-9Kh" secondAttribute="trailing" id="Y6Q-F3-NUV"/>
+                                    <constraint firstItem="SRZ-dV-9Kh" firstAttribute="leading" secondItem="l3u-7d-eTV" secondAttribute="leading" id="m7i-nk-9ND"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l3u-7d-eTV" firstAttribute="trailing" secondItem="EQo-2f-hYs" secondAttribute="trailing" id="EB1-wY-Rpd"/>
+                            <constraint firstItem="l3u-7d-eTV" firstAttribute="bottom" secondItem="EQo-2f-hYs" secondAttribute="bottom" id="MGV-JJ-BBD"/>
+                            <constraint firstItem="l3u-7d-eTV" firstAttribute="leading" secondItem="EQo-2f-hYs" secondAttribute="leading" id="VCm-gk-yGK"/>
+                            <constraint firstItem="l3u-7d-eTV" firstAttribute="top" secondItem="EQo-2f-hYs" secondAttribute="top" id="WYB-80-DfA"/>
+                            <constraint firstItem="SRZ-dV-9Kh" firstAttribute="width" secondItem="0uU-OV-rUu" secondAttribute="width" id="dJh-Ic-K7m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EQo-2f-hYs"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recycle" id="5Oc-OG-sVB"/>
-                    <navigationItem key="navigationItem" id="3D2-oF-JoF"/>
+                    <navigationItem key="navigationItem" title="Recycle" id="3D2-oF-JoF"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="buttonBackView" destination="SGd-gt-W5i" id="I7A-j0-Grg"/>
+                        <outlet property="recycleCenterButton" destination="DlS-DA-Wrd" id="1zc-Ka-dfG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIk-7D-w1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1100" y="145.98214285714286"/>
+            <point key="canvasLocation" x="1098.5507246376812" y="145.98214285714286"/>
         </scene>
         <!--Recycle-->
         <scene sceneID="z3Q-xd-P95">
@@ -48,4 +368,13 @@
             <point key="canvasLocation" x="189.85507246376812" y="145.98214285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="recycle1" width="214" height="267"/>
+        <image name="recycle2" width="217" height="265"/>
+        <image name="recycle3" width="217" height="265"/>
+        <image name="recycle4" width="214" height="266"/>
+        <image name="recycle5" width="219" height="268"/>
+        <image name="recycle6" width="218" height="265"/>
+        <image name="recycle7" width="222" height="263"/>
+    </resources>
 </document>
